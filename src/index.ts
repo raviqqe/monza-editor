@@ -7,13 +7,13 @@ export const initialize = (
   container.setAttribute("class", styles.main ?? "");
 
   const textarea = container.appendChild(document.createElement("textarea"));
-  textarea.setAttribute("class", styles.textarea ?? "");
+  textarea.className += ` ${styles.textarea ?? ""}`;
 
   const pre = container.appendChild(document.createElement("pre"));
-  pre.setAttribute("class", styles.pre ?? "");
+  pre.className += ` ${styles.pre ?? ""}`;
 
   const code = pre.appendChild(document.createElement("code"));
-  code.setAttribute("class", styles.code ?? "");
+  code.className += ` ${styles.code ?? ""}`;
 
   const update = () =>
     window.requestAnimationFrame(() => {
