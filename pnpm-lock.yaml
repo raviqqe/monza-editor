@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.1.4
+        specifier: ^2.2.0
         version: 2.2.0
       '@raviqqe/biome-config':
-        specifier: ^2.0.10
+        specifier: ^2.0.16
         version: 2.0.16(@biomejs/biome@2.2.0)
 
   examples/shiki:
@@ -59,7 +59,7 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       typescript:
-        specifier: ^5.0.2
+        specifier: ^5.9.2
         version: 5.9.2
       typescript-plugin-css-modules:
         specifier: ^5.2.0
