@@ -1,0 +1,22 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  release:
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+      - run: npm ci
+      - run: npm run build
+      - uses: js-devtools/npm-publish@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          access: public
+          token: ${{ secrets.NPM_TOKEN }}

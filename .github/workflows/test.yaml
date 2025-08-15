@@ -1,0 +1,32 @@
+name: test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          cache: npm
+      - run: pnpm i
+      - run: pnpm build
+      - run: pnpm lint
+      - run: pnpm test
+      - uses: codecov/codecov-action@v5
+  spell_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: streetsidesoftware/cspell-action@main
+        with:
+          files: "**/*.{md,ts}"
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: raviqqe/markdown-link-check@v1
