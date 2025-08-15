@@ -16,7 +16,7 @@ const highlighter = await createHighlighter({
 });
 
 const editor = container.appendChild(document.createElement("div"));
-container.className = styles.editor ?? "";
+editor.className = styles.editor ?? "";
 
 initialize(editor, (text) =>
   highlighter.codeToHtml(text, {
