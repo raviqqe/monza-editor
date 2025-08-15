@@ -8,6 +8,10 @@ permissions:
   contents: read
 jobs:
   release:
+    strategy:
+      matrix:
+        directory:
+          - monza-editor
     permissions:
       contents: read
       id-token: write
@@ -20,4 +24,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           access: public
+          package: packages/${{ matrix.directory }}
           token: ${{ secrets.NPM_TOKEN }}
