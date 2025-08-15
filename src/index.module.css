@@ -14,7 +14,7 @@
   font-size: inherit;
   line-height: inherit;
   margin: 0;
-  padding: var(--padding);
+  padding: var(--padding, 0.1rem);
   text-align: left;
 }
 
