@@ -1,5 +1,8 @@
-import { expect, it } from "vitest";
+import { it } from "vitest";
+import { initialize } from "./index.js";
 
-it("works", () => {
-  expect(40 + 2).toBe(42);
+it("initializes an editor", () => {
+  const editor = document.createElement("div");
+
+  initialize(editor, (text) => text);
 });
