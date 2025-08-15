@@ -15,7 +15,7 @@ jobs:
       - run: pnpm build
       - run: pnpm -r build
       - run: pnpm lint
-      - run: pnpm test
+      - run: pnpm -r test
   spell_check:
     runs-on: ubuntu-latest
     steps:
