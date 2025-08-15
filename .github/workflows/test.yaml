@@ -4,16 +4,14 @@ on:
     branches:
       - main
   pull_request:
+permissions:
+  contents: read
 jobs:
-  test:
+  node_js:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
-        with:
-          node-version: latest
-          cache: npm
-      - run: pnpm i
+      - uses: ./.github/actions/setup
       - run: pnpm build
       - run: pnpm lint
       - run: pnpm test
@@ -30,3 +28,12 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: raviqqe/markdown-link-check@v1
+  test:
+    needs:
+      - node_js
+      - readme
+      - spell_check
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - run: for result in ${{ join(needs.*.result, ' ') }}; do [ $result = success ]; done
