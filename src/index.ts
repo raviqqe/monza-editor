@@ -13,7 +13,7 @@ export const initialize = (
   pre.setAttribute("class", styles.pre ?? "");
 
   const code = pre.appendChild(document.createElement("code"));
-  pre.setAttribute("class", styles.code ?? "");
+  code.setAttribute("class", styles.code ?? "");
 
   const update = () =>
     window.requestAnimationFrame(() => {
