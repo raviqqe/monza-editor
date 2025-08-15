@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  place-items: center;
+}
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+}
