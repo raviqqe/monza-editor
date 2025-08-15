@@ -6,6 +6,7 @@
 
   > textarea {
     field-sizing: content;
+    resize: none;
   }
 
   > pre {
