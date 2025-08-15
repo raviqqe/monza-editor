@@ -10,7 +10,7 @@
 .editor {
   border: none;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: var(--font-family, monospace);
   font-size: inherit;
   line-height: inherit;
   margin: 0;
