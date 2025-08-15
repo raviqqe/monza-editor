@@ -16,6 +16,8 @@
   margin: 0;
   padding: var(--padding, 0.1rem);
   text-align: left;
+  width: 100%;
+  height: 100%;
 }
 
 .textarea {
@@ -33,7 +35,6 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  width: 100%;
 }
 
 .code {
