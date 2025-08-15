@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.input {
+.text {
   white-space: break-spaces;
   word-break: break-word;
 }
@@ -20,7 +20,7 @@
 
 .textarea {
   composes: editor;
-  composes: input;
+  composes: text;
 
   field-sizing: content;
   resize: none;
@@ -38,5 +38,5 @@
 }
 
 .code {
-  composes: input;
+  composes: text;
 }
