@@ -1,1 +1,1 @@
-export const initializeEditor = () => {}
+export const initializeEditor = () => {};
