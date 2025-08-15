@@ -10,14 +10,15 @@ if (!container) {
   throw new Error("No container");
 }
 
-container.className = styles.editor ?? "";
-
 const highlighter = await createHighlighter({
   langs: ["scheme"],
   themes: ["vitesse-light"],
 });
 
-initialize(container.appendChild(document.createElement("div")), (text) =>
+const editor = container.appendChild(document.createElement("div"));
+container.className = styles.editor ?? "";
+
+initialize(editor, (text) =>
   highlighter.codeToHtml(text, {
     lang: "scheme",
     structure: "inline",
