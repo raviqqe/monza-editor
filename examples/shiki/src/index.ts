@@ -2,6 +2,7 @@ import { initialize } from "monza-editor";
 import "monza-editor/style.css";
 import "./style.css";
 import { createHighlighter } from "shiki";
+import styles from "./index.module.css";
 
 const container = document.querySelector<HTMLDivElement>("#app");
 
@@ -14,7 +15,10 @@ const highlighter = await createHighlighter({
   themes: ["vitesse-light"],
 });
 
-initialize(container.appendChild(document.createElement("div")), (text) =>
+const editor = container.appendChild(document.createElement("div"));
+editor.className = styles.editor ?? "";
+
+initialize(editor, (text) =>
   highlighter.codeToHtml(text, {
     lang: "scheme",
     structure: "inline",
