@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 export const initialize = (
   container: Element,
-  highlight: (text: string) => string | Promise<string>,
+  highlight: (text: string) => string,
 ): void => {
   container.setAttribute("class", styles.main ?? "");
 
@@ -15,8 +15,8 @@ export const initialize = (
   const code = pre.appendChild(document.createElement("code"));
 
   const update = () =>
-    window.requestAnimationFrame(async () => {
-      code.innerHTML = await highlight(textarea.value);
+    window.requestAnimationFrame(() => {
+      code.innerHTML = highlight(textarea.value);
 
       textarea.style.height = "0";
       textarea.style.height = `${textarea.scrollHeight}px`;
