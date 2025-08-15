@@ -1,17 +1,14 @@
 .main {
-  --border-width: 1px;
-
+  border: 1px solid black;
   position: relative;
   white-space: break-spaces;
   word-break: break-word;
 
   > textarea {
-    border: var(--border-width) solid black;
     field-sizing: content;
   }
 
   > pre {
-    border: var(--border-width) solid transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,6 +19,7 @@
 }
 
 .editor {
+  border: none;
   box-sizing: border-box;
   font-family: monospace;
   font-size: 1rem;

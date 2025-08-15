@@ -19,7 +19,7 @@ export const initialize = (
       code.innerHTML = await highlight(textarea.value);
 
       textarea.style.height = "0";
-      textarea.style.height = `${textarea.scrollHeight + 2}px`;
+      textarea.style.height = `${textarea.scrollHeight}px`;
     });
 
   textarea.addEventListener("input", update);
