@@ -2,7 +2,16 @@
   "extends": "@raviqqe/tsconfig/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "goToDefinition": true,
+          "noUncheckedIndexedAccess": true
+        }
+      }
+    ]
   },
   "include": ["src"]
 }

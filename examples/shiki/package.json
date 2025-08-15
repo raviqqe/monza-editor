@@ -1,0 +1,19 @@
+{
+  "name": "@monza-editor/shiki-example",
+  "description": "Shiki example for Monza editor",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "monza-editor": "workspace:*",
+    "shiki": "^3.9.2"
+  },
+  "devDependencies": {
+    "@raviqqe/tsconfig": "^2.0.1",
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2"
+  }
+}
