@@ -12,9 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
-      - run: npm ci
-      - run: npm run build
+      - run: pnpm ci
+      - run: pnpm build
       - uses: js-devtools/npm-publish@v3
         if: github.ref == 'refs/heads/main'
         with:
