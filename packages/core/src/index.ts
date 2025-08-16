@@ -2,14 +2,14 @@ import styles from "./index.module.css";
 
 interface Options {
   highlight: (text: string) => string;
-  onKeyDown?: (event: KeyboardEvent) => void;
+  onChange?: (event: Event) => void;
   onInput?: (event: Event) => void;
   value?: string;
 }
 
 export const initialize = (
   container: Element,
-  { highlight, onKeyDown, onInput, value }: Options,
+  { highlight, onChange, onInput, value }: Options,
 ): void => {
   container.className += ` ${styles.main}`;
 
@@ -44,8 +44,8 @@ export const initialize = (
   });
   textarea.addEventListener("scroll", scroll);
 
-  if (onKeyDown) {
-    textarea.addEventListener("keydown", onKeyDown);
+  if (onChange) {
+    textarea.addEventListener("change", onChange);
   }
 
   update();
