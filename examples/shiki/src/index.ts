@@ -13,7 +13,7 @@ if (!container) {
 const highlighter = await createHighlighterCore({
   engine: createJavaScriptRegexEngine(),
   langs: [import("@shikijs/langs/typescript")],
-  themes: [import("@shikijs/themes/nord")],
+  themes: [import("@shikijs/themes/min-light")],
 });
 
 const editor = container.appendChild(document.createElement("div"));
@@ -21,8 +21,8 @@ editor.className = styles.editor ?? "";
 
 initialize(editor, (text) =>
   highlighter.codeToHtml(text, {
-    lang: "scheme",
+    lang: "typescript",
     structure: "inline",
-    theme: "vitesse-light",
+    theme: "min-light",
   }),
 );
