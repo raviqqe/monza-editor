@@ -19,10 +19,10 @@ jobs:
         working-directory: doc
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
+      - uses: ./.github/actions/setup
       - uses: actions/configure-pages@v5
-      - run: npm ci
-      - run: npm run build
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm -r build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: doc/dist
