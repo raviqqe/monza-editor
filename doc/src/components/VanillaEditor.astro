@@ -19,6 +19,13 @@ import "monza-editor/style.css";
   import { initialize } from "monza-editor";
   import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 
+  const source = `
+import { exit } from "node:process";
+
+console.log("Hello, world!");
+exit(0);
+`.trim();
+
   const highlighter = await createHighlighterCore({
     engine: createJavaScriptRegexEngine(),
     langs: [import("@shikijs/langs/typescript")],
@@ -43,5 +50,6 @@ import "monza-editor/style.css";
           ? "github-dark"
           : "github-light",
       }),
+    value: source,
   });
 </script>
