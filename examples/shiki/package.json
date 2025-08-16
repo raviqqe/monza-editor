@@ -8,6 +8,8 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
+    "@shikijs/langs": "^3.9.2",
+    "@shikijs/themes": "^3.9.2",
     "monza-editor": "workspace:*",
     "shiki": "^3.9.2"
   },

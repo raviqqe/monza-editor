@@ -17,6 +17,12 @@ importers:
 
   examples/shiki:
     dependencies:
+      '@shikijs/langs':
+        specifier: ^3.9.2
+        version: 3.9.2
+      '@shikijs/themes':
+        specifier: ^3.9.2
+        version: 3.9.2
       monza-editor:
         specifier: workspace:*
         version: link:../../packages/core
