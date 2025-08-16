@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/v/monza-editor?style=flat-square)](https://www.npmjs.com/package/monza-editor)
 [![License](https://img.shields.io/github/license/raviqqe/monza-editor.svg?style=flat-square)](LICENSE)
 
-The minimal `textarea` element with syntax highlight.
+The `textarea` element with syntax highlight.
 
 ## Usage
 
