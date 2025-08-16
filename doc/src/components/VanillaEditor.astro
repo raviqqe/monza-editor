@@ -3,6 +3,18 @@ import "monza-editor/style.css";
 ---
 
 <div id="vanilla-editor"></div>
+<style>
+  div {
+    --me-padding: 0.5rem;
+
+    border: 1px solid light-dark(var(--black), var(--white));
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    height: 10rem;
+    width: 20rem;
+    overflow: hidden;
+  }
+</style>
 <script>
   import { initialize } from "monza-editor";
   import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
