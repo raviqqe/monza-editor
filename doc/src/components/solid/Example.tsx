@@ -2,6 +2,7 @@ import { Editor } from "@monza-editor/solid";
 import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 import type { JSX } from "solid-js";
 import styles from "./Example.module.css";
+import { theme } from "../../utility.js";
 
 const highlighter = await createHighlighterCore({
   engine: createJavaScriptRegexEngine(),
@@ -11,10 +12,6 @@ const highlighter = await createHighlighterCore({
     import("@shikijs/themes/github-light"),
   ],
 });
-
-const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-  ? "github-dark"
-  : "github-light";
 
 export const Example = (): JSX.Element => {
   return (
