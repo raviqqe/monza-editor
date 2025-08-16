@@ -1,8 +1,14 @@
 import styles from "./index.module.css";
 
+interface Options {
+  value?: string;
+  onInput?: (value: string) => void;
+  highlight: (text: string) => string;
+}
+
 export const initialize = (
   container: Element,
-  highlight: (text: string) => string,
+  { highlight }: Options,
 ): void => {
   container.className += ` ${styles.main}`;
 
