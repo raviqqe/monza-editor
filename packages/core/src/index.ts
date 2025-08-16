@@ -2,19 +2,21 @@ import styles from "./index.module.css";
 
 interface Options {
   highlight: (text: string) => string;
-  onInput?: (value: string) => void;
+  onKeyDown?: (event: KeyboardEvent) => void;
+  onInput?: (event: Event) => void;
   value?: string;
 }
 
 export const initialize = (
   container: Element,
-  { highlight }: Options,
+  { highlight, onKeyDown, onInput, value }: Options,
 ): void => {
   container.className += ` ${styles.main}`;
 
   const textarea = container.appendChild(document.createElement("textarea"));
   textarea.className += ` ${styles.textarea}`;
   textarea.setAttribute("spellcheck", "false");
+  textarea.value = value ?? "";
 
   const pre = container.appendChild(document.createElement("pre"));
   pre.className += ` ${styles.pre}`;
@@ -36,8 +38,15 @@ export const initialize = (
       scroll();
     });
 
-  textarea.addEventListener("input", update);
+  textarea.addEventListener("input", (event) => {
+    update();
+    onInput?.(event);
+  });
   textarea.addEventListener("scroll", scroll);
+
+  if (onKeyDown) {
+    textarea.addEventListener("keydown", onKeyDown);
+  }
 
   update();
 };
