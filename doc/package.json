@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",
+    "@astrojs/solid-js": "^5.1.0",
     "@monza-editor/solid": "workspace:*",
     "@shikijs/langs": "^3.9.2",
     "@shikijs/themes": "^3.9.2",
     "astro": "^5.13.2",
     "monza-editor": "workspace:*",
-    "shiki": "^3.9.2"
+    "shiki": "^3.9.2",
+    "solid-js": "^1.9.9"
   },
   "devDependencies": {
     "typescript": "^5.9.2"
