@@ -18,13 +18,7 @@ import "monza-editor/style.css";
 <script>
   import { initialize } from "monza-editor";
   import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
-
-  const source = `
-import { exit } from "node:process";
-
-console.log("Hello, world!");
-exit(0);
-`.trim();
+  import { source } from "../utility.js";
 
   const highlighter = await createHighlighterCore({
     engine: createJavaScriptRegexEngine(),
