@@ -3,8 +3,11 @@ import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 
 const highlighter = await createHighlighterCore({
   engine: createJavaScriptRegexEngine(),
-  langs: [],
-  themes: [],
+  langs: [import("@shikijs/langs/typescript")],
+  themes: [
+    import("@shikijs/themes/github-dark"),
+    import("@shikijs/themes/github-light"),
+  ],
 });
 
 export const SolidExample = () => (
@@ -18,5 +21,6 @@ export const SolidExample = () => (
           : "github-light",
       })
     }
+    value='console.log("Hello, Solid.js!");'
   />
 );
