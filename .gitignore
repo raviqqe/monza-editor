@@ -1,4 +1,5 @@
 *.tsbuildinfo
+.astro
 coverage
 dist
 docs
