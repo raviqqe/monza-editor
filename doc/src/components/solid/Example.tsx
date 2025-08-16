@@ -1,5 +1,6 @@
 import { Editor } from "@monza-editor/solid";
 import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
+import type { JSX } from "solid-js";
 
 const highlighter = await createHighlighterCore({
   engine: createJavaScriptRegexEngine(),
@@ -10,7 +11,7 @@ const highlighter = await createHighlighterCore({
   ],
 });
 
-export const SolidExample = () => (
+export const SolidExample = (): JSX.Element => (
   <Editor
     onHighlight={(text) =>
       highlighter.codeToHtml(text, {
