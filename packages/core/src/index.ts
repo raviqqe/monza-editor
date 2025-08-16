@@ -1,9 +1,13 @@
 import styles from "./index.module.css";
 
+export interface TextareaEvent extends Omit<Event, "target"> {
+  target: HTMLTextAreaElement;
+}
+
 export interface Options {
   highlight: (text: string) => string;
-  onChange?: (event: Event) => void;
-  onInput?: (event: Event) => void;
+  onChange?: (event: TextareaEvent) => void;
+  onInput?: (event: TextareaEvent) => void;
   value?: string;
 }
 
@@ -40,12 +44,14 @@ export const initialize = (
 
   textarea.addEventListener("input", (event) => {
     update();
-    onInput?.(event);
+    onInput?.(event as TextareaEvent);
   });
   textarea.addEventListener("scroll", scroll);
 
   if (onChange) {
-    textarea.addEventListener("change", onChange);
+    textarea.addEventListener("change", (event) =>
+      onChange(event as TextareaEvent),
+    );
   }
 
   update();
