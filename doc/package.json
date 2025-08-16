@@ -9,8 +9,11 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@shikijs/langs": "^3.9.2",
+    "@shikijs/themes": "^3.9.2",
     "astro": "^5.13.2",
-    "monza-editor": "workspace:*"
+    "monza-editor": "workspace:*",
+    "shiki": "^3.9.2"
   },
   "devDependencies": {
     "typescript": "^5.9.2"

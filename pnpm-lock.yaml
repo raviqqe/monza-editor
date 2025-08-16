@@ -17,12 +17,21 @@ importers:
 
   doc:
     dependencies:
+      '@shikijs/langs':
+        specifier: ^3.9.2
+        version: 3.9.2
+      '@shikijs/themes':
+        specifier: ^3.9.2
+        version: 3.9.2
       astro:
         specifier: ^5.13.2
         version: 5.13.2(@types/node@24.3.0)(jiti@2.5.1)(less@4.4.0)(rollup@4.46.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.2)
       monza-editor:
         specifier: workspace:*
         version: link:../packages/core
+      shiki:
+        specifier: ^3.9.2
+        version: 3.9.2
     devDependencies:
       typescript:
         specifier: ^5.9.2

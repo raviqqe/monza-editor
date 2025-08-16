@@ -1,0 +1,30 @@
+---
+
+---
+
+<div id="vanilla-editor"></div>
+<script>
+  import { initialize } from "monza-editor";
+  import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
+
+  const highlighter = await createHighlighterCore({
+    engine: createJavaScriptRegexEngine(),
+    langs: [import("@shikijs/langs/typescript")],
+    themes: [import("@shikijs/themes/min-light")],
+  });
+
+  const element = document.querySelector(`[id="vanilla-editor"]`);
+
+  if (!element) {
+    throw new Error("No editor element");
+  }
+
+  initialize(element, {
+    highlight: (text) =>
+      highlighter.codeToHtml(text, {
+        lang: "typescript",
+        structure: "inline",
+        theme: "github-light",
+      }),
+  });
+</script>
