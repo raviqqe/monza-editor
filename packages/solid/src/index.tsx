@@ -1,8 +1,10 @@
 import "monza-editor/style.css";
-import { initialize, Options } from "monza-editor";
+import { initialize, type Options } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
-interface Props extends Options {}
+interface Props extends Options {
+  class?: string;
+}
 
 export const Editor = (props: Props): JSX.Element => {
   let ref: HTMLDivElement | undefined;
@@ -13,5 +15,5 @@ export const Editor = (props: Props): JSX.Element => {
     }
   });
 
-  return <div ref={ref} />;
+  return <div class={props.class} ref={ref} />;
 };
