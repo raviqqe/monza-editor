@@ -7,6 +7,34 @@ settings:
 importers:
 
   .:
+    devDependencies:
+      '@biomejs/biome':
+        specifier: ^2.2.0
+        version: 2.2.0
+      '@raviqqe/biome-config':
+        specifier: ^2.0.16
+        version: 2.0.16(@biomejs/biome@2.2.0)
+
+  examples/shiki:
+    dependencies:
+      monza-editor:
+        specifier: workspace:*
+        version: link:../../packages/monza-editor
+      shiki:
+        specifier: ^3.9.2
+        version: 3.9.2
+    devDependencies:
+      '@raviqqe/tsconfig':
+        specifier: ^2.0.1
+        version: 2.0.1
+      typescript:
+        specifier: ~5.9.2
+        version: 5.9.2
+      vite:
+        specifier: ^7.1.2
+        version: 7.1.2(jiti@2.5.1)(less@4.4.0)(sass@1.90.0)(stylus@0.62.0)
+
+  packages/monza-editor:
     dependencies:
       shiki:
         specifier: ^3.9.2
@@ -31,7 +59,7 @@ importers:
         specifier: ^26.1.0
         version: 26.1.0
       typescript:
-        specifier: ^5.0.2
+        specifier: ^5.9.2
         version: 5.9.2
       typescript-plugin-css-modules:
         specifier: ^5.2.0
@@ -39,25 +67,6 @@ importers:
       vitest:
         specifier: ^3.0.2
         version: 3.2.4(jiti@2.5.1)(jsdom@26.1.0)(less@4.4.0)(sass@1.90.0)(stylus@0.62.0)
-
-  examples/shiki:
-    dependencies:
-      monza-editor:
-        specifier: workspace:*
-        version: link:../..
-      shiki:
-        specifier: ^3.9.2
-        version: 3.9.2
-    devDependencies:
-      '@raviqqe/tsconfig':
-        specifier: ^2.0.1
-        version: 2.0.1
-      typescript:
-        specifier: ~5.9.2
-        version: 5.9.2
-      vite:
-        specifier: ^7.1.2
-        version: 7.1.2(jiti@2.5.1)(less@4.4.0)(sass@1.90.0)(stylus@0.62.0)
 
 packages:
 
