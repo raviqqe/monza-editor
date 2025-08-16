@@ -36,12 +36,6 @@ importers:
 
   packages/editor:
     devDependencies:
-      '@biomejs/biome':
-        specifier: ^2.1.4
-        version: 2.2.0
-      '@raviqqe/biome-config':
-        specifier: ^2.0.10
-        version: 2.0.16(@biomejs/biome@2.2.0)
       '@raviqqe/tsconfig':
         specifier: ^2.0.1
         version: 2.0.1
