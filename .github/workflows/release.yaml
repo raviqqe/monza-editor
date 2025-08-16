@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 jobs:
-  release:
+  npm:
     strategy:
       matrix:
         directory:
@@ -26,3 +26,10 @@ jobs:
           access: public
           package: packages/${{ matrix.directory }}
           token: ${{ secrets.NPM_TOKEN }}
+  release:
+    needs:
+      - npm
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - run: for result in ${{ join(needs.*.result, ' ') }}; do [ $result = success ]; done
