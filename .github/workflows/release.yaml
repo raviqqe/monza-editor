@@ -11,7 +11,8 @@ jobs:
     strategy:
       matrix:
         directory:
-          - monza-editor
+          - editor
+          - solid
     permissions:
       contents: read
       id-token: write
