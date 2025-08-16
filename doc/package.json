@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "astro": "^5.13.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
   }
 }
