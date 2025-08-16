@@ -1,1 +1,1 @@
-../../../packages/editor/src/css.d.ts
+../../../packages/core/src/css.d.ts
