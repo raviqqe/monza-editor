@@ -1,5 +1,5 @@
 {
-  "extends": "@raviqqe/tsconfig/tsconfig.json",
+  "extends": "@raviqqe/tsconfig",
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
