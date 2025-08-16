@@ -13,9 +13,4 @@ export default defineConfig({
   output: {
     target: "web",
   },
-  source: {
-    entry: {
-      index: "./src/index.ts",
-    },
-  },
 });
