@@ -10,11 +10,11 @@
 .editor {
   border: none;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: var(--me-font-family, monospace);
   font-size: inherit;
   line-height: inherit;
   margin: 0;
-  padding: var(--padding, 0.1rem);
+  padding: var(--me-padding, 0.1rem);
   text-align: left;
   width: 100%;
   height: 100%;
