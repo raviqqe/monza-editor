@@ -12,10 +12,22 @@
 </html>
 
 <style>
+  :root {
+    --black: black;
+    --white: white;
+
+    background-color: light-dark(var(--white), var(--black));
+    color-scheme: light dark;
+    color: light-dark(var(--black), var(--white));
+    font-family: sans-serif;
+  }
+
   html,
   body {
     margin: 0;
     width: 100%;
     height: 100%;
+    display: grid;
+    place-items: center;
   }
 </style>
