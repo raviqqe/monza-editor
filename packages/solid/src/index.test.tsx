@@ -1,8 +1,7 @@
 import { it } from "vitest";
-import { initialize } from "./index.js";
+import { render } from "solid-testing-library";
+import { Editor } from "./index.js";
 
-it("initializes an editor", () => {
-  const editor = document.createElement("div");
-
-  initialize(editor, (text) => text);
+it("renders", () => {
+  render(() => <Editor />);
 });
