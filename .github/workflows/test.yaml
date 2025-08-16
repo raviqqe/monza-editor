@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
-      - run: pnpm build
       - run: pnpm -r build
       - run: pnpm lint
       - run: pnpm -r test
