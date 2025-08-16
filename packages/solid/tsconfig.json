@@ -1,6 +1,8 @@
 {
-  "extends": "@raviqqe/react-tsconfig/tsconfig.json",
+  "extends": "@raviqqe/tsconfig/tsconfig.json",
   "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "noEmit": true,
     "outDir": "dist",
     "rootDir": "src"
