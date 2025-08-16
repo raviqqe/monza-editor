@@ -2,7 +2,7 @@
 import "monza-editor/style.css";
 ---
 
-<div id="vanilla-editor"></div>
+<div id="vanilla-example"></div>
 <style>
   div {
     --me-padding: 1rem;
@@ -29,7 +29,7 @@ import "monza-editor/style.css";
     ],
   });
 
-  const element = document.querySelector(`[id="vanilla-editor"]`);
+  const element = document.getElementById("vanilla-example");
 
   if (!element) {
     throw new Error("No editor element");

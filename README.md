@@ -6,6 +6,10 @@
 
 The `textarea` element with syntax highlight.
 
+- npm packages
+  - [`monza-editor`](https://www.npmjs.com/package/monza-editor)
+  - [`@monza-editor/solid`](https://www.npmjs.com/package/@monza-editor/solid)
+
 ## Usage
 
 ### Styling
