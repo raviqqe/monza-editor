@@ -12,11 +12,11 @@ const highlighter = await createHighlighterCore({
   ],
 });
 
-export const Example = (): JSX.Element => {
-  const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "github-dark"
-    : "github-light";
+const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+  ? "github-dark"
+  : "github-light";
 
+export const Example = (): JSX.Element => {
   return (
     <Editor
       class={styles.main}
