@@ -1,10 +1,8 @@
 import "monza-editor/style.css";
-import { initialize } from "monza-editor";
+import { initialize, Options } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
-interface Props {
-  highlight: (text: string) => string;
-}
+interface Props extends Options {}
 
 export const Editor = (props: Props): JSX.Element => {
   let ref: HTMLDivElement | undefined;
