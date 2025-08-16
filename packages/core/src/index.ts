@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 
-interface Options {
+export interface Options {
   highlight: (text: string) => string;
   onChange?: (event: Event) => void;
   onInput?: (event: Event) => void;
