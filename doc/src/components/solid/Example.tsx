@@ -12,18 +12,22 @@ const highlighter = await createHighlighterCore({
   ],
 });
 
-export const Example = (): JSX.Element => (
-  <Editor
-    class={styles.main}
-    onHighlight={(text) =>
-      highlighter.codeToHtml(text, {
-        lang: "typescript",
-        structure: "inline",
-        theme: window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "github-dark"
-          : "github-light",
-      })
-    }
-    value='console.log("Hello, Solid.js!");'
-  />
-);
+export const Example = (): JSX.Element => {
+  const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "github-dark"
+    : "github-light";
+
+  return (
+    <Editor
+      class={styles.main}
+      onHighlight={(text) =>
+        highlighter.codeToHtml(text, {
+          lang: "typescript",
+          structure: "inline",
+          theme,
+        })
+      }
+      value='console.log("Hello, Solid.js!");'
+    />
+  );
+};
