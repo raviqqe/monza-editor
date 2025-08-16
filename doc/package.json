@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",
-    "@lucide/astro": "^0.539.0",
     "@shikijs/langs": "^3.9.2",
     "@shikijs/themes": "^3.9.2",
     "astro": "^5.13.2",
