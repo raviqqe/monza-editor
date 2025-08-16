@@ -20,6 +20,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "monza-editor": "workspace:*",
     "solid-js": "^1.9.9"
   },
   "devDependencies": {

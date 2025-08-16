@@ -63,6 +63,9 @@ importers:
 
   packages/solid:
     dependencies:
+      monza-editor:
+        specifier: workspace:*
+        version: link:../editor
       solid-js:
         specifier: ^1.9.9
         version: 1.9.9
