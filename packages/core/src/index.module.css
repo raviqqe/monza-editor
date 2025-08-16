@@ -26,9 +26,8 @@
   composes: editor;
   composes: text;
 
-  /* TODO Support auto height. */
-  field-sizing: content;
   resize: none;
+  /* TODO field-sizing: content; */
 }
 
 .pre {
