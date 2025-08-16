@@ -1,7 +1,7 @@
 {
   "extends": "@raviqqe/tsconfig",
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "jsxImportSource": "solid-js",
     "noEmit": true,
     "outDir": "dist",
