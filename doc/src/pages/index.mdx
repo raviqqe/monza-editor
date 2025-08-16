@@ -4,8 +4,8 @@ description: The textarea element with syntax highlight.
 layout: ../layouts/Default.astro
 ---
 
+import SolidExample from "../components/SolidExample.astro";
 import VanillaExample from "../components/VanillaExample.astro";
-import { SolidExample } from "../components/solid/Example.tsx";
 import Readme from "../../../README.md";
 
 <Readme />
@@ -18,4 +18,4 @@ import Readme from "../../../README.md";
 
 ### Solid.js
 
-<SolidExample client:only="solid-js" />
+<SolidExample />

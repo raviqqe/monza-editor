@@ -11,7 +11,7 @@ const highlighter = await createHighlighterCore({
   ],
 });
 
-export const SolidExample = (): JSX.Element => (
+export const Example = (): JSX.Element => (
   <Editor
     onHighlight={(text) =>
       highlighter.codeToHtml(text, {
