@@ -1,6 +1,6 @@
-import { initialize } from "monza-editor";
-import "monza-editor/style.css";
 import "./style.css";
+import "monza-editor/style.css";
+import { initialize } from "monza-editor";
 import { createHighlighter } from "shiki";
 import styles from "./index.module.css";
 
