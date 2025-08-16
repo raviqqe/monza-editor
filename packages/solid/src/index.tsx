@@ -3,7 +3,7 @@ import { initialize } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
 interface Props {
-  highlight?: (text: string) => string;
+  highlight: (text: string) => string;
 }
 
 export const Editor = (props: Props): JSX.Element => {
@@ -11,7 +11,7 @@ export const Editor = (props: Props): JSX.Element => {
 
   onMount(() => {
     if (ref) {
-      initialize(ref, props.highlight ?? ((text) => text));
+      initialize(ref, props);
     }
   });
 
