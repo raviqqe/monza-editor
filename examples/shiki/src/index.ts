@@ -27,6 +27,6 @@ initialize(editor, {
       theme: "min-light",
     }),
   // biome-ignore lint/suspicious/noConsole: Testing
-  onInput: (event) => console.log(event),
+  onInput: (event) => console.log(event.target.value),
   value: `console.log("Hello, world!");`,
 });
