@@ -31,6 +31,7 @@
     "jsdom": "^26.1.0",
     "solid-testing-library": "^0.5.1",
     "typescript": "^5.9.2",
+    "vite-plugin-solid": "^2.11.8",
     "vitest": "^3.0.2"
   }
 }
