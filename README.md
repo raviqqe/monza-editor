@@ -6,6 +6,17 @@
 
 The minimal `textarea` element with syntax highlight.
 
+## Usage
+
+### Styling
+
+You might set CSS properties, such as `font-size`, `line-height`, `background` and `border`, at the top-level element.
+
+You might also set the following CSS variables that overwrite their corresponding CSS properties.
+
+- `--me-font-family`: The font family used for text.
+- `--me-padding`: The padding inside a textarea.
+
 ## License
 
 [MIT](LICENSE)
