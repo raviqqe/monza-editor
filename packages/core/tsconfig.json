@@ -1,9 +1,7 @@
 {
-  "extends": "@raviqqe/tsconfig/tsconfig.json",
+  "extends": "@raviqqe/tsconfig",
   "compilerOptions": {
     "noEmit": true,
-    "outDir": "dist",
-    "rootDir": "src",
     "plugins": [
       {
         "name": "typescript-plugin-css-modules",

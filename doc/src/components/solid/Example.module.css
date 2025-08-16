@@ -1,0 +1,10 @@
+.main {
+  --me-padding: 1rem;
+
+  border: 1px solid light-dark(var(--black), var(--white));
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  height: 10rem;
+  max-width: 24rem;
+  overflow: hidden;
+}

@@ -5,3 +5,7 @@ const square = (x: number): number =>
 console.log("Hello, world!");
 console.log(square(42));
 `.trim();
+
+export const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+  ? "github-dark"
+  : "github-light";

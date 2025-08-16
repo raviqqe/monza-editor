@@ -11,14 +11,14 @@ import "monza-editor/style.css";
     border-radius: 0.5rem;
     font-size: 0.9rem;
     height: 10rem;
-    width: 24rem;
+    max-width: 24rem;
     overflow: hidden;
   }
 </style>
 <script>
   import { initialize } from "monza-editor";
   import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
-  import { source } from "../utility.js";
+  import { source, theme } from "../utility.js";
 
   const highlighter = await createHighlighterCore({
     engine: createJavaScriptRegexEngine(),
@@ -40,9 +40,7 @@ import "monza-editor/style.css";
       highlighter.codeToHtml(text, {
         lang: "typescript",
         structure: "inline",
-        theme: window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "github-dark"
-          : "github-light",
+        theme,
       }),
     value: source,
   });
