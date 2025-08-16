@@ -8,6 +8,7 @@ export const initialize = (
 
   const textarea = container.appendChild(document.createElement("textarea"));
   textarea.className += ` ${styles.textarea}`;
+  textarea.setAttribute("spellcheck", "false");
 
   const pre = container.appendChild(document.createElement("pre"));
   pre.className += ` ${styles.pre}`;
