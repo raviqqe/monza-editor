@@ -9,6 +9,14 @@ const highlighter = await createHighlighterCore({
 
 export const SolidExample = () => (
   <Editor
-    onHighlight={(text) => highlighter.codeToHtml(text, { lang: "typescript" })}
+    onHighlight={(text) =>
+      highlighter.codeToHtml(text, {
+        lang: "typescript",
+        structure: "inline",
+        theme: window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "github-dark"
+          : "github-light",
+      })
+    }
   />
 );
