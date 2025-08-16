@@ -19,10 +19,12 @@ const highlighter = await createHighlighterCore({
 const editor = container.appendChild(document.createElement("div"));
 editor.className = styles.editor ?? "";
 
-initialize(editor, (text) =>
-  highlighter.codeToHtml(text, {
-    lang: "typescript",
-    structure: "inline",
-    theme: "min-light",
-  }),
-);
+initialize(editor, {
+  highlight: (text) =>
+    highlighter.codeToHtml(text, {
+      lang: "typescript",
+      structure: "inline",
+      theme: "min-light",
+    }),
+  value: `console.log("Hello, world!");`,
+});
