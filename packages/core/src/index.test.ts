@@ -4,5 +4,5 @@ import { initialize } from "./index.js";
 it("initializes an editor", () => {
   const editor = document.createElement("div");
 
-  initialize(editor, (text) => text);
+  initialize(editor, { highlight: (text) => text });
 });
