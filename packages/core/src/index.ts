@@ -25,7 +25,7 @@ export const initialize = (
     window.requestAnimationFrame(() => {
       const text = textarea.value;
 
-      code.innerHTML = highlight(text.at(-1) == "\n" ? text + " " : text);
+      code.innerHTML = highlight(text.at(-1) === "\n" ? text + " " : text);
 
       scroll();
     });
