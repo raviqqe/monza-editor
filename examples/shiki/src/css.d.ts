@@ -1,1 +1,1 @@
-../../../packages/monza-editor/src/css.d.ts
+../../../packages/editor/src/css.d.ts
