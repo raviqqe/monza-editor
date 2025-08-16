@@ -4,6 +4,7 @@ import { type JSX, onMount } from "solid-js";
 
 interface Props extends Omit<Options, "highlight"> {
   class?: string;
+  id?: string;
   onHighlight: Options["highlight"];
 }
 
@@ -16,5 +17,5 @@ export const Editor = (props: Props): JSX.Element => {
     }
   });
 
-  return <div class={props.class} ref={ref} />;
+  return <div class={props.class} id={props.id} ref={ref} />;
 };
