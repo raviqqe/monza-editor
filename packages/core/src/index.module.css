@@ -18,12 +18,15 @@
   text-align: left;
   width: 100%;
   height: 100%;
+  overflow: scroll;
+  overscroll-behavior: none;
 }
 
 .textarea {
   composes: editor;
   composes: text;
 
+  /* TODO Support auto height. */
   field-sizing: content;
   resize: none;
 }
@@ -35,6 +38,7 @@
   top: 0;
   left: 0;
   pointer-events: none;
+  scrollbar-width: 0;
 }
 
 .code {
