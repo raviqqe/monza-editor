@@ -10,7 +10,10 @@
   const highlighter = await createHighlighterCore({
     engine: createJavaScriptRegexEngine(),
     langs: [import("@shikijs/langs/typescript")],
-    themes: [import("@shikijs/themes/min-light")],
+    themes: [
+      import("@shikijs/themes/github-dark"),
+      import("@shikijs/themes/github-light"),
+    ],
   });
 
   const element = document.querySelector(`[id="vanilla-editor"]`);
@@ -24,7 +27,9 @@
       highlighter.codeToHtml(text, {
         lang: "typescript",
         structure: "inline",
-        theme: "github-light",
+        theme: window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "github-dark"
+          : "github-light",
       }),
   });
 </script>
