@@ -16,15 +16,22 @@ export const initialize = (
   const code = pre.appendChild(document.createElement("code"));
   code.className += ` ${styles.code}`;
 
+  const scroll = () => {
+    pre.scrollTop = textarea.scrollTop;
+    pre.scrollLeft = textarea.scrollLeft;
+  };
+
   const update = () =>
     window.requestAnimationFrame(() => {
-      code.innerHTML = highlight(textarea.value);
+      const text = textarea.value;
 
-      textarea.style.height = "0";
-      textarea.style.height = `max(${textarea.scrollHeight}px, 100%)`;
+      code.innerHTML = highlight(text.at(-1) == "\n" ? text + " " : text);
+
+      scroll();
     });
 
   textarea.addEventListener("input", update);
+  textarea.addEventListener("scroll", scroll);
 
   update();
 };
