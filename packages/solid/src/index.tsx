@@ -1,3 +1,4 @@
+import "monza-editor/style.css";
 import { initialize } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
