@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.4",
+    "@monza-editor/solid": "workspace:*",
     "@shikijs/langs": "^3.9.2",
     "@shikijs/themes": "^3.9.2",
     "astro": "^5.13.2",
