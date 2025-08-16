@@ -1,0 +1,49 @@
+---
+import "monza-editor/style.css";
+---
+
+<div id="vanilla-editor"></div>
+<style>
+  div {
+    --me-padding: 1rem;
+
+    border: 1px solid light-dark(var(--black), var(--white));
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    height: 10rem;
+    width: 24rem;
+    overflow: hidden;
+  }
+</style>
+<script>
+  import { initialize } from "monza-editor";
+  import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
+  import { source } from "../utility.js";
+
+  const highlighter = await createHighlighterCore({
+    engine: createJavaScriptRegexEngine(),
+    langs: [import("@shikijs/langs/typescript")],
+    themes: [
+      import("@shikijs/themes/github-dark"),
+      import("@shikijs/themes/github-light"),
+    ],
+  });
+
+  const element = document.querySelector(`[id="vanilla-editor"]`);
+
+  if (!element) {
+    throw new Error("No editor element");
+  }
+
+  initialize(element, {
+    highlight: (text) =>
+      highlighter.codeToHtml(text, {
+        lang: "typescript",
+        structure: "inline",
+        theme: window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "github-dark"
+          : "github-light",
+      }),
+    value: source,
+  });
+</script>
