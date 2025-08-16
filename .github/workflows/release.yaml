@@ -7,12 +7,7 @@ on:
 permissions:
   contents: read
 jobs:
-  npm:
-    strategy:
-      matrix:
-        directory:
-          - core
-          - solid
+  release:
     permissions:
       contents: read
       id-token: write
@@ -21,16 +16,6 @@ jobs:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
       - run: pnpm -r build
-      - uses: js-devtools/npm-publish@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          access: public
-          package: packages/${{ matrix.directory }}
-          token: ${{ secrets.NPM_TOKEN }}
-  release:
-    needs:
-      - npm
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - run: for result in ${{ join(needs.*.result, ' ') }}; do [ $result = success ]; done
+      - run: pnpm -r publish --access public ${{ github.ref != 'refs/heads/main' && '--dry-run' || '' }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
