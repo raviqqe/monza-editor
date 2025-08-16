@@ -1,17 +1,20 @@
+---
+const { title, description } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Monza editor</title>
+    <title>{title}</title>
   </head>
   <body>
     <article>
       <slot />
     </article>
   </body>
-
   <style>
     :root {
       --black: black;
