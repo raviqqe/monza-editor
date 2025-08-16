@@ -5,6 +5,6 @@
   border-radius: 0.5rem;
   font-size: 0.9rem;
   height: 10rem;
-  width: 24rem;
+  max-width: 24rem;
   overflow: hidden;
 }
