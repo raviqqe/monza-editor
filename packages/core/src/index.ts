@@ -1,9 +1,9 @@
 import styles from "./index.module.css";
 
 interface Options {
-  value?: string;
-  onInput?: (value: string) => void;
   highlight: (text: string) => string;
+  onInput?: (value: string) => void;
+  value?: string;
 }
 
 export const initialize = (
