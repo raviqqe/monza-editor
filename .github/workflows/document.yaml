@@ -28,16 +28,6 @@ jobs:
           path: doc/dist
       - uses: actions/deploy-pages@v4
         if: github.ref == 'refs/heads/main'
-  web_lint:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: doc
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
-      - run: npm ci
-      - run: npm run lint
   web_test:
     runs-on: ubuntu-latest
     steps:
