@@ -1,3 +1,5 @@
+/* @jsxImportSource solid-js */
+
 import { Editor } from "@monza-editor/solid";
 import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 import type { JSX } from "solid-js";

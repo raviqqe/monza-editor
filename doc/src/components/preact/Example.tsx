@@ -1,3 +1,5 @@
+/* @jsxImportSource preact */
+
 import { Editor } from "@monza-editor/preact";
 import type { JSX } from "preact";
 import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
