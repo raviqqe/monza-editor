@@ -1,5 +1,5 @@
 import "monza-editor/style.css";
-import { initialize, type RenderOptions } from "monza-editor";
+import { initialize, styles, type RenderOptions } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
@@ -28,10 +28,10 @@ export const Editor = (props: Props): JSX.Element => {
   });
 
   return (
-    <div class={props.class} id={props.id} ref={div}>
-      <textarea ref={textarea} />
-      <pre ref={pre}>
-        <code ref={code} />
+    <div class={`${styles.main} ${props.class}`} id={props.id} ref={div}>
+      <textarea class={styles.textarea} ref={textarea} />
+      <pre class={styles.pre} ref={pre}>
+        <code class={styles.code} ref={code} />
       </pre>
     </div>
   );
