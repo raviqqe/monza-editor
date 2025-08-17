@@ -28,9 +28,24 @@ jobs:
           path: doc/dist
       - uses: actions/deploy-pages@v4
         if: github.ref == 'refs/heads/main'
+  web_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+      - run: pnpm -r build
+      - run: pnpm build --site http://localhost:4321/monza-editor
+        working-directory: doc
+      - run: pnpm preview &
+        working-directory: doc
+      - run: >
+          go tool muffet
+          --buffer-size 8192
+          http://localhost:4321/monza-editor/
   document:
     needs:
       - web_build
+      - web_test
     if: always()
     runs-on: ubuntu-latest
     steps:
