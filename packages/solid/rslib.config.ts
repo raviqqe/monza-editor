@@ -19,7 +19,6 @@ export default defineConfig({
     pluginBabel({ include: /\.tsx$/ }),
     pluginSolid({
       solidPresetOptions: {
-        generate: "ssr",
         hydratable: true,
       },
     }),
