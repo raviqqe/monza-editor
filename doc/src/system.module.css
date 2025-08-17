@@ -1,7 +1,8 @@
 .editor {
   --me-padding: 1rem;
 
-  border: 1px solid light-dark(var(--black), var(--white));
+  background: light-dark(#eee, #111);
+  border: 1px solid light-dark(black, white);
   border-radius: 0.5rem;
   font-size: 0.9rem;
   height: 6rem;

@@ -8,6 +8,7 @@
 }
 
 .editor {
+  background: transparent;
   border: none;
   box-sizing: border-box;
   font-size: inherit;
