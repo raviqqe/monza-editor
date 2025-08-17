@@ -17,6 +17,9 @@ importers:
 
   doc:
     dependencies:
+      '@monza-editor/astro':
+        specifier: workspace:*
+        version: link:../packages/astro
       '@monza-editor/preact':
         specifier: workspace:*
         version: link:../packages/preact

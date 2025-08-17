@@ -9,6 +9,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@monza-editor/astro": "workspace:*",
     "@monza-editor/preact": "workspace:*",
     "@monza-editor/react": "workspace:*",
     "@monza-editor/solid": "workspace:*",
