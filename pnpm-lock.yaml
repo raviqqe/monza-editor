@@ -35,6 +35,9 @@ importers:
       monza-editor:
         specifier: workspace:*
         version: link:../packages/core
+      preact:
+        specifier: ^10.27.0
+        version: 10.27.0
       react:
         specifier: ^19.1.1
         version: 19.1.1
