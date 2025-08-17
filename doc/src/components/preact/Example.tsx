@@ -1,5 +1,5 @@
-import { Editor } from "@monza-editor/react";
-import type { JSX } from "react";
+import { Editor } from "@monza-editor/preact";
+import type { JSX } from "preact";
 import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 import { theme } from "../../utility.js";
 import styles from "./Example.module.css";
