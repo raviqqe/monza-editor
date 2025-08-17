@@ -1,5 +1,5 @@
 import "monza-editor/style.css";
-import { initialize, type RenderOptions } from "monza-editor";
+import { initialize, styles, type RenderOptions } from "monza-editor";
 import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/hooks";
 
@@ -34,10 +34,10 @@ export const Editor = ({
   }, []);
 
   return (
-    <div className={className} id={id} ref={div}>
-      <textarea ref={textarea} />
-      <pre ref={pre}>
-        <code ref={code} />
+    <div className={`${styles.main} ${className}`} id={id} ref={div}>
+      <textarea class={styles.textarea} ref={textarea} />
+      <pre class={styles.pre} ref={pre}>
+        <code class={styles.code} ref={code} />
       </pre>
     </div>
   );
