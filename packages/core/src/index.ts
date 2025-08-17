@@ -1,6 +1,6 @@
 import rawStyles from "./index.module.css";
 
-type ChildElementName = "code" | "div" | "pre" | "textarea";
+type ChildElementName = "code" | "pre" | "textarea";
 
 export const styles = rawStyles as Record<ChildElementName | "main", string>;
 
@@ -66,7 +66,7 @@ export const initialize = ({
 };
 
 export interface RenderOptions
-  extends Omit<InitializationOptions, ChildElementName> {}
+  extends Omit<InitializationOptions, ChildElementName | "div"> {}
 
 export const render = (div: HTMLDivElement, options: RenderOptions): void => {
   const textarea = div.appendChild(document.createElement("textarea"));
