@@ -16,7 +16,7 @@ import "monza-editor/style.css";
   }
 </style>
 <script>
-  import { initialize } from "monza-editor";
+  import { render } from "monza-editor";
   import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
   import { source, theme } from "../utility.js";
 
@@ -35,7 +35,7 @@ import "monza-editor/style.css";
     throw new Error("No editor element");
   }
 
-  initialize(element, {
+  render(element as HTMLDivElement, {
     highlight: (text) =>
       highlighter.codeToHtml(text, {
         lang: "typescript",
