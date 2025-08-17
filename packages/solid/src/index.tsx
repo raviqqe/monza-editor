@@ -9,17 +9,15 @@ interface Props extends Omit<RenderOptions, "highlight"> {
 }
 
 export const Editor = (props: Props): JSX.Element => {
-  let div: HTMLDivElement | undefined;
   let textarea: HTMLTextAreaElement | undefined;
   let pre: HTMLPreElement | undefined;
   let code: HTMLElement | undefined;
 
   onMount(() => {
-    if (div && textarea && pre && code) {
+    if (textarea && pre && code) {
       initialize({
         ...props,
         code,
-        div,
         highlight: props.onHighlight,
         pre,
         textarea,
@@ -28,7 +26,7 @@ export const Editor = (props: Props): JSX.Element => {
   });
 
   return (
-    <div class={`${styles.main} ${props.class}`} id={props.id} ref={div}>
+    <div class={`${styles.main} ${props.class}`} id={props.id}>
       <textarea class={styles.textarea} ref={textarea} />
       <pre class={styles.pre} ref={pre}>
         <code class={styles.code} ref={code} />

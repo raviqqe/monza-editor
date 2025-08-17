@@ -15,17 +15,15 @@ export const Editor = ({
   onHighlight,
   ...rest
 }: Props): JSX.Element => {
-  const div = useRef<HTMLDivElement>(null);
   const textarea = useRef<HTMLTextAreaElement>(null);
   const pre = useRef<HTMLPreElement>(null);
   const code = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (div.current && textarea.current && pre.current && code.current) {
+    if (textarea.current && pre.current && code.current) {
       initialize({
         ...rest,
         code: code.current,
-        div: div.current,
         highlight: onHighlight,
         pre: pre.current,
         textarea: textarea.current,
@@ -34,7 +32,7 @@ export const Editor = ({
   }, []);
 
   return (
-    <div className={`${styles.main} ${className}`} id={id} ref={div}>
+    <div className={`${styles.main} ${className}`} id={id}>
       <textarea class={styles.textarea} ref={textarea} />
       <pre class={styles.pre} ref={pre}>
         <code class={styles.code} ref={code} />
