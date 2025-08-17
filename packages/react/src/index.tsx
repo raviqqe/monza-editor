@@ -1,6 +1,6 @@
 import "monza-editor/style.css";
 import { initialize, type RenderOptions } from "monza-editor";
-import { type JSX, onMount } from "solid-js";
+import { type JSX } from "react";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
   class?: string;
@@ -9,12 +9,12 @@ interface Props extends Omit<RenderOptions, "highlight"> {
 }
 
 export const Editor = (props: Props): JSX.Element => {
-  let div: HTMLDivElement | undefined;
+  const div = useRef<HTMLDivElement>();
   let textarea: HTMLTextAreaElement | undefined;
   let pre: HTMLPreElement | undefined;
   let code: HTMLElement | undefined;
 
-  onMount(() => {
+  useEffect(() => {
     if (div && textarea && pre && code) {
       initialize({
         ...props,
