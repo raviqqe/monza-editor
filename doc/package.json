@@ -5,15 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "tsc && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
+    "@monza-editor/preact": "workspace:*",
     "@monza-editor/react": "workspace:*",
     "@monza-editor/solid": "workspace:*",
     "@shikijs/langs": "^3.9.2",
     "@shikijs/themes": "^3.9.2",
     "monza-editor": "workspace:*",
+    "preact": "^10.27.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "shiki": "^3.9.2",
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "@astrojs/mdx": "^4.3.4",
+    "@astrojs/preact": "^4.1.0",
     "@astrojs/react": "^4.3.0",
     "@astrojs/solid-js": "^5.1.0",
     "@types/react": "^19.1.10",

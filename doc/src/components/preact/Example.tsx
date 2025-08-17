@@ -1,8 +1,8 @@
-/* @jsxImportSource solid-js */
+/* @jsxImportSource preact */
 
-import { Editor } from "@monza-editor/solid";
+import { Editor } from "@monza-editor/preact";
+import type { JSX } from "preact";
 import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
-import type { JSX } from "solid-js";
 import { theme } from "../../utility.js";
 import styles from "./Example.module.css";
 
@@ -18,7 +18,7 @@ const highlighter = await createHighlighterCore({
 export const Example = (): JSX.Element => {
   return (
     <Editor
-      class={styles.main}
+      className={styles.main}
       onHighlight={(text) =>
         highlighter.codeToHtml(text, {
           lang: "typescript",
@@ -26,7 +26,7 @@ export const Example = (): JSX.Element => {
           theme,
         })
       }
-      value='console.log("Hello, Solid.js!");'
+      value='console.log("Hello, Preact!");'
     />
   );
 };

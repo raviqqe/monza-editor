@@ -1,0 +1,34 @@
+{
+  "name": "@monza-editor/preact",
+  "version": "0.1.0",
+  "description": "Preact component of Monza editor",
+  "repository": "https://github.com/raviqqe/monza-editor",
+  "license": "MIT",
+  "publishConfig": {
+    "provenance": true
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rslib build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "monza-editor": "workspace:*",
+    "preact": "^10.27.0"
+  },
+  "devDependencies": {
+    "@raviqqe/react-tsconfig": "^2.0.0",
+    "@raviqqe/tsconfig": "^2.0.1",
+    "@rsbuild/plugin-preact": "^1.5.2",
+    "@rslib/core": "^0.12.0",
+    "@testing-library/preact": "^3.2.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.0.2"
+  }
+}
