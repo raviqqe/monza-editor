@@ -19,13 +19,15 @@
     "test": "vitest"
   },
   "dependencies": {
-    "monza-editor": "workspace:*"
+    "monza-editor": "workspace:*",
+    "preact": "^10.27.0"
   },
   "devDependencies": {
     "@raviqqe/react-tsconfig": "^2.0.0",
     "@raviqqe/tsconfig": "^2.0.1",
     "@rsbuild/plugin-preact": "^1.5.2",
     "@rslib/core": "^0.12.0",
+    "@testing-library/preact": "^3.2.4",
     "typescript": "^5.9.2",
     "vitest": "^3.0.2"
   }

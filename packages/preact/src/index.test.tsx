@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render } from "@testing-library/preact";
 import { it } from "vitest";
 import { Editor } from "./index.js";
 

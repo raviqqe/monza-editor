@@ -90,6 +90,9 @@ importers:
       monza-editor:
         specifier: workspace:*
         version: link:../core
+      preact:
+        specifier: ^10.27.0
+        version: 10.27.0
     devDependencies:
       '@raviqqe/react-tsconfig':
         specifier: ^2.0.0
@@ -103,6 +106,9 @@ importers:
       '@rslib/core':
         specifier: ^0.12.0
         version: 0.12.1(typescript@5.9.2)
+      '@testing-library/preact':
+        specifier: ^3.2.4
+        version: 3.2.4(preact@10.27.0)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -1219,6 +1225,12 @@ packages:
   '@testing-library/dom@8.20.1':
     resolution: {integrity: sha512-/DiOQ5xBxgdYRC8LNk7U+RWat0S3qRLeIw3ZIkMQ9kkVlRmwD/Eg8k8CqIpD6GW7u20JIUOfMKbxtiLutpjQ4g==}
     engines: {node: '>=12'}
+
+  '@testing-library/preact@3.2.4':
+    resolution: {integrity: sha512-F+kJ243LP6VmEK1M809unzTE/ijg+bsMNuiRN0JEDIJBELKKDNhdgC/WrUSZ7klwJvtlO3wQZ9ix+jhObG07Fg==}
+    engines: {node: '>= 12'}
+    peerDependencies:
+      preact: '>=10 || ^10.0.0-alpha.0 || ^10.0.0-beta.0'
 
   '@testing-library/react@16.3.0':
     resolution: {integrity: sha512-kFSyxiEDwv1WLl2fgsq6pPBbw5aWKrsY2/noi1Id0TK0UParSF62oFQFGHXIyaG4pp2tEub/Zlel+fjjZILDsw==}
@@ -4420,6 +4432,11 @@ snapshots:
       dom-accessibility-api: 0.5.16
       lz-string: 1.5.0
       pretty-format: 27.5.1
+
+  '@testing-library/preact@3.2.4(preact@10.27.0)':
+    dependencies:
+      '@testing-library/dom': 8.20.1
+      preact: 10.27.0
 
   '@testing-library/react@16.3.0(@testing-library/dom@10.4.1)(@types/react-dom@19.1.7(@types/react@19.1.10))(@types/react@19.1.10)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
