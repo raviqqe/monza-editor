@@ -36,7 +36,7 @@ You might also set the following CSS variables that overwrite their correspondin
 ## Alternatives
 
 - [`webcoder49/code-input`](https://github.com/webcoder49/code-input) is a richer but still lightweight alternative.
-- [`microsoft/monaco-editor`](https://github.com/microsoft/monaco-editor) is the full-fledged editor in JS.
+- [`microsoft/monaco-editor`](https://github.com/microsoft/monaco-editor) is the full-fledged editor in JS, which you can always fall back to with the burden of its huge bundle size.
 
 ## License
 
