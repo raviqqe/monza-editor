@@ -16,7 +16,7 @@ const highlighter = await createHighlighterCore({
 export const Example = (): JSX.Element => {
   return (
     <Editor
-      class={styles.main}
+      className={styles.main}
       onHighlight={(text) =>
         highlighter.codeToHtml(text, {
           lang: "typescript",
