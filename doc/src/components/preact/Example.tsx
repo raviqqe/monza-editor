@@ -26,7 +26,7 @@ export const Example = (): JSX.Element => {
           theme,
         })
       }
-      value='console.log("Hello, React!");'
+      value='console.log("Hello, Preact!");'
     />
   );
 };
