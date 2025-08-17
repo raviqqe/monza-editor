@@ -25,6 +25,7 @@
   composes: editor;
   composes: text;
 
+  caret-color: inherit;
   color: transparent;
   resize: none;
   /* TODO field-sizing: content; */
