@@ -1,5 +1,5 @@
 import "monza-editor/style.css";
-import { type RenderOptions, initialize } from "monza-editor";
+import { initialize, type RenderOptions } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
