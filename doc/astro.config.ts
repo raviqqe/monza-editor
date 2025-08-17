@@ -4,6 +4,6 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   base: "/monza-editor",
-  integrations: [mdx(), solid()],
+  integrations: [mdx(), solid({ include: "**/solid/**" })],
   site: "https://raviqqe.com/monza-editor",
 });
