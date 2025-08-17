@@ -1,0 +1,4 @@
+*.config.ts
+*.test.*
+src
+tsconfig.*

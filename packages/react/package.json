@@ -1,0 +1,30 @@
+{
+  "name": "@monza-editor/react",
+  "version": "0.1.0",
+  "description": "React component of Monza editor",
+  "repository": "https://github.com/raviqqe/monza-editor",
+  "license": "MIT",
+  "publishConfig": {
+    "provenance": true
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rslib build",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "monza-editor": "workspace:*"
+  },
+  "devDependencies": {
+    "@raviqqe/tsconfig": "^2.0.1",
+    "@rslib/core": "^0.12.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.0.2"
+  }
+}
