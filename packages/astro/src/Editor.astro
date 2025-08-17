@@ -5,12 +5,13 @@ import type { BundledLanguage, BundledTheme } from "shiki";
 interface Props {
   language: BundledLanguage;
   theme: BundledTheme;
+  value?: string;
 }
 
-const { language, theme } = Astro.props;
+const { language, theme, value } = Astro.props;
 ---
 
-<monza-editor data-language={language} data-theme={theme}>
+<monza-editor data-language={language} data-theme={theme} data-value={value}>
   <div>
     <textarea></textarea>
     <pre><code /></pre>
@@ -28,7 +29,7 @@ const { language, theme } = Astro.props;
 
   class Editor extends HTMLElement {
     async connectedCallback() {
-      const { language, theme } = this.dataset;
+      const { language, theme, value } = this.dataset;
 
       if (!language || !theme) {
         throw new Error("Editor props missing");
@@ -54,7 +55,7 @@ const { language, theme } = Astro.props;
           }),
         pre,
         textarea,
-        value: `console.log("Hello, Astro!");`,
+        value,
       });
 
       await highlighter.loadLanguage(language as BundledLanguage);
