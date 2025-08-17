@@ -1,4 +1,4 @@
-# Monza editor
+# Monza Editor
 
 [![GitHub Action](https://img.shields.io/github/actions/workflow/status/raviqqe/monza-editor/test.yaml?branch=main&style=flat-square)](https://github.com/raviqqe/monza-editor/actions)
 [![npm](https://img.shields.io/npm/v/monza-editor?style=flat-square)](https://www.npmjs.com/package/monza-editor)
@@ -26,8 +26,8 @@ npm install monza-editor
 
 ### Syntax highlighting
 
-Instead of providing the default syntax highlighter, Monza editor lets you bring one of your own.
-You need to pass a `highlight` function which takes source code as a `string` and returns HTML-annotated code as a `string` on the initialization of Monza editor.
+Instead of providing the default syntax highlighter, Monza Editor lets you bring one of your own.
+You need to pass a `highlight` function which takes source code as a `string` and returns HTML-annotated code as a `string` on the initialization of Monza Editor.
 See [examples](https://raviqqe.com/monza-editor/#examples) and their source code for more details.
 
 ### CSS styling
