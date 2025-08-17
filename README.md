@@ -9,11 +9,17 @@ The `textarea` element with syntax highlight.
 ## Install
 
 ```sh
-# For vanilla JS
-npm install monza-editor
+# For Preact
+npm install @monza-editor/preact
+
+# For React
+npm install @monza-editor/react
 
 # For Solid.js
 npm install @monza-editor/solid
+
+# For vanilla JS
+npm install monza-editor
 ```
 
 ## Usage
