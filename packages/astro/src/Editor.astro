@@ -29,7 +29,7 @@ const { language, theme, value, ...props } = Astro.props;
   const highlighter = await createHighlighter({ langs: [], themes: [] });
 
   class Editor extends HTMLElement {
-    async connectedCallback() {
+    async connectedCallback(): Promise<void> {
       const { language, theme, value } = this.dataset;
 
       if (!language || !theme) {
