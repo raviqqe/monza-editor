@@ -10,7 +10,6 @@ export interface TextareaEvent extends Omit<Event, "target"> {
 
 export interface InitializationOptions {
   code: HTMLElement;
-  div: HTMLDivElement;
   highlight: (text: string) => string;
   onChange?: (event: TextareaEvent) => void;
   onInput?: (event: TextareaEvent) => void;
@@ -21,7 +20,6 @@ export interface InitializationOptions {
 
 export const initialize = ({
   code,
-  div,
   highlight,
   onChange,
   onInput,
@@ -29,12 +27,8 @@ export const initialize = ({
   textarea,
   value,
 }: InitializationOptions): void => {
-  div.classList.add(styles.main);
-  textarea.classList.add(styles.textarea);
   textarea.setAttribute("spellcheck", "false");
   textarea.value = value ?? "";
-  pre.classList.add(styles.pre);
-  code.classList.add(styles.code);
 
   const scroll = () => {
     pre.scrollTop = textarea.scrollTop;
@@ -66,18 +60,17 @@ export const initialize = ({
 };
 
 export interface RenderOptions
-  extends Omit<InitializationOptions, ChildElementName | "div"> {}
+  extends Omit<InitializationOptions, ChildElementName> {}
 
 export const render = (div: HTMLDivElement, options: RenderOptions): void => {
   const textarea = div.appendChild(document.createElement("textarea"));
   const pre = div.appendChild(document.createElement("pre"));
   const code = pre.appendChild(document.createElement("code"));
 
-  initialize({
-    ...options,
-    code,
-    div,
-    pre,
-    textarea,
-  });
+  div.classList.add(styles.main);
+  textarea.classList.add(styles.textarea);
+  pre.classList.add(styles.pre);
+  code.classList.add(styles.code);
+
+  initialize({ ...options, code, pre, textarea });
 };
