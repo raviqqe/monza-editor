@@ -1,11 +1,11 @@
 import "monza-editor/style.css";
-import { initialize, type Options } from "monza-editor";
+import { type RenderOptions, render } from "monza-editor";
 import { type JSX, onMount } from "solid-js";
 
-interface Props extends Omit<Options, "highlight"> {
+interface Props extends Omit<RenderOptions, "highlight"> {
   class?: string;
   id?: string;
-  onHighlight: Options["highlight"];
+  onHighlight: RenderOptions["highlight"];
 }
 
 export const Editor = (props: Props): JSX.Element => {
@@ -13,7 +13,7 @@ export const Editor = (props: Props): JSX.Element => {
 
   onMount(() => {
     if (ref) {
-      initialize(ref, { ...props, highlight: props.onHighlight });
+      render(ref, { ...props, highlight: props.onHighlight });
     }
   });
 

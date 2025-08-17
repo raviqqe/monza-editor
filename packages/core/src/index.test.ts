@@ -1,8 +1,8 @@
 import { it } from "vitest";
-import { initialize } from "./index.js";
+import { render } from "./index.js";
 
 it("initializes an editor", () => {
   const editor = document.createElement("div");
 
-  initialize(editor, { highlight: (text) => text });
+  render(editor, { highlight: (text) => text });
 });
