@@ -68,9 +68,9 @@ export const render = (div: HTMLDivElement, options: RenderOptions): void => {
   const code = pre.appendChild(document.createElement("code"));
 
   div.classList.add(styles.main);
-  textarea.classList.add(styles.textarea);
-  pre.classList.add(styles.pre);
-  code.classList.add(styles.code);
+  textarea.className = styles.textarea;
+  pre.className = styles.pre;
+  code.className = styles.code;
 
   initialize({ ...options, code, pre, textarea });
 };
