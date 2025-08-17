@@ -35,6 +35,9 @@ importers:
       react:
         specifier: ^19.1.1
         version: 19.1.1
+      react-dom:
+        specifier: ^19.1.1
+        version: 19.1.1(react@19.1.1)
       shiki:
         specifier: ^3.9.2
         version: 3.9.2
