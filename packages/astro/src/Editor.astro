@@ -1,0 +1,26 @@
+---
+import "monza-editor/style.css";
+
+const { foo } = Astro.props;
+---
+
+<div id="astro-editor"></div>
+<script>
+  import { render } from "monza-editor";
+
+  const element = document.getElementById("vanilla-example");
+
+  if (!element) {
+    throw new Error("No editor element");
+  }
+
+  render(element as HTMLDivElement, {
+    highlight: (text) =>
+      highlighter.codeToHtml(text, {
+        lang: "typescript",
+        structure: "inline",
+        theme,
+      }),
+    value: `console.log("Hello, JavaScript!");`,
+  });
+</script>
