@@ -26,8 +26,8 @@ npm install monza-editor
 
 ### Styling
 
-At the very minimum, we recommend you set `font-size` and `font-family` to a certain monospace font.
-You might set the other CSS properties, such as `line-height`, `background` and `border`, at the top-level element.
+At the very minimum, we recommend you set `font-size` and `font-family` to a certain monospace font at the top-level element.
+You might set the other CSS properties, such as `line-height`, `background` and `border`, there.
 
 You might also set the following CSS variables that overwrite their corresponding CSS properties.
 
