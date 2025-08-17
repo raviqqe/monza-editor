@@ -15,12 +15,5 @@ export default defineConfig({
   output: {
     target: "web",
   },
-  plugins: [
-    pluginBabel({ include: /\.tsx$/ }),
-    pluginSolid({
-      solidPresetOptions: {
-        hydratable: true,
-      },
-    }),
-  ],
+  plugins: [pluginBabel({ include: /\.tsx$/ }), pluginSolid()],
 });
