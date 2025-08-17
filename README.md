@@ -24,7 +24,12 @@ npm install monza-editor
 
 ## Usage
 
-### Styling
+### Syntax highlighting
+
+Instead of providing the default syntax highlighter, Monza editor lets you bring your own one.
+See [examples](https://raviqqe.com/monza-editor/#examples) and their source code for more details.
+
+### CSS styling
 
 At the very minimum, we recommend you to set `font-size` and `font-family` to a certain monospace font at the top-level element.
 You might set the other CSS properties, such as `line-height`, `background` and `border`, there.
