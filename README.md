@@ -27,6 +27,7 @@ npm install monza-editor
 ### Syntax highlighting
 
 Instead of providing the default syntax highlighter, Monza editor lets you bring your own one.
+You need to pass a highlight function which takes source code as a `string` and returns HTML-annotated code as a `string` on the initialization of Monza editor.
 See [examples](https://raviqqe.com/monza-editor/#examples) and their source code for more details.
 
 ### CSS styling
