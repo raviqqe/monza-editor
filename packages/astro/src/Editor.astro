@@ -45,6 +45,9 @@ const { language, theme, value, ...props } = Astro.props;
         throw new Error("Editor elements missing");
       }
 
+      await highlighter.loadLanguage(language as BundledLanguage);
+      await highlighter.loadTheme(theme as BundledTheme);
+
       initialize({
         div,
         code,
@@ -58,9 +61,6 @@ const { language, theme, value, ...props } = Astro.props;
         textarea,
         value,
       });
-
-      await highlighter.loadLanguage(language as BundledLanguage);
-      await highlighter.loadTheme(theme as BundledTheme);
     }
   }
 
