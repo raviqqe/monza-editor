@@ -7,13 +7,19 @@ interface Props {
   class?: string;
   language: BundledLanguage;
   theme: BundledTheme;
+  darkTheme?: BundledTheme;
   value?: string;
 }
 
-const { language, theme, value, ...props } = Astro.props;
+const { language, theme, darkTheme, value, ...props } = Astro.props;
 ---
 
-<monza-editor data-language={language} data-theme={theme} data-value={value}>
+<monza-editor
+  data-language={language}
+  data-theme={theme}
+  data-darkTheme={darkTheme}
+  data-value={value}
+>
   <div class={`${styles.main} ${props.class}`}>
     <textarea class={styles.textarea}></textarea>
     <pre class={styles.pre}><code class={styles.code} /></pre>
@@ -31,7 +37,7 @@ const { language, theme, value, ...props } = Astro.props;
 
   class Editor extends HTMLElement {
     async connectedCallback(): Promise<void> {
-      const { language, theme, value } = this.dataset;
+      const { language, theme, darkTheme, value } = this.dataset;
 
       if (!language || !theme) {
         throw new Error("Editor props missing");
@@ -47,7 +53,13 @@ const { language, theme, value, ...props } = Astro.props;
       }
 
       await highlighter.loadLanguage(language as BundledLanguage);
-      await highlighter.loadTheme(theme as BundledTheme);
+
+      const defaultTheme: string =
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          darkTheme) ||
+        theme;
+
+      await highlighter.loadTheme(defaultTheme as BundledTheme);
 
       initialize({
         code,
