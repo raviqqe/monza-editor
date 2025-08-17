@@ -1,6 +1,6 @@
 import "monza-editor/style.css";
 import { initialize, type RenderOptions } from "monza-editor";
-import { useEffect, useRef, type JSX } from "react";
+import { type JSX, useEffect, useRef } from "react";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
   class?: string;
