@@ -1,6 +1,6 @@
 import { Editor } from "@monza-editor/react";
-import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 import type { JSX } from "react";
+import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
 import { theme } from "../../utility.js";
 import styles from "../solid/Example.module.css";
 
@@ -24,7 +24,7 @@ export const Example = (): JSX.Element => {
           theme,
         })
       }
-      value='console.log("Hello, Solid.js!");'
+      value='console.log("Hello, React!");'
     />
   );
 };
