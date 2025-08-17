@@ -26,6 +26,7 @@
   composes: editor;
   composes: text;
 
+  color: transparent;
   resize: none;
   /* TODO field-sizing: content; */
 }
