@@ -1,43 +1,66 @@
 ---
 import "monza-editor/style.css";
+import type { BundledLanguage, BundledTheme } from "shiki";
 
-const { foo } = Astro.props;
+interface Props {
+  language: BundledLanguage;
+  theme: BundledTheme;
+}
+
+const { language, theme } = Astro.props;
 ---
 
-<monza-editor>
+<monza-editor data-language={language} data-theme={theme}>
   <div>
     <textarea></textarea>
     <pre><code /></pre>
   </div>
 </monza-editor>
 <script>
-  import { render } from "monza-editor";
+  import { initialize } from "monza-editor";
+  import {
+    createHighlighter,
+    type BundledLanguage,
+    type BundledTheme,
+  } from "shiki";
 
-  const element = document.getElementById("vanilla-example");
+  const highlighter = await createHighlighter({ langs: [], themes: [] });
 
-  if (!element) {
-    throw new Error("No editor element");
-  }
+  class Editor extends HTMLElement {
+    async connectedCallback() {
+      const { language, theme } = this.dataset;
 
-  render(element as HTMLDivElement, {
-    highlight: (text) =>
-      highlighter.codeToHtml(text, {
-        lang: "typescript",
-        structure: "inline",
-        theme,
-      }),
-    value: `console.log("Hello, JavaScript!");`,
-  });
-  class MonzaEditor extends HTMLElement {
-    connectedCallback() {
-      // Read the message from the data attribute.
-      const message = this.dataset.message;
-      const button = this.querySelector("button");
-      button.addEventListener("click", () => {
-        alert(message);
+      if (!language || !theme) {
+        throw new Error("Editor props missing");
+      }
+
+      const div = this.querySelector("div");
+      const textarea = this.querySelector("textarea");
+      const pre = this.querySelector("pre");
+      const code = this.querySelector("code");
+
+      if (!div || !textarea || !pre || !code) {
+        throw new Error("Editor elements missing");
+      }
+
+      initialize({
+        div,
+        code,
+        highlight: (text) =>
+          highlighter.codeToHtml(text, {
+            lang: language,
+            structure: "inline",
+            theme,
+          }),
+        pre,
+        textarea,
+        value: `console.log("Hello, Astro!");`,
       });
+
+      await highlighter.loadLanguage(language as BundledLanguage);
+      await highlighter.loadTheme(theme as BundledTheme);
     }
   }
 
-  customElements.define("monza-editor", MonzaEditor);
+  customElements.define("monza-editor", Editor);
 </script>
