@@ -1,6 +1,6 @@
 import "monza-editor/style.css";
 import { initialize, type RenderOptions } from "monza-editor";
-import { type JSX } from "react";
+import { useEffect, useRef, type JSX } from "react";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
   class?: string;
@@ -9,26 +9,26 @@ interface Props extends Omit<RenderOptions, "highlight"> {
 }
 
 export const Editor = (props: Props): JSX.Element => {
-  const div = useRef<HTMLDivElement>();
-  let textarea: HTMLTextAreaElement | undefined;
-  let pre: HTMLPreElement | undefined;
-  let code: HTMLElement | undefined;
+  const div = useRef<HTMLDivElement>(null);
+  const textarea = useRef<HTMLTextAreaElement>(null);
+  const pre = useRef<HTMLPreElement>(null);
+  const code = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (div && textarea && pre && code) {
+    if (div.current && textarea.current && pre.current && code.current) {
       initialize({
         ...props,
-        code,
-        div,
+        code: code.current,
+        div: div.current,
         highlight: props.onHighlight,
-        pre,
-        textarea,
+        pre: pre.current,
+        textarea: textarea.current,
       });
     }
-  });
+  }, []);
 
   return (
-    <div class={props.class} id={props.id} ref={div}>
+    <div className={props.class} id={props.id} ref={div}>
       <textarea ref={textarea} />
       <pre ref={pre}>
         <code ref={code} />
