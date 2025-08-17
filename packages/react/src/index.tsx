@@ -3,12 +3,17 @@ import { initialize, type RenderOptions } from "monza-editor";
 import { type JSX, useEffect, useRef } from "react";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
-  class?: string;
+  className?: string;
   id?: string;
   onHighlight: RenderOptions["highlight"];
 }
 
-export const Editor = (props: Props): JSX.Element => {
+export const Editor = ({
+  className,
+  id,
+  onHighlight,
+  ...rest
+}: Props): JSX.Element => {
   const div = useRef<HTMLDivElement>(null);
   const textarea = useRef<HTMLTextAreaElement>(null);
   const pre = useRef<HTMLPreElement>(null);
@@ -17,10 +22,10 @@ export const Editor = (props: Props): JSX.Element => {
   useEffect(() => {
     if (div.current && textarea.current && pre.current && code.current) {
       initialize({
-        ...props,
+        ...rest,
         code: code.current,
         div: div.current,
-        highlight: props.onHighlight,
+        highlight: onHighlight,
         pre: pre.current,
         textarea: textarea.current,
       });
@@ -28,7 +33,7 @@ export const Editor = (props: Props): JSX.Element => {
   }, []);
 
   return (
-    <div className={props.class} id={props.id} ref={div}>
+    <div className={className} id={id} ref={div}>
       <textarea ref={textarea} />
       <pre ref={pre}>
         <code ref={code} />
