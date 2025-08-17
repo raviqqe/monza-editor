@@ -1,5 +1,4 @@
-import { pluginBabel } from "@rsbuild/plugin-babel";
-import { pluginSolid } from "@rsbuild/plugin-solid";
+import { pluginReact } from "@rsbuild/plugin-react";
 import { defineConfig } from "@rslib/core";
 
 export default defineConfig({
@@ -15,5 +14,5 @@ export default defineConfig({
   output: {
     target: "web",
   },
-  plugins: [pluginBabel({ include: /\.tsx$/ }), pluginSolid()],
+  plugins: [pluginReact()],
 });
