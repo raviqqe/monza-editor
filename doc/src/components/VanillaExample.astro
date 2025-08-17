@@ -17,17 +17,7 @@ import "monza-editor/style.css";
 </style>
 <script>
   import { render } from "monza-editor";
-  import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
-  import { source, theme } from "../utility.js";
-
-  const highlighter = await createHighlighterCore({
-    engine: createJavaScriptRegexEngine(),
-    langs: [import("@shikijs/langs/typescript")],
-    themes: [
-      import("@shikijs/themes/github-dark"),
-      import("@shikijs/themes/github-light"),
-    ],
-  });
+  import { source, theme, highlighter } from "../utility.js";
 
   const element = document.getElementById("vanilla-example");
 

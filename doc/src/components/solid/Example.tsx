@@ -2,7 +2,7 @@
 
 import { Editor } from "@monza-editor/solid";
 import type { JSX } from "solid-js";
-import { theme, highlighter } from "../../utility.js";
+import { highlighter, theme } from "../../utility.js";
 import styles from "./Example.module.css";
 
 export const Example = (): JSX.Element => {

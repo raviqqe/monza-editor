@@ -1,6 +1,6 @@
 import { Editor } from "@monza-editor/react";
 import type { JSX } from "react";
-import { theme, highlighter } from "../../utility.js";
+import { highlighter, theme } from "../../utility.js";
 import styles from "./Example.module.css";
 
 export const Example = (): JSX.Element => {
