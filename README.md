@@ -23,7 +23,8 @@ You might also set the following CSS variables that overwrite their correspondin
 
 ## Alternatives
 
-- [`WebCoder49/code-input`](https://github.com/WebCoder49/code-input) is a richer alternative
+- [`webcoder49/code-input`](https://github.com/webcoder49/code-input) is a richer but still lightweight alternative.
+- [`microsoft/monaco-editor`](https://github.com/microsoft/monaco-editor) is the full-fledged editor in JS.
 
 ## License
 
