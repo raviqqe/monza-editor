@@ -1,0 +1,7 @@
+{
+  "extends": "@raviqqe/react-tsconfig",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["src"]
+}
