@@ -1,5 +1,5 @@
 import "monza-editor/style.css";
-import { initialize, styles, type RenderOptions } from "monza-editor";
+import { initialize, type RenderOptions, styles } from "monza-editor";
 import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/hooks";
 
