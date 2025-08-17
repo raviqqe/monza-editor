@@ -1,8 +1,6 @@
 {
-  "extends": "@raviqqe/tsconfig",
+  "extends": "@raviqqe/react-tsconfig",
   "compilerOptions": {
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
     "noEmit": true
   },
   "include": ["src"]

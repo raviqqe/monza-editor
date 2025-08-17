@@ -79,9 +79,9 @@ importers:
         specifier: ^19.1.1
         version: 19.1.1
     devDependencies:
-      '@raviqqe/tsconfig':
-        specifier: ^2.0.1
-        version: 2.0.1
+      '@raviqqe/react-tsconfig':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@rslib/core':
         specifier: ^0.12.0
         version: 0.12.1(typescript@5.9.2)
@@ -864,6 +864,9 @@ packages:
     resolution: {integrity: sha512-glVr+58zq/OEHYCz3TFnBGdl9Sz9qCNOA9FlvnvlL5P6t8j17QrGup+eoP+mm/TToi81A0vaH50sVialG5450g==}
     peerDependencies:
       '@biomejs/biome': ^2.1.4
+
+  '@raviqqe/react-tsconfig@2.0.0':
+    resolution: {integrity: sha512-9SSMgKDH1Hx1WxyInmbqqYgkN5HeNvU80NiexDyxCRkO2iUaXl9DA5UpiLBrJC/pSZASoZFQ/c6/WLTu95miZg==}
 
   '@raviqqe/tsconfig@2.0.1':
     resolution: {integrity: sha512-Pr3F3/Jd4CQbzQwiFG75pmzh9sZHngip9lgEaUUO2E6Wub06OsCS6MAcC0Wb6+RTc+3zXGz5iS1oczDoFXFmcQ==}
@@ -3935,6 +3938,10 @@ snapshots:
   '@raviqqe/biome-config@2.0.16(@biomejs/biome@2.2.0)':
     dependencies:
       '@biomejs/biome': 2.2.0
+
+  '@raviqqe/react-tsconfig@2.0.0':
+    dependencies:
+      '@raviqqe/tsconfig': 2.0.1
 
   '@raviqqe/tsconfig@2.0.1':
     dependencies:
