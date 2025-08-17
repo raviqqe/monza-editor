@@ -17,6 +17,9 @@ importers:
 
   doc:
     dependencies:
+      '@monza-editor/react':
+        specifier: workspace:*
+        version: link:../packages/react
       '@monza-editor/solid':
         specifier: workspace:*
         version: link:../packages/solid
