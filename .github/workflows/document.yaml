@@ -33,9 +33,10 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
-      - uses: actions/setup-node@v4
-      - run: tools/document.sh -l
-      - run: npm run preview &
+      - run: pnpm -r build
+      - run: pnpm build --site http://localhost:4321/monza-editor
+        working-directory: doc
+      - run: pnpm preview &
         working-directory: doc
       - run: go tool muffet http://localhost:4321/stak/
   document:
