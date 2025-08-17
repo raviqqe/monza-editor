@@ -50,7 +50,6 @@ const { language, theme, value, ...props } = Astro.props;
       await highlighter.loadTheme(theme as BundledTheme);
 
       initialize({
-        div,
         code,
         highlight: (text) =>
           highlighter.codeToHtml(text, {
