@@ -1,1 +1,3 @@
-../solid/Example.module.css
+.main {
+  composes: editor from "../../system.module.css";
+}

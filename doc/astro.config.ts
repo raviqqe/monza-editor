@@ -8,9 +8,9 @@ export default defineConfig({
   base: "/monza-editor",
   integrations: [
     mdx(),
-    preact({ include: "**/preact/**" }),
-    react({ include: "**/react/**" }),
-    solid({ include: "**/solid/**" }),
+    preact({ include: "**/preact/**/*.tsx" }),
+    react({ include: "**/react/**/*.tsx" }),
+    solid({ include: "**/solid/**/*.tsx" }),
   ],
   site: "https://raviqqe.com/monza-editor",
 });
