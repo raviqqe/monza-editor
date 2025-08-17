@@ -28,9 +28,20 @@ jobs:
           path: doc/dist
       - uses: actions/deploy-pages@v4
         if: github.ref == 'refs/heads/main'
+  web_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+      - uses: actions/setup-node@v4
+      - run: tools/document.sh -l
+      - run: npm run preview &
+        working-directory: doc
+      - run: go tool muffet http://localhost:4321/stak/
   document:
     needs:
       - web_build
+      - web_test
     if: always()
     runs-on: ubuntu-latest
     steps:
