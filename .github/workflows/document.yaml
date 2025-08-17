@@ -38,7 +38,7 @@ jobs:
         working-directory: doc
       - run: pnpm preview &
         working-directory: doc
-      - run: go tool muffet http://localhost:4321/stak/
+      - run: go tool muffet http://localhost:4321/monza-editor/
   document:
     needs:
       - web_build
