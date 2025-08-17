@@ -1,33 +1,17 @@
 ---
 import "monza-editor/style.css";
+import styles from "./VanillaExample.module.css";
 ---
 
-<div id="vanilla-example"></div>
+<div class={styles.main} id="vanilla-example"></div>
 <style>
   div {
-    --me-padding: 1rem;
-
-    border: 1px solid light-dark(var(--black), var(--white));
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
     height: 10rem;
-    max-width: 24rem;
-    overflow: hidden;
   }
 </style>
 <script>
   import { render } from "monza-editor";
-  import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
-  import { source, theme } from "../utility.js";
-
-  const highlighter = await createHighlighterCore({
-    engine: createJavaScriptRegexEngine(),
-    langs: [import("@shikijs/langs/typescript")],
-    themes: [
-      import("@shikijs/themes/github-dark"),
-      import("@shikijs/themes/github-light"),
-    ],
-  });
+  import { highlighter, source, theme } from "../utility.js";
 
   const element = document.getElementById("vanilla-example");
 
