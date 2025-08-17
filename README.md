@@ -21,6 +21,10 @@ You might also set the following CSS variables that overwrite their correspondin
 - `--me-font-family`: The font family used for text.
 - `--me-padding`: The padding inside a textarea.
 
+## Alternatives
+
+- [`WebCoder49/code-input`](https://github.com/WebCoder49/code-input) is a richer alternative
+
 ## License
 
 [MIT](LICENSE)
