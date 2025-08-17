@@ -4,7 +4,12 @@ import "monza-editor/style.css";
 const { foo } = Astro.props;
 ---
 
-<div id="astro-editor"></div>
+<monza-editor>
+  <div>
+    <textarea></textarea>
+    <pre><code /></pre>
+  </div>
+</monza-editor>
 <script>
   import { render } from "monza-editor";
 
@@ -23,4 +28,16 @@ const { foo } = Astro.props;
       }),
     value: `console.log("Hello, JavaScript!");`,
   });
+  class MonzaEditor extends HTMLElement {
+    connectedCallback() {
+      // Read the message from the data attribute.
+      const message = this.dataset.message;
+      const button = this.querySelector("button");
+      button.addEventListener("click", () => {
+        alert(message);
+      });
+    }
+  }
+
+  customElements.define("monza-editor", MonzaEditor);
 </script>
