@@ -19,7 +19,6 @@
   },
   "scripts": {
     "build": "rslib build",
-    "lint": "biome ci",
     "test": "vitest"
   },
   "dependencies": {},
