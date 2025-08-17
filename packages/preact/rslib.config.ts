@@ -1,4 +1,4 @@
-import { pluginReact } from "@rsbuild/plugin-react";
+import { pluginPreact } from "@rsbuild/plugin-preact";
 import { defineConfig } from "@rslib/core";
 
 export default defineConfig({
@@ -14,5 +14,5 @@ export default defineConfig({
   output: {
     target: "web",
   },
-  plugins: [pluginReact()],
+  plugins: [pluginPreact()],
 });
