@@ -1,5 +1,6 @@
 ---
 import "monza-editor/style.css";
+import { styles } from "monza-editor";
 import type { BundledLanguage, BundledTheme } from "shiki";
 
 interface Props {
@@ -13,9 +14,9 @@ const { language, theme, value, ...props } = Astro.props;
 ---
 
 <monza-editor data-language={language} data-theme={theme} data-value={value}>
-  <div class={props.class}>
-    <textarea></textarea>
-    <pre><code /></pre>
+  <div class={`${styles.main} ${props.class}`}>
+    <textarea class={styles.textarea}></textarea>
+    <pre class={styles.pre}><code class={styles.code} /></pre>
   </div>
 </monza-editor>
 <script>
