@@ -1,4 +1,8 @@
-import styles from "./index.module.css";
+import rawStyles from "./index.module.css";
+
+type Elements ="code" | "div" | "pre" | "textarea";
+
+export const styles = rawStyles as Record<"code"| "main" |"pre"| "textarea", string>;
 
 export interface TextareaEvent extends Omit<Event, "target"> {
   target: HTMLTextAreaElement;
@@ -25,12 +29,12 @@ export const initialize = ({
   textarea,
   value,
 }: InitializationOptions): void => {
-  div.className += ` ${styles.main}`;
-  textarea.className += ` ${styles.textarea}`;
+  div.classList.add(styles.main );
+  textarea.classList.add(styles.textarea );
   textarea.setAttribute("spellcheck", "false");
   textarea.value = value ?? "";
-  pre.className += ` ${styles.pre}`;
-  code.className += ` ${styles.code}`;
+  pre.classList.add(styles.pre );
+  code.classList.add(styles.code);
 
   const scroll = () => {
     pre.scrollTop = textarea.scrollTop;
@@ -62,7 +66,7 @@ export const initialize = ({
 };
 
 export interface RenderOptions
-  extends Omit<InitializationOptions, "code" | "div" | "pre" | "textarea"> {}
+  extends Omit<InitializationOptions, Elements> {}
 
 export const render = (div: HTMLDivElement, options: RenderOptions): void => {
   const textarea = div.appendChild(document.createElement("textarea"));
