@@ -1,0 +1,11 @@
+---
+import { Editor } from "@monza-editor/astro";
+import styles from "./VanillaExample.module.css";
+---
+
+<Editor
+  class={styles.main}
+  language="typescript"
+  theme="github-dark"
+  value='console.log("Hello, Astro!");'
+/>

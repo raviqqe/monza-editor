@@ -1,0 +1,68 @@
+---
+import "monza-editor/style.css";
+import type { BundledLanguage, BundledTheme } from "shiki";
+
+interface Props {
+  class?: string;
+  language: BundledLanguage;
+  theme: BundledTheme;
+  value?: string;
+}
+
+const { language, theme, value, ...props } = Astro.props;
+---
+
+<monza-editor data-language={language} data-theme={theme} data-value={value}>
+  <div class={props.class}>
+    <textarea></textarea>
+    <pre><code /></pre>
+  </div>
+</monza-editor>
+<script>
+  import { initialize } from "monza-editor";
+  import {
+    createHighlighter,
+    type BundledLanguage,
+    type BundledTheme,
+  } from "shiki";
+
+  const highlighter = await createHighlighter({ langs: [], themes: [] });
+
+  class Editor extends HTMLElement {
+    async connectedCallback() {
+      const { language, theme, value } = this.dataset;
+
+      if (!language || !theme) {
+        throw new Error("Editor props missing");
+      }
+
+      const div = this.querySelector("div");
+      const textarea = this.querySelector("textarea");
+      const pre = this.querySelector("pre");
+      const code = this.querySelector("code");
+
+      if (!div || !textarea || !pre || !code) {
+        throw new Error("Editor elements missing");
+      }
+
+      initialize({
+        div,
+        code,
+        highlight: (text) =>
+          highlighter.codeToHtml(text, {
+            lang: language,
+            structure: "inline",
+            theme,
+          }),
+        pre,
+        textarea,
+        value,
+      });
+
+      await highlighter.loadLanguage(language as BundledLanguage);
+      await highlighter.loadTheme(theme as BundledTheme);
+    }
+  }
+
+  customElements.define("monza-editor", Editor);
+</script>

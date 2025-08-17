@@ -1,0 +1,7 @@
+{
+  "extends": "@raviqqe/tsconfig",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["src"]
+}
