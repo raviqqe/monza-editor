@@ -15,7 +15,7 @@ export const Editor = (props: Props): JSX.Element => {
   let code: HTMLElement | undefined;
 
   onMount(() => {
-    if (div && textarea && pre && code) {
+    if (typeof window === "object" && div && textarea && pre && code) {
       initialize({
         ...props,
         code,
