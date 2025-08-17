@@ -34,4 +34,4 @@ You might also set the following CSS variables that overwrite their correspondin
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/raviqqe/monza-editor/blob/main/LICENSE)
