@@ -5,13 +5,14 @@ import type { BundledLanguage, BundledTheme } from "shiki";
 
 interface Props {
   class?: string;
+  id?: string;
   language: BundledLanguage;
   theme: BundledTheme;
   darkTheme?: BundledTheme;
   value?: string;
 }
 
-const { language, theme, darkTheme, value, ...props } = Astro.props;
+const { id, language, theme, darkTheme, value, ...props } = Astro.props;
 ---
 
 <monza-editor
@@ -20,7 +21,7 @@ const { language, theme, darkTheme, value, ...props } = Astro.props;
   data-dark-theme={darkTheme}
   data-value={value}
 >
-  <div class={`${styles.main} ${props.class}`}>
+  <div class={`${styles.main} ${props.class}`} id={id}>
     <textarea class={styles.textarea}></textarea>
     <pre class={styles.pre}><code class={styles.code} /></pre>
   </div>
