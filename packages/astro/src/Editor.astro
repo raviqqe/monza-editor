@@ -37,12 +37,7 @@ const { language, theme, darkTheme, value, ...props } = Astro.props;
 
   class Editor extends HTMLElement {
     async connectedCallback(): Promise<void> {
-      const {
-        language,
-        theme,
-        ["dark-theme"]: darkTheme,
-        value,
-      } = this.dataset;
+      const { language, theme, darkTheme, value } = this.dataset;
 
       if (!language || !theme) {
         throw new Error("Editor props missing");
