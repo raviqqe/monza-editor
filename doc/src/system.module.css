@@ -10,7 +10,7 @@
   overflow: hidden;
 
   span {
-    /* biome-ignore lint/complexity/noImportantStyles: No other way to override */
+    /* biome-ignore lint/complexity/noImportantStyles: Override Shiki's style */
     font-style: normal !important;
   }
 }
