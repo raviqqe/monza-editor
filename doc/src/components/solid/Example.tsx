@@ -1,5 +1,6 @@
 /* @jsxImportSource solid-js */
 
+import "monza-editor/style.css";
 import { Editor } from "@monza-editor/solid";
 import type { JSX } from "solid-js";
 import { highlight } from "../../utility.js";

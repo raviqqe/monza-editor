@@ -1,3 +1,4 @@
+import "monza-editor/style.css";
 import { Editor } from "@monza-editor/react";
 import type { JSX } from "react";
 import { highlight } from "../../utility.js";
