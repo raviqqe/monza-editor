@@ -12,6 +12,9 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./style.css": {
+      "default": "monza-editor/style.css"
     }
   },
   "scripts": {
