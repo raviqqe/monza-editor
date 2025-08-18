@@ -1,5 +1,6 @@
 /* @jsxImportSource preact */
 
+import "monza-editor/style.css";
 import { Editor } from "@monza-editor/preact";
 import type { JSX } from "preact";
 import { highlight } from "../../utility.js";
