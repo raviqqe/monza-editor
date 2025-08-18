@@ -27,7 +27,7 @@ export const Editor = ({
         textarea: textarea.current,
       });
     }
-  }, []);
+  }, [textarea.current, pre.current, code.current]);
 
   return (
     <div className={`${styles.main} ${className}`} id={id}>
