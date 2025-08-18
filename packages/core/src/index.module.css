@@ -27,6 +27,7 @@
   composes: text;
 
   resize: none;
+  outline: none;
   /* TODO field-sizing: content; */
 }
 
