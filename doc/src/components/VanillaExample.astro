@@ -6,7 +6,7 @@ import styles from "./VanillaExample.module.css";
 <div class={styles.main} id="vanilla-example"></div>
 <script>
   import { render } from "monza-editor";
-  import { highlighter, theme } from "../utility.js";
+  import { highlight } from "../utility.js";
 
   const element = document.getElementById("vanilla-example");
 
@@ -15,12 +15,7 @@ import styles from "./VanillaExample.module.css";
   }
 
   render(element as HTMLDivElement, {
-    highlight: (text) =>
-      highlighter.codeToHtml(text, {
-        lang: "typescript",
-        structure: "inline",
-        theme,
-      }),
+    highlight,
     value: `console.log("Hello, JavaScript!");`,
   });
 </script>
