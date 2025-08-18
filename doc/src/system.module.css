@@ -8,4 +8,9 @@
   height: 6rem;
   max-width: 24rem;
   overflow: hidden;
+
+  span {
+    /* biome-ignore lint/complexity/noImportantStyles: Override Shiki's style */
+    font-style: normal !important;
+  }
 }
