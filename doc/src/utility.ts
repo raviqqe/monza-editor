@@ -16,4 +16,8 @@ const theme =
     : "github-light";
 
 export const highlight = (text: string) =>
-  highlighter.codeToHtml(text, { lang: "typescript", theme });
+  highlighter.codeToHtml(text, {
+    lang: "typescript",
+    structure: "inline",
+    theme,
+  });
