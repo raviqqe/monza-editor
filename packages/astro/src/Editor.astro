@@ -54,12 +54,17 @@ const { language, theme, darkTheme, value, ...props } = Astro.props;
 
       await highlighter.loadLanguage(language as BundledLanguage);
 
-      const defaultTheme: string =
-        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
-          darkTheme) ||
-        theme;
+      for (const name of [theme, darkTheme]) {
+        if (name) {
+          await highlighter.loadTheme(name as BundledTheme);
+        }
+      }
 
-      await highlighter.loadTheme(defaultTheme as BundledTheme);
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      let dark = mediaQuery.matches;
+
+      mediaQuery.addEventListener("change", (event) => (dark = event.matches));
 
       initialize({
         code,
@@ -67,7 +72,7 @@ const { language, theme, darkTheme, value, ...props } = Astro.props;
           highlighter.codeToHtml(text, {
             lang: language,
             structure: "inline",
-            theme: defaultTheme,
+            theme: (dark && darkTheme) || theme,
           }),
         pre,
         textarea,
