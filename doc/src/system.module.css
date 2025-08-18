@@ -9,7 +9,8 @@
   max-width: 24rem;
   overflow: hidden;
 
-  * {
-    font-style: normal;
+  span {
+    /* biome-ignore lint/complexity/noImportantStyles: No other way to override */
+    font-style: normal !important;
   }
 }
