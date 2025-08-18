@@ -23,7 +23,7 @@ export const Editor = ({ id, onHighlight, ...rest }: Props): JSX.Element => {
         textarea: textarea.current,
       });
     }
-  }, []);
+  }, [textarea.current, pre.current, code.current]);
 
   return (
     <div class={`${styles.main} ${rest.class}`} id={id}>
