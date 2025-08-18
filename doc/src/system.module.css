@@ -8,4 +8,8 @@
   height: 6rem;
   max-width: 24rem;
   overflow: hidden;
+
+  * {
+    font-style: normal;
+  }
 }
