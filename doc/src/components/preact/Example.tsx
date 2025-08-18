@@ -8,7 +8,7 @@ import styles from "./Example.module.css";
 export const Example = (): JSX.Element => {
   return (
     <Editor
-      className={styles.main}
+      class={styles.main}
       onHighlight={(text) =>
         highlighter.codeToHtml(text, {
           lang: "typescript",

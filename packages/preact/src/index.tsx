@@ -4,17 +4,12 @@ import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/hooks";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
-  className?: string;
+  class?: string;
   id?: string;
   onHighlight: RenderOptions["highlight"];
 }
 
-export const Editor = ({
-  className,
-  id,
-  onHighlight,
-  ...rest
-}: Props): JSX.Element => {
+export const Editor = ({ id, onHighlight, ...rest }: Props): JSX.Element => {
   const textarea = useRef<HTMLTextAreaElement>(null);
   const pre = useRef<HTMLPreElement>(null);
   const code = useRef<HTMLElement>(null);
@@ -32,7 +27,7 @@ export const Editor = ({
   }, []);
 
   return (
-    <div className={`${styles.main} ${className}`} id={id}>
+    <div class={`${styles.main} ${rest.class}`} id={id}>
       <textarea class={styles.textarea} ref={textarea} />
       <pre class={styles.pre} ref={pre}>
         <code class={styles.code} ref={code} />
