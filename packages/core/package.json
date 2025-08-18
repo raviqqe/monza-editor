@@ -21,9 +21,9 @@
     "build": "rslib build",
     "test": "vitest"
   },
+  "dependencies": {},
   "devDependencies": {
     "@raviqqe/tsconfig": "^2.0.1",
-    "@rsbuild/plugin-typed-css-modules": "^1.0.3",
     "@rslib/core": "^0.12.0",
     "jsdom": "^26.1.0",
     "typescript": "^5.9.2",

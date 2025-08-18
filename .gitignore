@@ -1,4 +1,3 @@
-*.css.d.ts
 *.tsbuildinfo
 .astro
 coverage

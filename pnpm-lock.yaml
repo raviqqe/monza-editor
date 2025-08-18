@@ -100,9 +100,6 @@ importers:
       '@raviqqe/tsconfig':
         specifier: ^2.0.1
         version: 2.0.1
-      '@rsbuild/plugin-typed-css-modules':
-        specifier: ^1.0.3
-        version: 1.0.3(@rsbuild/core@1.5.0-beta.3)
       '@rslib/core':
         specifier: ^0.12.0
         version: 0.12.1(typescript@5.9.2)
@@ -1173,14 +1170,6 @@ packages:
     resolution: {integrity: sha512-4dCNiSBSYuJjzC7Bov/hCUzxAZcMiGMBZnKKgQXKuJRJwy23OqrxiiDa6AlmZozD5I/wEBwoUDasPbRqjkKFcA==}
     peerDependencies:
       '@rsbuild/core': 1.x
-
-  '@rsbuild/plugin-typed-css-modules@1.0.3':
-    resolution: {integrity: sha512-eW1NyAbTU88KzXDU/YJj0/KLgq1KCtF0yUnPZ+E3OQ+jrFDV4h4rwcZWyElaHxO3zb7WaAY9xOkhPvlC2o4VGw==}
-    peerDependencies:
-      '@rsbuild/core': 1.x
-    peerDependenciesMeta:
-      '@rsbuild/core':
-        optional: true
 
   '@rslib/core@0.12.1':
     resolution: {integrity: sha512-ualcmPkgBk1/IgapJ/GN5wWfl0zjH++3Wpe7f8990NzM4zk5MS9JVqDjV9oljCtf/N8Va5YDC4pEULzVES7xYQ==}
@@ -4527,10 +4516,6 @@ snapshots:
       - '@babel/core'
       - solid-js
       - supports-color
-
-  '@rsbuild/plugin-typed-css-modules@1.0.3(@rsbuild/core@1.5.0-beta.3)':
-    optionalDependencies:
-      '@rsbuild/core': 1.5.0-beta.3
 
   '@rslib/core@0.12.1(typescript@5.9.2)':
     dependencies:

@@ -1,6 +1,8 @@
-import styles from "./index.module.css";
+import rawStyles from "./index.module.css";
 
-export { styles };
+type ChildElementName = "code" | "pre" | "textarea";
+
+export const styles = rawStyles as Record<ChildElementName | "main", string>;
 
 export interface TextareaEvent extends Omit<Event, "target"> {
   target: HTMLTextAreaElement;
@@ -58,7 +60,7 @@ export const initialize = ({
 };
 
 export interface RenderOptions
-  extends Omit<InitializationOptions, "code" | "pre" | "textarea"> {}
+  extends Omit<InitializationOptions, ChildElementName> {}
 
 export const render = (div: HTMLDivElement, options: RenderOptions): void => {
   const textarea = div.appendChild(document.createElement("textarea"));
