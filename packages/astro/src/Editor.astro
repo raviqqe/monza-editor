@@ -17,7 +17,7 @@ const { language, theme, darkTheme, value, ...props } = Astro.props;
 <monza-editor
   data-language={language}
   data-theme={theme}
-  data-darkTheme={darkTheme}
+  data-dark-theme={darkTheme}
   data-value={value}
 >
   <div class={`${styles.main} ${props.class}`}>
@@ -37,7 +37,12 @@ const { language, theme, darkTheme, value, ...props } = Astro.props;
 
   class Editor extends HTMLElement {
     async connectedCallback(): Promise<void> {
-      const { language, theme, darkTheme, value } = this.dataset;
+      const {
+        language,
+        theme,
+        ["dark-theme"]: darkTheme,
+        value,
+      } = this.dataset;
 
       if (!language || !theme) {
         throw new Error("Editor props missing");
