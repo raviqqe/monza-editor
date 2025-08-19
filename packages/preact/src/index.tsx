@@ -32,7 +32,9 @@ export const Editor = ({
 
   return (
     <div class={`${styles.main} ${rest.class}`} id={id}>
-      <textarea class={styles.textarea} ref={textarea} value={value} />
+      <textarea class={styles.textarea} ref={textarea}>
+        {value}
+      </textarea>
       <pre class={styles.pre} ref={pre}>
         <code class={styles.code} ref={code} />
       </pre>
