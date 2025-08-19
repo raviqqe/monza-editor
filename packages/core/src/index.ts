@@ -27,6 +27,7 @@ export const initialize = ({
   textarea,
   value,
 }: InitializationOptions): void => {
+  textarea.setAttribute("autocapitalize", "false");
   textarea.setAttribute("spellcheck", "false");
   textarea.value = value ?? "";
 
