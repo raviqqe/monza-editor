@@ -11,6 +11,7 @@ export const Editor = ({
   className,
   id,
   onHighlight,
+  value,
   ...rest
 }: Props): JSX.Element => {
   const textarea = useRef<HTMLTextAreaElement>(null);
@@ -26,6 +27,8 @@ export const Editor = ({
         pre: pre.current,
         textarea: textarea.current,
       });
+
+      textarea.current.value = value ?? "";
     }
   }, [textarea.current, pre.current, code.current]);
 

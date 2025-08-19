@@ -15,7 +15,6 @@ export interface InitializationOptions {
   onInput?: (event: TextareaEvent) => void;
   pre: HTMLPreElement;
   textarea: HTMLTextAreaElement;
-  value?: string;
 }
 
 export const initialize = ({
@@ -25,11 +24,9 @@ export const initialize = ({
   onInput,
   pre,
   textarea,
-  value,
 }: InitializationOptions): void => {
   textarea.setAttribute("autocapitalize", "false");
   textarea.setAttribute("spellcheck", "false");
-  textarea.value = value ?? "";
 
   const scroll = () => {
     pre.scrollTop = textarea.scrollTop;
@@ -61,12 +58,19 @@ export const initialize = ({
 };
 
 export interface RenderOptions
-  extends Omit<InitializationOptions, ChildElementName> {}
+  extends Omit<InitializationOptions, ChildElementName> {
+  value?: string;
+}
 
-export const render = (div: HTMLDivElement, options: RenderOptions): void => {
+export const render = (
+  div: HTMLDivElement,
+  { value, ...options }: RenderOptions,
+): void => {
   const textarea = div.appendChild(document.createElement("textarea"));
   const pre = div.appendChild(document.createElement("pre"));
   const code = pre.appendChild(document.createElement("code"));
+
+  textarea.value = value ?? "";
 
   div.classList.add(styles.main);
   textarea.className = styles.textarea;
