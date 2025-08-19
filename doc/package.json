@@ -16,7 +16,7 @@
     "@shikijs/langs": "^3.9.2",
     "@shikijs/themes": "^3.9.2",
     "monza-editor": "workspace:*",
-    "preact": "^10.27.0",
+    "preact": "^10.27.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "shiki": "^3.9.2",
