@@ -26,7 +26,6 @@ export const Editor = ({
         highlight: onHighlight,
         pre: pre.current,
         textarea: textarea.current,
-        value,
       });
     }
   }, [textarea.current, pre.current, code.current]);

@@ -19,7 +19,6 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
   data-language={language}
   data-theme={theme}
   data-dark-theme={darkTheme}
-  data-value={value}
 >
   <div class={`${styles.main} ${props.class}`} id={id}>
     <textarea class={styles.textarea} value={value}></textarea>
@@ -38,7 +37,7 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
 
   class Editor extends HTMLElement {
     async connectedCallback(): Promise<void> {
-      const { language, theme, darkTheme, value } = this.dataset;
+      const { language, theme, darkTheme } = this.dataset;
 
       if (!language || !theme) {
         throw new Error("Editor props missing");
@@ -77,7 +76,6 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
           }),
         pre,
         textarea,
-        value,
       });
     }
   }
