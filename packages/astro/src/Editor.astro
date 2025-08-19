@@ -22,7 +22,7 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
   data-value={value}
 >
   <div class={`${styles.main} ${props.class}`} id={id}>
-    <textarea class={styles.textarea}></textarea>
+    <textarea class={styles.textarea} value={value}></textarea>
     <pre class={styles.pre}><code class={styles.code} /></pre>
   </div>
 </monza-editor>
