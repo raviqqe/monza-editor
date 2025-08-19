@@ -11,6 +11,7 @@ export const Editor = ({
   className,
   id,
   onHighlight,
+  value,
   ...rest
 }: Props): JSX.Element => {
   const textarea = useRef<HTMLTextAreaElement>(null);
@@ -25,13 +26,14 @@ export const Editor = ({
         highlight: onHighlight,
         pre: pre.current,
         textarea: textarea.current,
+        value,
       });
     }
   }, [textarea.current, pre.current, code.current]);
 
   return (
     <div className={`${styles.main} ${className}`} id={id}>
-      <textarea className={styles.textarea} ref={textarea} />
+      <textarea className={styles.textarea} ref={textarea} value={value} />
       <pre className={styles.pre} ref={pre}>
         <code className={styles.code} ref={code} />
       </pre>
