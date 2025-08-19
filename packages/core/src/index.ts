@@ -25,7 +25,7 @@ export const initialize = ({
   pre,
   textarea,
 }: InitializationOptions): void => {
-  textarea.setAttribute("autocapitalize", "false");
+  textarea.setAttribute("autocapitalize", "off");
   textarea.setAttribute("spellcheck", "false");
 
   const scroll = () => {
