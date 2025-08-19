@@ -26,7 +26,7 @@ export const Editor = (props: Props): JSX.Element => {
 
   return (
     <div class={`${styles.main} ${props.class}`} id={props.id}>
-      <textarea class={styles.textarea} ref={textarea} />
+      <textarea class={styles.textarea} ref={textarea} value={props.value} />
       <pre class={styles.pre} ref={pre}>
         <code class={styles.code} ref={code} />
       </pre>
