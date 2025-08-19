@@ -27,12 +27,14 @@ export const Editor = ({
         pre: pre.current,
         textarea: textarea.current,
       });
+
+      textarea.current.value = value ?? "";
     }
   }, [textarea.current, pre.current, code.current]);
 
   return (
     <div className={`${styles.main} ${className}`} id={id}>
-      <textarea className={styles.textarea} ref={textarea} value={value} />
+      <textarea className={styles.textarea} ref={textarea} />
       <pre className={styles.pre} ref={pre}>
         <code className={styles.code} ref={code} />
       </pre>
