@@ -14,7 +14,7 @@
     "@monza-editor/react": "workspace:*",
     "@monza-editor/solid": "workspace:*",
     "@shikijs/langs": "^3.11.0",
-    "@shikijs/themes": "^3.10.0",
+    "@shikijs/themes": "^3.11.0",
     "monza-editor": "workspace:*",
     "preact": "^10.27.1",
     "react": "^19.1.1",
