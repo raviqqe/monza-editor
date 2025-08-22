@@ -23,7 +23,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - run: pnpm i --frozen-lockfile
       - run: pnpm -r build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: doc/dist
       - uses: actions/deploy-pages@v4
