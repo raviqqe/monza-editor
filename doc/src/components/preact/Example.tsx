@@ -6,12 +6,10 @@ import type { JSX } from "preact";
 import { highlight } from "../../utility.js";
 import styles from "./Example.module.css";
 
-export const Example = (): JSX.Element => {
-  return (
-    <Editor
-      class={styles.main}
-      onHighlight={highlight}
-      value='console.log("Hello, Preact!");'
-    />
-  );
-};
+export const Example = (): JSX.Element => (
+  <Editor
+    class={styles.main}
+    onHighlight={highlight}
+    value='console.log("Hello, Preact!");'
+  />
+);
