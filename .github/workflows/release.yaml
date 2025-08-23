@@ -14,4 +14,4 @@ jobs:
       - uses: ./.github/actions/setup
       - uses: raviqqe/pnpm-publish@v1
         with:
-          npm_token: ${{ secrets.NPM_TOKEN }}
+          npm_token: ${{ github.ref == 'refs/heads/main' && secrets.NPM_TOKEN || '' }}
