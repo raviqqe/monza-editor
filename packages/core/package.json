@@ -1,6 +1,6 @@
 {
   "name": "monza-editor",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "The textarea element with syntax highlight",
   "repository": "https://github.com/raviqqe/monza-editor",
   "license": "MIT",
