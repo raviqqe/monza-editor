@@ -1,6 +1,6 @@
 import { initialize, type RenderOptions, styles } from "monza-editor";
 import type { JSX } from "preact";
-import { useEffect, useRef } from "preact/hooks";
+import { useEffect, useMemo, useRef } from "preact/hooks";
 
 interface Props extends Omit<RenderOptions, "highlight"> {
   class?: string;
@@ -17,6 +17,13 @@ export const Editor = ({
   const textarea = useRef<HTMLTextAreaElement>(null);
   const pre = useRef<HTMLPreElement>(null);
   const code = useRef<HTMLElement>(null);
+  const initialCode = useMemo(
+    () =>
+      value && typeof window === "undefined"
+        ? { __html: onHighlight(value) }
+        : undefined,
+    [],
+  );
 
   useEffect(() => {
     if (textarea.current && pre.current && code.current) {
@@ -36,7 +43,12 @@ export const Editor = ({
         {value}
       </textarea>
       <pre class={styles.pre} ref={pre}>
-        <code class={styles.code} ref={code} />
+        <code
+          class={styles.code}
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: SSR
+          dangerouslySetInnerHTML={initialCode}
+          ref={code}
+        />
       </pre>
     </div>
   );
