@@ -26,6 +26,8 @@
   composes: editor;
   composes: text;
 
+  caret-color: light-dark(black, white);
+  color: transparent;
   resize: none;
   outline: none;
   /* TODO field-sizing: content; */
