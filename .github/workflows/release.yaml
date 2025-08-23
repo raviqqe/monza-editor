@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup
-      - uses: raviqqe/pnpm-publish
+      - uses: raviqqe/pnpm-publish@v1
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
