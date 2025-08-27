@@ -33,8 +33,8 @@ importers:
         specifier: ^3.11.0
         version: 3.11.0
       '@shikijs/themes':
-        specifier: ^3.11.0
-        version: 3.11.0
+        specifier: ^3.12.0
+        version: 3.12.0
       monza-editor:
         specifier: workspace:*
         version: link:../packages/core
@@ -1379,8 +1379,14 @@ packages:
   '@shikijs/themes@3.11.0':
     resolution: {integrity: sha512-BhhWRzCTEk2CtWt4S4bgsOqPJRkapvxdsifAwqP+6mk5uxboAQchc0etiJ0iIasxnMsb764qGD24DK9albcU9Q==}
 
+  '@shikijs/themes@3.12.0':
+    resolution: {integrity: sha512-/lxvQxSI5s4qZLV/AuFaA4Wt61t/0Oka/P9Lmpr1UV+HydNCczO3DMHOC/CsXCCpbv4Zq8sMD0cDa7mvaVoj0Q==}
+
   '@shikijs/types@3.11.0':
     resolution: {integrity: sha512-RB7IMo2E7NZHyfkqAuaf4CofyY8bPzjWPjJRzn6SEak3b46fIQyG6Vx5fG/obqkfppQ+g8vEsiD7Uc6lqQt32Q==}
+
+  '@shikijs/types@3.12.0':
+    resolution: {integrity: sha512-jsFzm8hCeTINC3OCmTZdhR9DOl/foJWplH2Px0bTi4m8z59fnsueLsweX82oGcjRQ7mfQAluQYKGoH2VzsWY4A==}
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
@@ -4785,7 +4791,16 @@ snapshots:
     dependencies:
       '@shikijs/types': 3.11.0
 
+  '@shikijs/themes@3.12.0':
+    dependencies:
+      '@shikijs/types': 3.12.0
+
   '@shikijs/types@3.11.0':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+
+  '@shikijs/types@3.12.0':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.4
