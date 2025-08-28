@@ -10,5 +10,5 @@ runs:
       with:
         node-version-file: package.json
         cache: pnpm
-    - run: pnpm i
+    - run: pnpm i --frozen-lockfile
       shell: bash
