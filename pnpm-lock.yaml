@@ -29,12 +29,6 @@ importers:
       '@monza-editor/solid':
         specifier: workspace:*
         version: link:../packages/solid
-      '@shikijs/langs':
-        specifier: ^3.12.0
-        version: 3.12.0
-      '@shikijs/themes':
-        specifier: ^3.12.0
-        version: 3.12.0
       monza-editor:
         specifier: workspace:*
         version: link:../packages/core
@@ -50,9 +44,6 @@ importers:
       react-dom:
         specifier: ^19.1.1
         version: 19.1.1(react@19.1.1)
-      shiki:
-        specifier: ^3.12.0
-        version: 3.12.0
       solid-js:
         specifier: ^1.9.9
         version: 1.9.9
