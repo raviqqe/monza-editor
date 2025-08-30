@@ -16,6 +16,7 @@
     "@shikijs/langs": "^3.12.0",
     "@shikijs/themes": "^3.12.0",
     "monza-editor": "workspace:*",
+    "picolight": "^0.2.2",
     "preact": "^10.27.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

@@ -38,6 +38,9 @@ importers:
       monza-editor:
         specifier: workspace:*
         version: link:../packages/core
+      picolight:
+        specifier: ^0.2.2
+        version: 0.2.2
       preact:
         specifier: ^10.27.1
         version: 10.27.1
@@ -2763,6 +2766,9 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
+  picolight@0.2.2:
+    resolution: {integrity: sha512-Ihc+Kkp9s+L+JIeQ3vFQfseV44B5fbhCUmNrKOxaZJf9xLkbcMijKdlkDWWyDD2q8FWZxfa8HrTvMVJVYPxdoQ==}
 
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
@@ -6698,6 +6704,8 @@ snapshots:
   pathval@2.0.1: {}
 
   picocolors@1.1.1: {}
+
+  picolight@0.2.2: {}
 
   picomatch@2.3.1: {}
 

@@ -1,23 +1,13 @@
-import { createHighlighterCore, createJavaScriptRegexEngine } from "shiki";
-
-const highlighter = await createHighlighterCore({
-  engine: createJavaScriptRegexEngine(),
-  langs: [import("@shikijs/langs/typescript")],
-  themes: [
-    import("@shikijs/themes/github-dark"),
-    import("@shikijs/themes/github-light"),
-  ],
-});
+import * as picolight from "picolight";
+import { typescript } from "picolight/languages/typescript";
+import { githubDark } from "picolight/themes/github-dark";
+import { githubLight } from "picolight/themes/github-light";
 
 const theme =
   typeof window === "object" &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "github-dark"
-    : "github-light";
+    ? githubDark
+    : githubLight;
 
 export const highlight = (text: string) =>
-  highlighter.codeToHtml(text, {
-    lang: "typescript",
-    structure: "inline",
-    theme,
-  });
+  picolight.highlight(text, typescript, theme);
