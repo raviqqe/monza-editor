@@ -6,7 +6,7 @@
 
 The `textarea` element with syntax highlight.
 
-Its core library consists of only 1 KB JavaScript and 0.5 KB CSS.
+Its core library consists of only 1 KB JavaScript and 0.5 KB CSS!
 
 ## Install
 
