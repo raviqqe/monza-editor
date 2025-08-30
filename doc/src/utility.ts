@@ -9,5 +9,5 @@ const theme =
     ? githubDark
     : githubLight;
 
-export const highlight = (text: string) =>
-  picolight.highlight(text, typescript, theme);
+export const highlight = (text: string): string =>
+  picolight.highlight(text, typescript, theme).outerHTML;
