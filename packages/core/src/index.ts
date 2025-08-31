@@ -17,6 +17,10 @@ export interface InitializationOptions {
   textarea: HTMLTextAreaElement;
 }
 
+export interface Editor {
+  rerender: () => void;
+}
+
 export const initialize = ({
   code,
   highlight,
@@ -24,7 +28,7 @@ export const initialize = ({
   onInput,
   pre,
   textarea,
-}: InitializationOptions): void => {
+}: InitializationOptions): Editor => {
   textarea.setAttribute("autocapitalize", "off");
   textarea.setAttribute("spellcheck", "false");
 
@@ -33,7 +37,7 @@ export const initialize = ({
     pre.scrollLeft = textarea.scrollLeft;
   };
 
-  const update = () =>
+  const rerender = () =>
     window.requestAnimationFrame(() => {
       const text = textarea.value;
 
@@ -43,7 +47,7 @@ export const initialize = ({
     });
 
   textarea.addEventListener("input", (event) => {
-    update();
+    rerender();
     onInput?.(event as TextareaEvent);
   });
   textarea.addEventListener("scroll", scroll);
@@ -54,7 +58,9 @@ export const initialize = ({
     );
   }
 
-  update();
+  rerender();
+
+  return { rerender };
 };
 
 export interface RenderOptions
