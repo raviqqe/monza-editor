@@ -11,6 +11,7 @@
   background: transparent;
   border: none;
   box-sizing: border-box;
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   margin: 0;
