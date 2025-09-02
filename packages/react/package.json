@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@raviqqe/react-tsconfig": "^2.0.0",
-    "@raviqqe/tsconfig": "^2.0.1",
+    "@raviqqe/tsconfig": "^2.0.2",
     "@rsbuild/plugin-react": "^1.4.0",
     "@rslib/core": "^0.12.4",
     "@testing-library/react": "^16.3.0",
