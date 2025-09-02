@@ -22,7 +22,7 @@
     "shiki": "^3.12.1"
   },
   "devDependencies": {
-    "@raviqqe/tsconfig": "^2.0.1",
+    "@raviqqe/tsconfig": "^2.0.2",
     "astro": "^5.13.5",
     "typescript": "^5.9.2"
   }
