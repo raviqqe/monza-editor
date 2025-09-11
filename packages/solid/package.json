@@ -26,7 +26,7 @@
     "@raviqqe/tsconfig": "^2.0.2",
     "@rsbuild/plugin-babel": "^1.0.6",
     "@rsbuild/plugin-solid": "^1.0.6",
-    "@rslib/core": "^0.13.1",
+    "@rslib/core": "^0.13.2",
     "@solidjs/testing-library": "^0.8.10",
     "typescript": "^5.9.2",
     "vite-plugin-solid": "^2.11.8",
