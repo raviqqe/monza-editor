@@ -12,8 +12,8 @@ importers:
         specifier: ^2.2.4
         version: 2.2.4
       '@raviqqe/biome-config':
-        specifier: ^2.0.17
-        version: 2.0.17(@biomejs/biome@2.2.4)
+        specifier: ^2.0.18
+        version: 2.0.18(@biomejs/biome@2.2.4)
 
   doc:
     dependencies:
@@ -1062,8 +1062,8 @@ packages:
       preact: ^10.4.0 || ^11.0.0-0
       vite: '>=2.0.0'
 
-  '@raviqqe/biome-config@2.0.17':
-    resolution: {integrity: sha512-vy1mF4n6TUAxZz9GePousmdZuxMR6zKYrnblBG/vFnFtvh26q8DHHF4hjqiBw+HCckaTlcQFsX0ZBI4/O79MLA==}
+  '@raviqqe/biome-config@2.0.18':
+    resolution: {integrity: sha512-R6ljtZguYe7DN9xyUhgyQ+kGjblM1ruK5IUlQfeZ/QVSINljxe1jEqFOsGKWnrSzHNCfeTo3u5mZNIp9KSghaQ==}
     engines: {node: ^24.6.0}
     peerDependencies:
       '@biomejs/biome': ^2.1.4
@@ -4704,7 +4704,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@raviqqe/biome-config@2.0.17(@biomejs/biome@2.2.4)':
+  '@raviqqe/biome-config@2.0.18(@biomejs/biome@2.2.4)':
     dependencies:
       '@biomejs/biome': 2.2.4
 
