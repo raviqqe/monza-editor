@@ -80,8 +80,8 @@ importers:
         version: 3.12.2
     devDependencies:
       '@raviqqe/tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       astro:
         specifier: ^5.13.7
         version: 5.13.7(@types/node@24.3.1)(jiti@2.5.1)(less@4.4.0)(rollup@4.50.1)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.2)
@@ -92,8 +92,8 @@ importers:
   packages/core:
     devDependencies:
       '@raviqqe/tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       '@rslib/core':
         specifier: ^0.13.2
         version: 0.13.2(typescript@5.9.2)
@@ -123,8 +123,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@raviqqe/tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       '@rsbuild/plugin-preact':
         specifier: ^1.5.2
         version: 1.5.2(@rsbuild/core@1.5.6)(preact@10.27.1)
@@ -154,8 +154,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       '@raviqqe/tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       '@rsbuild/plugin-react':
         specifier: ^1.4.0
         version: 1.4.0(@rsbuild/core@1.5.6)
@@ -185,8 +185,8 @@ importers:
         version: 1.9.9
     devDependencies:
       '@raviqqe/tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       '@rsbuild/plugin-babel':
         specifier: ^1.0.6
         version: 1.0.6(@rsbuild/core@1.5.6)
@@ -1072,8 +1072,8 @@ packages:
     resolution: {integrity: sha512-eeneru1zgke/iym/xpjdvu5bGWNyOJhVpGSNl+rAHtWaytCycUAYiTF3NLq4FYDfYNu3cFxbwR0XQcw6iCFMoQ==}
     engines: {node: ^24.7.0}
 
-  '@raviqqe/tsconfig@2.0.2':
-    resolution: {integrity: sha512-ySX6Lsem2y4/6Vnes92HhEw7xzVMZoXXnHoO/i8YQk8ZUtiIJmY2xAwcn4ERJAp4wW4Y6yYgPP0ieVig55REZQ==}
+  '@raviqqe/tsconfig@2.0.3':
+    resolution: {integrity: sha512-9eTFd1ye3CcD0vfoPVkLzBr+cOTx/Vk5+feJb9KM4rWxEx3zGtXvAr2v3Er2DOdP8w0c2KhwKXFB/By2NffIHA==}
     engines: {node: '>=24.6.0'}
 
   '@rolldown/pluginutils@1.0.0-beta.27':
@@ -4710,9 +4710,9 @@ snapshots:
 
   '@raviqqe/react-tsconfig@2.0.1':
     dependencies:
-      '@raviqqe/tsconfig': 2.0.2
+      '@raviqqe/tsconfig': 2.0.3
 
-  '@raviqqe/tsconfig@2.0.2':
+  '@raviqqe/tsconfig@2.0.3':
     dependencies:
       typescript: 5.9.2
 
