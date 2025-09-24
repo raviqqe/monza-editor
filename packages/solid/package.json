@@ -24,8 +24,6 @@
   },
   "devDependencies": {
     "@raviqqe/tsconfig": "^2.0.3",
-    "@rsbuild/plugin-babel": "^1.0.6",
-    "@rsbuild/plugin-solid": "^1.0.6",
     "@solidjs/testing-library": "^0.8.10",
     "rolldown-plugin-solid": "^0.2.1",
     "tsdown": "^0.15.4",
