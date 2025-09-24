@@ -8,15 +8,4 @@ export default defineConfig([
     platform: "neutral",
     plugins: [solid()],
   },
-  {
-    dts: false,
-    entry: ["./src/index.tsx"],
-    inputOptions: {
-      jsx: "preserve",
-    },
-    outExtensions: () => ({
-      js: ".jsx",
-    }),
-    platform: "neutral",
-  },
 ]);
