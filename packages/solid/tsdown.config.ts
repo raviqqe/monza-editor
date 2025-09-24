@@ -4,13 +4,13 @@ import { defineConfig } from "tsdown";
 export default defineConfig([
   {
     dts: true,
-    entry: ["./src/index.ts"],
+    entry: ["./src/index.tsx"],
     platform: "neutral",
     plugins: [solid()],
   },
   {
     dts: false,
-    entry: ["./src/index.ts"],
+    entry: ["./src/index.tsx"],
     inputOptions: {
       jsx: "preserve",
     },
