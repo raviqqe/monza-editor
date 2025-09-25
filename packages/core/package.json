@@ -27,6 +27,7 @@
     "tsdown": "^0.15.4",
     "typescript": "^5.9.2",
     "typescript-plugin-css-modules": "^5.2.0",
+    "unplugin-lightningcss": "^0.4.3",
     "vitest": "^3.0.2"
   }
 }
