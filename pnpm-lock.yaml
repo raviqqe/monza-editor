@@ -55,8 +55,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(@babel/core@7.28.4)(@types/node@24.5.2)(jiti@2.6.0)(less@4.4.0)(preact@10.27.2)(sass@1.90.0)(stylus@0.62.0)
       '@astrojs/react':
-        specifier: ^4.3.1
-        version: 4.3.1(@types/node@24.5.2)(@types/react-dom@19.1.7(@types/react@19.1.13))(@types/react@19.1.13)(jiti@2.6.0)(less@4.4.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.90.0)(stylus@0.62.0)
+        specifier: ^4.4.0
+        version: 4.4.0(@types/node@24.5.2)(@types/react-dom@19.1.7(@types/react@19.1.13))(@types/react@19.1.13)(jiti@2.6.0)(less@4.4.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.90.0)(stylus@0.62.0)
       '@astrojs/solid-js':
         specifier: ^5.1.1
         version: 5.1.1(@types/node@24.5.2)(jiti@2.6.0)(less@4.4.0)(sass@1.90.0)(solid-js@1.9.9)(stylus@0.62.0)
@@ -307,8 +307,8 @@ packages:
     resolution: {integrity: sha512-q8VwfU/fDZNoDOf+r7jUnMC2//H2l0TuQ6FkGJL8vD8nw/q5KiL3DS1KKBI3QhI9UQhpJ5dc7AtqfbXWuOgLCQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/react@4.3.1':
-    resolution: {integrity: sha512-Jhv35TsDHuQLvwof2z10P3g1s9wIR4UN9jE7O4NZBJNXOt/+qk+L0rY9th4SX7VzccKmRltUGxAhI1cXH52gXw==}
+  '@astrojs/react@4.4.0':
+    resolution: {integrity: sha512-RzblkVImAFdV1C0AWsSWzS70Z0FMtW2p0XXkNYu3QePfyVJta3JIy8m8jY8271etaCZtpFjsE2UaiHGZIBm6nw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21 || ^19.0.0
@@ -4028,7 +4028,7 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.3.1(@types/node@24.5.2)(@types/react-dom@19.1.7(@types/react@19.1.13))(@types/react@19.1.13)(jiti@2.6.0)(less@4.4.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.90.0)(stylus@0.62.0)':
+  '@astrojs/react@4.4.0(@types/node@24.5.2)(@types/react-dom@19.1.7(@types/react@19.1.13))(@types/react@19.1.13)(jiti@2.6.0)(less@4.4.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.90.0)(stylus@0.62.0)':
     dependencies:
       '@types/react': 19.1.13
       '@types/react-dom': 19.1.7(@types/react@19.1.13)
