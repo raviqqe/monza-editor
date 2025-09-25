@@ -18,12 +18,11 @@
     }
   },
   "scripts": {
-    "build": "rslib build",
+    "build": "tsdown",
     "test": "vitest"
   },
   "devDependencies": {
     "@raviqqe/tsconfig": "^2.0.3",
-    "@rslib/core": "^0.14.0",
     "jsdom": "^27.0.0",
     "tsdown": "^0.15.4",
     "typescript": "^5.9.2",
