@@ -134,6 +134,9 @@ importers:
       '@testing-library/preact':
         specifier: ^3.2.4
         version: 3.2.4(preact@10.27.2)
+      tsdown:
+        specifier: ^0.15.4
+        version: 0.15.4(typescript@5.9.2)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2

@@ -28,6 +28,7 @@
     "@rsbuild/plugin-preact": "^1.5.2",
     "@rslib/core": "^0.14.0",
     "@testing-library/preact": "^3.2.4",
+    "tsdown": "^0.15.4",
     "typescript": "^5.9.2",
     "vitest": "^3.0.2"
   }
