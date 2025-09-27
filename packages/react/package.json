@@ -20,13 +20,12 @@
   },
   "dependencies": {
     "monza-editor": "workspace:*",
-    "react": "^19.1.1"
+    "react": "^19.1.1",
+    "tsdown": "^0.15.4"
   },
   "devDependencies": {
     "@raviqqe/react-tsconfig": "^2.0.1",
     "@raviqqe/tsconfig": "^2.0.3",
-    "@rsbuild/plugin-react": "^1.4.1",
-    "@rslib/core": "^0.14.0",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.1.13",
     "typescript": "^5.9.2",

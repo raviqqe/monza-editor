@@ -149,6 +149,9 @@ importers:
       react:
         specifier: ^19.1.1
         version: 19.1.1
+      tsdown:
+        specifier: ^0.15.4
+        version: 0.15.4(typescript@5.9.2)
     devDependencies:
       '@raviqqe/react-tsconfig':
         specifier: ^2.0.1
@@ -2517,10 +2520,6 @@ packages:
 
   isarray@2.0.5:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
-
-  jiti@2.5.1:
-    resolution: {integrity: sha512-twQoecYPiVA5K/h6SxtORw/Bs3ar+mLUtoPSc7iMXzQzK8d7eJ/R09wmTwAjiamETn1cXYPGfNnu7DMoHgu12w==}
-    hasBin: true
 
   jiti@2.6.0:
     resolution: {integrity: sha512-VXe6RjJkBPj0ohtqaO8vSWP3ZhAKo66fKrFNCll4BTcwljPLz03pCbaNKfzGP5MbrCYcbJ7v0nOYYwUzTEIdXQ==}
@@ -6389,8 +6388,6 @@ snapshots:
 
   isarray@2.0.5: {}
 
-  jiti@2.5.1: {}
-
   jiti@2.6.0: {}
 
   js-tokens@4.0.0: {}
@@ -7801,7 +7798,7 @@ snapshots:
     dependencies:
       '@quansync/fs': 0.1.5
       defu: 6.1.4
-      jiti: 2.5.1
+      jiti: 2.6.0
       quansync: 0.2.11
 
   uncrypto@0.1.3: {}
