@@ -125,12 +125,6 @@ importers:
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
         version: 2.0.3
-      '@rsbuild/plugin-preact':
-        specifier: ^1.5.2
-        version: 1.5.2(@rsbuild/core@1.5.12)(preact@10.27.2)
-      '@rslib/core':
-        specifier: ^0.14.0
-        version: 0.14.0(typescript@5.9.2)
       '@testing-library/preact':
         specifier: ^3.2.4
         version: 3.2.4(preact@10.27.2)
@@ -1038,11 +1032,6 @@ packages:
   '@prefresh/babel-plugin@0.5.2':
     resolution: {integrity: sha512-AOl4HG6dAxWkJ5ndPHBgBa49oo/9bOiJuRDKHLSTyH+Fd9x00shTXpdiTj1W41l6oQIwUOAgJeHMn4QwIDpHkA==}
 
-  '@prefresh/core@1.5.5':
-    resolution: {integrity: sha512-H6GTXUl4V4fe3ijz7yhSa/mZ+pGSOh7XaJb6uP/sQsagBx9yl0D1HKDaeoMQA8Ad2Xm27LqvbitMGSdY9UFSKQ==}
-    peerDependencies:
-      preact: ^10.0.0
-
   '@prefresh/core@1.5.7':
     resolution: {integrity: sha512-AsyeitiPwG7UkT0mqgKzIDuydmYSKtBlzXEb5ymzskvxewcmVGRjQkcHDy6PCNBT7soAyHpQ0mPgXX4IeyOlUg==}
     peerDependencies:
@@ -1391,11 +1380,6 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  '@rsbuild/plugin-preact@1.5.2':
-    resolution: {integrity: sha512-cYApFIA8tgPchIWaCyVaQgyQs6p4iSuTOBWQeJBDJscGsNSvvW1RGEsdG8T50FFWkTJ/sKhSda5VBiYy23C2qw==}
-    peerDependencies:
-      '@rsbuild/core': 1.x
-
   '@rslib/core@0.14.0':
     resolution: {integrity: sha512-N8FP813mteNeWVo0HrwOXfy0gaz222chu3ZMEaqR1AKxH7HD3i3rRvm8sQ7yQXQ27wyLHl1/Fttxa9MG/dnHeA==}
     engines: {node: '>=18.12.0'}
@@ -1474,12 +1458,6 @@ packages:
     resolution: {integrity: sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w==}
     engines: {node: '>=16.0.0'}
 
-  '@rspack/plugin-preact-refresh@1.1.2':
-    resolution: {integrity: sha512-smTjBS8d0ItLiCt96VvlEHvtYt5rEc5vvB1SxUiv4CdUusb90GXe9+nXyr7EMO+wU3A+kocrGLGnRKLHsgGHUg==}
-    peerDependencies:
-      '@prefresh/core': ^1.5.0
-      '@prefresh/utils': ^1.2.0
-
   '@shikijs/core@3.13.0':
     resolution: {integrity: sha512-3P8rGsg2Eh2qIHekwuQjzWhKI4jV97PhvYjYUzGqjvJfqdQPz+nMlfWahU24GZAyW1FxFI1sYjyhfh5CoLmIUA==}
 
@@ -1511,14 +1489,8 @@ packages:
       '@solidjs/router':
         optional: true
 
-  '@swc/counter@0.1.3':
-    resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
-
   '@swc/helpers@0.5.17':
     resolution: {integrity: sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==}
-
-  '@swc/plugin-prefresh@9.0.2':
-    resolution: {integrity: sha512-E3SHiAOMHSJxnxXNVllpXOMzeQXLcdejyzIbJj7Z4u1Aua+ZIDOTBP3e4HgyZNzrUaCX+zU8Gk1aJepA8A76yg==}
 
   '@testing-library/dom@10.4.1':
     resolution: {integrity: sha512-o4PXJQidqJl82ckFaXUeoAW+XysPLauYI43Abki5hABd853iMhitooc6znOnczgbTYmEP6U6/y1ZyKAIsvMKGg==}
@@ -4757,10 +4729,6 @@ snapshots:
 
   '@prefresh/babel-plugin@0.5.2': {}
 
-  '@prefresh/core@1.5.5(preact@10.27.2)':
-    dependencies:
-      preact: 10.27.2
-
   '@prefresh/core@1.5.7(preact@10.27.2)':
     dependencies:
       preact: 10.27.2
@@ -4990,16 +4958,6 @@ snapshots:
       core-js: 3.45.1
       jiti: 2.6.0
 
-  '@rsbuild/plugin-preact@1.5.2(@rsbuild/core@1.5.12)(preact@10.27.2)':
-    dependencies:
-      '@prefresh/core': 1.5.5(preact@10.27.2)
-      '@prefresh/utils': 1.2.1
-      '@rsbuild/core': 1.5.12
-      '@rspack/plugin-preact-refresh': 1.1.2(@prefresh/core@1.5.5(preact@10.27.2))(@prefresh/utils@1.2.1)
-      '@swc/plugin-prefresh': 9.0.2
-    transitivePeerDependencies:
-      - preact
-
   '@rslib/core@0.14.0(typescript@5.9.2)':
     dependencies:
       '@rsbuild/core': 1.5.12
@@ -5064,11 +5022,6 @@ snapshots:
 
   '@rspack/lite-tapable@1.0.1': {}
 
-  '@rspack/plugin-preact-refresh@1.1.2(@prefresh/core@1.5.5(preact@10.27.2))(@prefresh/utils@1.2.1)':
-    dependencies:
-      '@prefresh/core': 1.5.5(preact@10.27.2)
-      '@prefresh/utils': 1.2.1
-
   '@shikijs/core@3.13.0':
     dependencies:
       '@shikijs/types': 3.13.0
@@ -5107,15 +5060,9 @@ snapshots:
       '@testing-library/dom': 10.4.1
       solid-js: 1.9.9
 
-  '@swc/counter@0.1.3': {}
-
   '@swc/helpers@0.5.17':
     dependencies:
       tslib: 2.8.1
-
-  '@swc/plugin-prefresh@9.0.2':
-    dependencies:
-      '@swc/counter': 0.1.3
 
   '@testing-library/dom@10.4.1':
     dependencies:
