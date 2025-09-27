@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "build": "rslib build",
+    "build": "tsdown",
     "test": "vitest"
   },
   "dependencies": {
@@ -25,10 +25,9 @@
   "devDependencies": {
     "@raviqqe/react-tsconfig": "^2.0.1",
     "@raviqqe/tsconfig": "^2.0.3",
-    "@rsbuild/plugin-react": "^1.4.1",
-    "@rslib/core": "^0.14.0",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.1.13",
+    "tsdown": "^0.15.4",
     "typescript": "^5.9.2",
     "vitest": "^3.0.2"
   }
