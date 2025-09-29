@@ -36,7 +36,7 @@ export const Editor = ({
     if (textarea.current) {
       textarea.current.value = value ?? "";
     }
-  }, [value]);
+  }, [value, textarea.current]);
 
   return (
     <div className={`${styles.main} ${className}`} id={id}>
