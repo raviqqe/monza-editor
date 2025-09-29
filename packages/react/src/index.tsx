@@ -27,8 +27,6 @@ export const Editor = ({
         pre: pre.current,
         textarea: textarea.current,
       });
-
-      textarea.current.value = value ?? "";
     }
   }, [textarea.current, pre.current, code.current]);
 
