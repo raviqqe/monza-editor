@@ -40,7 +40,9 @@ export const Editor = ({
     <div className={`${styles.main} ${className}`} id={id}>
       <textarea
         className={styles.textarea}
-        onChange={(event) => onChange(event as unknown as TextareaEvent)}
+        onChange={({ nativeEvent }) =>
+          onChange?.(nativeEvent as unknown as TextareaEvent)
+        }
         ref={textarea}
         value={value}
       />
