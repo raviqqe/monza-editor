@@ -30,14 +30,6 @@ export const Editor = ({
     }
   }, [textarea.current, pre.current, code.current]);
 
-
-  useEffect(() => {
-    if (textarea.current) {
-      textarea.current.value = value ?? "";
-    }
-  }, [value, textarea.current]);
-
-
   return (
     <div class={`${styles.main} ${rest.class}`} id={id}>
       <textarea class={styles.textarea} ref={textarea}>
