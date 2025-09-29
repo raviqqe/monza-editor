@@ -1,4 +1,9 @@
-import { initialize, type RenderOptions, styles } from "monza-editor";
+import {
+  initialize,
+  type RenderOptions,
+  styles,
+  type TextareaEvent,
+} from "monza-editor";
 import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/hooks";
 
@@ -10,6 +15,7 @@ interface Props extends Omit<RenderOptions, "highlight"> {
 
 export const Editor = ({
   id,
+  onChange,
   onHighlight,
   value,
   ...rest
@@ -32,7 +38,11 @@ export const Editor = ({
 
   return (
     <div class={`${styles.main} ${rest.class}`} id={id}>
-      <textarea class={styles.textarea} ref={textarea}>
+      <textarea
+        class={styles.textarea}
+        onChange={(event) => onChange?.(event as unknown as TextareaEvent)}
+        ref={textarea}
+      >
         {value}
       </textarea>
       <pre class={styles.pre} ref={pre}>
