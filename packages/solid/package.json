@@ -28,7 +28,7 @@
     "rolldown-plugin-solid": "^0.2.1",
     "tsdown": "^0.15.6",
     "typescript": "^5.9.3",
-    "vite-plugin-solid": "^2.11.8",
+    "vite-plugin-solid": "^2.11.9",
     "vitest": "^3.0.2"
   }
 }
