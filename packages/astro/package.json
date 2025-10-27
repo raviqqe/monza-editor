@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "monza-editor": "workspace:*",
-    "shiki": "^3.13.0"
+    "shiki": "^3.14.0"
   },
   "devDependencies": {
     "@raviqqe/tsconfig": "^2.0.3",
