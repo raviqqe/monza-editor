@@ -49,8 +49,8 @@ importers:
         version: 1.9.9
     devDependencies:
       '@astrojs/mdx':
-        specifier: ^4.3.8
-        version: 4.3.8(astro@5.15.1(@types/node@24.9.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.52.5)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))
+        specifier: ^4.3.9
+        version: 4.3.9(astro@5.15.1(@types/node@24.9.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.52.5)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))
       '@astrojs/preact':
         specifier: ^4.1.1
         version: 4.1.1(@babel/core@7.28.5)(@types/node@24.9.1)(jiti@2.6.1)(less@4.4.0)(preact@10.27.2)(sass@1.90.0)(stylus@0.62.0)
@@ -285,8 +285,8 @@ packages:
   '@astrojs/markdown-remark@6.3.8':
     resolution: {integrity: sha512-uFNyFWadnULWK2cOw4n0hLKeu+xaVWeuECdP10cQ3K2fkybtTlhb7J7TcScdjmS8Yps7oje9S/ehYMfZrhrgCg==}
 
-  '@astrojs/mdx@4.3.8':
-    resolution: {integrity: sha512-PXT0n2FfZAWEmQi4u4AZ0OPDDrDIF+aXPZGT5HCf52dex5EV3htMByeJUqYIoXdmazAFTASub0vRZLWBqJhJ9w==}
+  '@astrojs/mdx@4.3.9':
+    resolution: {integrity: sha512-80LHiM4z3FxAjATHNgFpa8nlTNSprAWB4UUKnr/QG56Pwk7uRnJWrXlok4wSCi/3fg8kTZ98A408Q91M+iqJdw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       astro: ^5.0.0
@@ -3984,7 +3984,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.8(astro@5.15.1(@types/node@24.9.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.52.5)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))':
+  '@astrojs/mdx@4.3.9(astro@5.15.1(@types/node@24.9.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.52.5)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.8
       '@mdx-js/mdx': 3.1.1
