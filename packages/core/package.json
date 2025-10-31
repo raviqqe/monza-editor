@@ -28,6 +28,6 @@
     "jsdom": "^27.0.1",
     "typescript": "^5.9.3",
     "typescript-plugin-css-modules": "^5.2.0",
-    "vitest": "^4.0.5"
+    "vitest": "^4.0.6"
   }
 }
