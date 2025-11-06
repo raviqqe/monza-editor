@@ -58,8 +58,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1(@types/node@24.9.2)(@types/react-dom@19.1.7(@types/react@19.1.17))(@types/react@19.1.17)(jiti@2.6.1)(less@4.4.0)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(sass@1.90.0)(stylus@0.62.0)
       '@astrojs/solid-js':
-        specifier: ^5.1.2
-        version: 5.1.2(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.0)(sass@1.90.0)(solid-js@1.9.10)(stylus@0.62.0)
+        specifier: ^5.1.3
+        version: 5.1.3(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.0)(sass@1.90.0)(solid-js@1.9.10)(stylus@0.62.0)
       '@types/react':
         specifier: ^19.1.17
         version: 19.1.17
@@ -309,8 +309,8 @@ packages:
       react: ^17.0.2 || ^18.0.0 || ^19.0.0
       react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
 
-  '@astrojs/solid-js@5.1.2':
-    resolution: {integrity: sha512-0Mt4tDXM4zQ8+WzY1ZNDgBQ4pE8vYW3We1P5XHJA9eOSYV2dhLOGT5zfVTQZ8PWTfZtoKBABtakZmdP97e01uQ==}
+  '@astrojs/solid-js@5.1.3':
+    resolution: {integrity: sha512-KxfYt4y1d7BuSw6EsN1EaPoGYsIES7bEI6AtTbncuabRUUMZs+mOWOeOdmgnwVLj+jbNbhBjUZsqr77eUviZdw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       solid-devtools: ^0.30.1
@@ -4110,7 +4110,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@astrojs/solid-js@5.1.2(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.0)(sass@1.90.0)(solid-js@1.9.10)(stylus@0.62.0)':
+  '@astrojs/solid-js@5.1.3(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.0)(sass@1.90.0)(solid-js@1.9.10)(stylus@0.62.0)':
     dependencies:
       solid-js: 1.9.10
       vite: 6.4.1(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.0)(sass@1.90.0)(stylus@0.62.0)
@@ -8040,7 +8040,7 @@ snapshots:
 
   vite@6.4.1(@types/node@24.9.2)(jiti@2.6.1)(less@4.4.0)(sass@1.90.0)(stylus@0.62.0):
     dependencies:
-      esbuild: 0.25.11
+      esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
       postcss: 8.5.6
