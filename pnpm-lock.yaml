@@ -50,7 +50,7 @@ importers:
     devDependencies:
       '@astrojs/mdx':
         specifier: ^4.3.10
-        version: 4.3.10(astro@5.15.4(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))
+        version: 4.3.10(astro@5.15.5(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))
       '@astrojs/preact':
         specifier: ^4.1.3
         version: 4.1.3(@babel/core@7.28.5)(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(preact@10.27.2)(sass@1.90.0)(stylus@0.62.0)
@@ -64,8 +64,8 @@ importers:
         specifier: ^19.1.17
         version: 19.1.17
       astro:
-        specifier: ^5.15.4
-        version: 5.15.4(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
+        specifier: ^5.15.5
+        version: 5.15.5(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -83,8 +83,8 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3
       astro:
-        specifier: ^5.15.4
-        version: 5.15.4(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
+        specifier: ^5.15.5
+        version: 5.15.5(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1751,8 +1751,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@5.15.4:
-    resolution: {integrity: sha512-0g/68hLHEJZF2nYUcZM5O0kOnzCsCIf8eA9+0jfBAxp4ycujrIHRgIOdZCFKL9GoTsn8AypWbziypH5aEIF+aA==}
+  astro@5.15.5:
+    resolution: {integrity: sha512-A56u4H6gFHEb0yRHcGTOADBb7jmEwfDjQpkqVV/Z+ZWlu6mYuwCrIcOUtZjNno0chrRKmOeZWDofW23ql18y3w==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3790,8 +3790,8 @@ packages:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
 
-  yocto-queue@1.2.1:
-    resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
+  yocto-queue@1.2.2:
+    resolution: {integrity: sha512-4LCcse/U2MHZ63HAJVE+v71o7yOdIe4cZ70Wpf8D/IyjDKYQLV5GD46B+hSTjJsvV5PztjvHoU580EftxjDZFQ==}
     engines: {node: '>=12.20'}
 
   yocto-spinner@0.2.3:
@@ -3913,12 +3913,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.10(astro@5.15.4(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))':
+  '@astrojs/mdx@4.3.10(astro@5.15.5(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.8
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.15.4(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
+      astro: 5.15.5(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -5324,7 +5324,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@5.15.4(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3):
+  astro@5.15.5(@types/node@24.10.0)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.4
@@ -6913,7 +6913,7 @@ snapshots:
 
   p-limit@6.2.0:
     dependencies:
-      yocto-queue: 1.2.1
+      yocto-queue: 1.2.2
 
   p-queue@8.1.1:
     dependencies:
@@ -7986,7 +7986,7 @@ snapshots:
 
   yargs-parser@21.1.1: {}
 
-  yocto-queue@1.2.1: {}
+  yocto-queue@1.2.2: {}
 
   yocto-spinner@0.2.3:
     dependencies:
