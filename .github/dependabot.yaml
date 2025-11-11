@@ -11,7 +11,7 @@ updates:
     groups:
       react:
         patterns:
-          - react*
+          - 'react*'
           - @types/react
       vitest:
         patterns:
