@@ -9,6 +9,10 @@ updates:
     schedule:
       interval: daily
     groups:
+      react:
+        patterns:
+          - react*
+          - "@types/react"
       vitest:
         patterns:
           - vitest

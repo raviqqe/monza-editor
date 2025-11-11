@@ -16,6 +16,7 @@
     "solidjs",
     "typeof",
     "vitesse",
+    "vitest",
     "webcoder"
   ]
 }
