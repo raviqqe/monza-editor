@@ -50,7 +50,7 @@ importers:
     devDependencies:
       '@astrojs/mdx':
         specifier: ^4.3.10
-        version: 4.3.10(astro@5.15.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))
+        version: 4.3.10(astro@5.15.7(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))
       '@astrojs/preact':
         specifier: ^4.1.3
         version: 4.1.3(@babel/core@7.28.5)(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(preact@10.27.2)(sass@1.90.0)(stylus@0.62.0)
@@ -64,8 +64,8 @@ importers:
         specifier: ^19.2.4
         version: 19.2.4
       astro:
-        specifier: ^5.15.6
-        version: 5.15.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
+        specifier: ^5.15.7
+        version: 5.15.7(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -83,8 +83,8 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3
       astro:
-        specifier: ^5.15.6
-        version: 5.15.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
+        specifier: ^5.15.7
+        version: 5.15.7(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -605,8 +605,8 @@ packages:
   '@emnapi/core@1.7.0':
     resolution: {integrity: sha512-pJdKGq/1iquWYtv1RRSljZklxHCOCAJFJrImO5ZLKPJVJlVUcs8yFwNQlqS0Lo8xT1VAXXTCZocF9n26FWEKsw==}
 
-  '@emnapi/runtime@1.7.0':
-    resolution: {integrity: sha512-oAYoQnCYaQZKVS53Fq23ceWMRxq5EhQsE0x0RdQ55jT7wagMu5k+fS39v1fiSLrtrLQlXwVINenqhLMtTrV/1Q==}
+  '@emnapi/runtime@1.7.1':
+    resolution: {integrity: sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA==}
 
   '@emnapi/wasi-threads@1.1.0':
     resolution: {integrity: sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ==}
@@ -1750,8 +1750,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@5.15.6:
-    resolution: {integrity: sha512-luLcw+FGkeUHYTfbmYjIWHB4T0D+3VSjCy8DKTXglJ2O3lU40AbwmPVBcnqhRnA1SneKzP5V5pzqjsHzUZ1+Rg==}
+  astro@5.15.7:
+    resolution: {integrity: sha512-Zmw6otInhxcjoGcEyEN+wxgdiQERQOS3VzOmAKsDdKK8Fb4x1656r+9NtaTXCRZ0/fGtHjkSvkGUhZUJLXKfxQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3231,8 +3231,8 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
-  smol-toml@1.4.2:
-    resolution: {integrity: sha512-rInDH6lCNiEyn3+hH8KVGFdbjc099j47+OSgbMrfDYX1CmXLfdKd7qi6IfcWj2wFxvSVkuI46M+wPGYfEOEj6g==}
+  smol-toml@1.5.2:
+    resolution: {integrity: sha512-QlaZEqcAH3/RtNyet1IPIYPsEWAaYyXXv1Krsi+1L/QHppjX4Ifm8MQsBISz9vE8cHicIq3clogsheili5vhaQ==}
     engines: {node: '>= 18'}
 
   solid-js@1.9.10:
@@ -3911,7 +3911,7 @@ snapshots:
       remark-rehype: 11.1.2
       remark-smartypants: 3.0.2
       shiki: 3.15.0
-      smol-toml: 1.4.2
+      smol-toml: 1.5.2
       unified: 11.0.5
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
@@ -3920,12 +3920,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.10(astro@5.15.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))':
+  '@astrojs/mdx@4.3.10(astro@5.15.7(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.8
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.15.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
+      astro: 5.15.7(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4070,8 +4070,8 @@ snapshots:
 
   '@babel/generator@7.28.3':
     dependencies:
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
       jsesc: 3.1.0
@@ -4180,11 +4180,11 @@ snapshots:
   '@babel/helpers@7.28.4':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@babel/parser@7.28.4':
     dependencies:
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
 
   '@babel/parser@7.28.5':
     dependencies:
@@ -4268,8 +4268,8 @@ snapshots:
   '@babel/template@7.27.2':
     dependencies:
       '@babel/code-frame': 7.27.1
-      '@babel/parser': 7.28.4
-      '@babel/types': 7.28.4
+      '@babel/parser': 7.28.5
+      '@babel/types': 7.28.5
 
   '@babel/traverse@7.28.3':
     dependencies:
@@ -4288,9 +4288,9 @@ snapshots:
       '@babel/code-frame': 7.27.1
       '@babel/generator': 7.28.3
       '@babel/helper-globals': 7.28.0
-      '@babel/parser': 7.28.4
+      '@babel/parser': 7.28.5
       '@babel/template': 7.27.2
-      '@babel/types': 7.28.4
+      '@babel/types': 7.28.5
       debug: 4.4.3
     transitivePeerDependencies:
       - supports-color
@@ -4384,7 +4384,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@emnapi/runtime@1.7.0':
+  '@emnapi/runtime@1.7.1':
     dependencies:
       tslib: 2.8.1
     optional: true
@@ -4557,7 +4557,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.34.5':
     dependencies:
-      '@emnapi/runtime': 1.7.0
+      '@emnapi/runtime': 1.7.1
     optional: true
 
   '@img/sharp-win32-arm64@0.34.5':
@@ -4651,7 +4651,7 @@ snapshots:
   '@napi-rs/wasm-runtime@1.0.7':
     dependencies:
       '@emnapi/core': 1.7.0
-      '@emnapi/runtime': 1.7.0
+      '@emnapi/runtime': 1.7.1
       '@tybys/wasm-util': 0.10.1
     optional: true
 
@@ -5331,7 +5331,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@5.15.6(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3):
+  astro@5.15.7(@types/node@24.10.1)(jiti@2.6.1)(less@4.4.0)(rollup@4.53.2)(sass@1.90.0)(stylus@0.62.0)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.4
@@ -5378,7 +5378,7 @@ snapshots:
       rehype: 13.0.2
       semver: 7.7.3
       shiki: 3.15.0
-      smol-toml: 1.4.2
+      smol-toml: 1.5.2
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tsconfck: 3.1.6(typescript@5.9.3)
@@ -7474,7 +7474,7 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  smol-toml@1.4.2: {}
+  smol-toml@1.5.2: {}
 
   solid-js@1.9.10:
     dependencies:
