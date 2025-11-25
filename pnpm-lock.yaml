@@ -95,8 +95,8 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3
       '@rslib/core':
-        specifier: ^0.18.0
-        version: 0.18.0(typescript@5.9.3)
+        specifier: ^0.18.1
+        version: 0.18.1(typescript@5.9.3)
       jsdom:
         specifier: ^27.2.0
         version: 27.2.0
@@ -1303,13 +1303,13 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rsbuild/core@1.6.7':
-    resolution: {integrity: sha512-V0INbMrT/LwyhzKmvpupe2oSvPFWaivz7sdriFRp381BJvD0d2pYcq9iRW91bxgMRX78MgTzFYAu868hMAzoSw==}
+  '@rsbuild/core@1.6.8':
+    resolution: {integrity: sha512-sVdzmrLV5hQtSTd2NqWNQg/KX30R4UatA8d6FHnpO2r44CJv+HXow3sjtYMhpmB+z3GIxidwcvLpmRbZcq+/+Q==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  '@rslib/core@0.18.0':
-    resolution: {integrity: sha512-ZLonxKnef5Hx4zZj2ZckicVnM0KwTP9x8XcNnZBuXo82maXVmSSERtvMrB7aufxlFjqEThOHG6RNuLZToM1eFQ==}
+  '@rslib/core@0.18.1':
+    resolution: {integrity: sha512-eDDz6y8anIAF17gQJBDfH6l/JTidkXANYAFq8iuymFQg/wE2PEKyBNC2K6n+jg4rT1a7AhuVbHZb5oDumaFopQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     peerDependencies:
@@ -1818,8 +1818,8 @@ packages:
   copy-anything@2.0.6:
     resolution: {integrity: sha512-1j20GZTsvKNkc4BY3NpMOM8tt///wY3FpIzozTOFO2ffuZcV61nojHXVKIy3WM+7ADCy5FVhdZYHYDdgTU0yJw==}
 
-  core-js@3.46.0:
-    resolution: {integrity: sha512-vDMm9B0xnqqZ8uSBpZ8sNtRtOdmfShrvT6h2TuQGLs0Is+cR0DYbj/KWP6ALVNbWPpqA/qPLoOuppJN07humpA==}
+  core-js@3.47.0:
+    resolution: {integrity: sha512-c3Q2VVkGAUyupsjRnaNX6u8Dq2vAdzm9iuPj5FW0fRxzlxgq9Q39MDq10IvmQSpLgHQNyQzQmOo6bgGHmH3NNg==}
 
   crossws@0.3.5:
     resolution: {integrity: sha512-ojKiDvcmByhwa8YYqbQI/hg7MEU0NC03+pSdEq4ZUnZR9xXpwk7E43SMNGkn+JxJGPFtNvQ48+vV2p+P1ml5PA==}
@@ -3028,8 +3028,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  rsbuild-plugin-dts@0.18.0:
-    resolution: {integrity: sha512-GzzcnYDoILabBddQH5wMQK93peZbHXnoF9wtFz0INRotAS2xIwBb1rIeFRpfn/fgXfSlFu4C8QbqD6U8PgXzJA==}
+  rsbuild-plugin-dts@0.18.1:
+    resolution: {integrity: sha512-2nj8zlMxyEkc4Z7wFo1zn1R2SQNyUSH1+g0hx5RKP0yJJojRovYbENjLf6ixFo7RwUU0PhS9EnuiiKqHPt8+FA==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       '@microsoft/api-extractor': ^7
@@ -4820,18 +4820,18 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.3':
     optional: true
 
-  '@rsbuild/core@1.6.7':
+  '@rsbuild/core@1.6.8':
     dependencies:
       '@rspack/core': 1.6.4(@swc/helpers@0.5.17)
       '@rspack/lite-tapable': 1.1.0
       '@swc/helpers': 0.5.17
-      core-js: 3.46.0
+      core-js: 3.47.0
       jiti: 2.6.1
 
-  '@rslib/core@0.18.0(typescript@5.9.3)':
+  '@rslib/core@0.18.1(typescript@5.9.3)':
     dependencies:
-      '@rsbuild/core': 1.6.7
-      rsbuild-plugin-dts: 0.18.0(@rsbuild/core@1.6.7)(typescript@5.9.3)
+      '@rsbuild/core': 1.6.8
+      rsbuild-plugin-dts: 0.18.1(@rsbuild/core@1.6.8)(typescript@5.9.3)
     optionalDependencies:
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -5451,7 +5451,7 @@ snapshots:
     dependencies:
       is-what: 3.14.1
 
-  core-js@3.46.0: {}
+  core-js@3.47.0: {}
 
   crossws@0.3.5:
     dependencies:
@@ -7161,10 +7161,10 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.53.3
       fsevents: 2.3.3
 
-  rsbuild-plugin-dts@0.18.0(@rsbuild/core@1.6.7)(typescript@5.9.3):
+  rsbuild-plugin-dts@0.18.1(@rsbuild/core@1.6.8)(typescript@5.9.3):
     dependencies:
       '@ast-grep/napi': 0.37.0
-      '@rsbuild/core': 1.6.7
+      '@rsbuild/core': 1.6.8
     optionalDependencies:
       typescript: 5.9.3
 
