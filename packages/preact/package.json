@@ -28,6 +28,6 @@
     "@testing-library/preact": "^3.2.4",
     "tsdown": "^0.16.6",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.13"
+    "vitest": "^4.0.14"
   }
 }
