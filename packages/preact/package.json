@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "monza-editor": "workspace:*",
-    "preact": "^10.27.2"
+    "preact": "^10.28.0"
   },
   "devDependencies": {
     "@raviqqe/react-tsconfig": "^2.0.1",
