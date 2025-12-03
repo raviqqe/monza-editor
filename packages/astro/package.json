@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "monza-editor": "workspace:*",
+    "picolight": "^0.2.6",
     "shiki": "^3.18.0"
   },
   "devDependencies": {

@@ -75,6 +75,9 @@ importers:
       monza-editor:
         specifier: workspace:*
         version: link:../core
+      picolight:
+        specifier: ^0.2.6
+        version: 0.2.6
       shiki:
         specifier: ^3.18.0
         version: 3.18.0
