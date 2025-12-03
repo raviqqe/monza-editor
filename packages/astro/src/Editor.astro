@@ -1,14 +1,14 @@
 ---
 import "monza-editor/style.css";
 import { styles } from "monza-editor";
-import type { BundledLanguage, BundledTheme } from "shiki";
+import type { Language, Theme } from "picolight";
 
 interface Props {
   class?: string;
   id?: string;
-  language: BundledLanguage;
-  theme: BundledTheme;
-  darkTheme?: BundledTheme;
+  language: Language;
+  theme: Theme;
+  darkTheme?: Theme;
   value?: string;
 }
 
@@ -27,13 +27,7 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
 </monza-editor>
 <script>
   import { initialize } from "monza-editor";
-  import {
-    createHighlighter,
-    type BundledLanguage,
-    type BundledTheme,
-  } from "shiki";
-
-  const highlighter = await createHighlighter({ langs: [], themes: [] });
+  import { highlight } from "picolight";
 
   class Editor extends HTMLElement {
     async connectedCallback(): Promise<void> {
@@ -52,28 +46,14 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
         throw new Error("Editor elements missing");
       }
 
-      await highlighter.loadLanguage(language as BundledLanguage);
-
-      for (const name of [theme, darkTheme]) {
-        if (name) {
-          await highlighter.loadTheme(name as BundledTheme);
-        }
-      }
-
       const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
       let dark = mediaQuery.matches;
-
       mediaQuery.addEventListener("change", (event) => (dark = event.matches));
 
       initialize({
         code,
         highlight: (text) =>
-          highlighter.codeToHtml(text, {
-            lang: language,
-            structure: "inline",
-            theme: (dark && darkTheme) || theme,
-          }),
+          highlight(text, JSON.parse(language), JSON.parse( dark &&  darkTheme || theme)).outerHTML,
         pre,
         textarea,
       });
