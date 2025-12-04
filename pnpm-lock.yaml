@@ -77,10 +77,7 @@ importers:
         version: link:../core
       picolight:
         specifier: ^0.2.6
-        version: 0.2.6
-      shiki:
-        specifier: ^3.19.0
-        version: 3.19.0
+        version: 0.2.7
     devDependencies:
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
