@@ -19,12 +19,11 @@
   },
   "dependencies": {
     "monza-editor": "workspace:*",
-    "picolight": "^0.2.6",
-    "shiki": "^3.18.0"
+    "picolight": "^0.2.6"
   },
   "devDependencies": {
     "@raviqqe/tsconfig": "^2.0.3",
-    "astro": "^5.16.0",
+    "astro": "^5.16.4",
     "typescript": "^5.9.3"
   }
 }
