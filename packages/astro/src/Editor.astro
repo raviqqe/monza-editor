@@ -54,12 +54,18 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
       mediaQuery.addEventListener("change", (event) => (dark = event.matches));
 
       const unmarshal = (_key: string, value: unknown): unknown =>
-        value instanceof Object && "_r" in value && typeof value._r === 'string' ? new RegExp(value._r) : value;
+        value instanceof Object && "_r" in value && typeof value._r === "string"
+          ? new RegExp(value._r)
+          : value;
 
       initialize({
         code,
         highlight: (text) =>
-          highlight(text, JSON.parse(language, unmarshal), JSON.parse( dark &&  darkTheme || theme)).outerHTML,
+          highlight(
+            text,
+            JSON.parse(language, unmarshal),
+            JSON.parse((dark && darkTheme) || theme),
+          ).outerHTML,
         pre,
         textarea,
       });
