@@ -1,12 +1,15 @@
 ---
 import { Editor } from "@monza-editor/astro";
+import { typescript } from "picolight/languages/typescript";
+import { githubDark } from "picolight/themes/github-dark";
+import { githubLight } from "picolight/themes/github-light";
 import styles from "./VanillaExample.module.css";
 ---
 
 <Editor
   class={styles.main}
-  language="typescript"
-  theme="github-light"
-  darkTheme="github-dark"
+  language={typescript}
+  theme={githubLight}
+  darkTheme={githubDark}
   value='console.log("Hello, Astro!");'
 />
