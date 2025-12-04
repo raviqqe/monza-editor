@@ -12,13 +12,16 @@ interface Props {
   value?: string;
 }
 
+const marshal = (_: string, value: unknown): unknown =>
+  value instanceof RegExp ? { _r: value.source } : value;
+
 const { id, language, theme, darkTheme, value, ...props } = Astro.props;
 ---
 
 <monza-editor
-  data-language={language}
-  data-theme={theme}
-  data-dark-theme={darkTheme}
+  data-language={JSON.stringify(language, marshal)}
+  data-theme={JSON.stringify(theme)}
+  data-dark-theme={JSON.stringify(darkTheme)}
 >
   <div class={`${styles.main} ${props.class}`} id={id}>
     <textarea class={styles.textarea}>{value}</textarea>
@@ -50,10 +53,13 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
       let dark = mediaQuery.matches;
       mediaQuery.addEventListener("change", (event) => (dark = event.matches));
 
+      const unmarshal = (_key: string, value: unknown): unknown =>
+        value instanceof Object && "_r" in value && typeof value._r === 'string' ? new RegExp(value._r) : value;
+
       initialize({
         code,
         highlight: (text) =>
-          highlight(text, JSON.parse(language), JSON.parse( dark &&  darkTheme || theme)).outerHTML,
+          highlight(text, JSON.parse(language, unmarshal), JSON.parse( dark &&  darkTheme || theme)).outerHTML,
         pre,
         textarea,
       });
