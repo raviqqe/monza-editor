@@ -33,8 +33,8 @@ importers:
         specifier: workspace:*
         version: link:../packages/core
       picolight:
-        specifier: ^0.2.7
-        version: 0.2.7
+        specifier: ^0.2.8
+        version: 0.2.8
       preact:
         specifier: ^10.28.0
         version: 10.28.0
@@ -76,8 +76,8 @@ importers:
         specifier: workspace:*
         version: link:../core
       picolight:
-        specifier: ^0.2.6
-        version: 0.2.7
+        specifier: ^0.2.8
+        version: 0.2.8
     devDependencies:
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
@@ -2798,8 +2798,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  picolight@0.2.7:
-    resolution: {integrity: sha512-sIXez71JAP9vcmxPwl+uMgEapHh3S6CxC1OjDqaNf4FVIPALVWvC6ocx1LJ9rkOUteiF6afeRFZQ2/ol3ZCGiA==}
+  picolight@0.2.8:
+    resolution: {integrity: sha512-fx6MZd5H3y5Lk3bKRuGhQ1NiQ/ImOgl67MoHQscEv0tDpVQ6/7V1ucdS7+7Zn2emieta5BRcr9XB5BPh8CIvkw==}
 
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
@@ -6859,7 +6859,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picolight@0.2.7: {}
+  picolight@0.2.8: {}
 
   picomatch@2.3.1: {}
 
