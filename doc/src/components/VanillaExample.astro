@@ -10,7 +10,7 @@ import styles from "./VanillaExample.module.css";
 
   const element = document.getElementById("vanilla-example");
 
-  if (!element) {
+  if (!(element instanceof HTMLDivElement)) {
     throw new Error("No editor element");
   }
 
