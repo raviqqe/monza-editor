@@ -123,8 +123,8 @@ importers:
         version: 10.28.0
     devDependencies:
       '@raviqqe/react-tsconfig':
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^2.0.2
+        version: 2.0.2
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
         version: 2.0.3
@@ -151,8 +151,8 @@ importers:
         version: 19.2.1
     devDependencies:
       '@raviqqe/react-tsconfig':
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^2.0.2
+        version: 2.0.2
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
         version: 2.0.3
@@ -1143,8 +1143,8 @@ packages:
     peerDependencies:
       '@biomejs/biome': ^2.1.4
 
-  '@raviqqe/react-tsconfig@2.0.1':
-    resolution: {integrity: sha512-eeneru1zgke/iym/xpjdvu5bGWNyOJhVpGSNl+rAHtWaytCycUAYiTF3NLq4FYDfYNu3cFxbwR0XQcw6iCFMoQ==}
+  '@raviqqe/react-tsconfig@2.0.2':
+    resolution: {integrity: sha512-dWIaX5677uqoE1GGUNt8Kj/czmL9puEDQPumsE/HR0zc+ABz37/AgTB4fSJMsQO5/qZdBOrueJ2sqiPt9+hcVg==}
     engines: {node: ^24.7.0}
 
   '@raviqqe/tsconfig@2.0.3':
@@ -5062,7 +5062,7 @@ snapshots:
     dependencies:
       '@biomejs/biome': 2.3.8
 
-  '@raviqqe/react-tsconfig@2.0.1':
+  '@raviqqe/react-tsconfig@2.0.2':
     dependencies:
       '@raviqqe/tsconfig': 2.0.3
 
