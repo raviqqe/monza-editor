@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "monza-editor": "workspace:*",
-    "react": "^19.2.1"
+    "react": "^19.2.3"
   },
   "devDependencies": {
     "@raviqqe/react-tsconfig": "^2.0.2",
