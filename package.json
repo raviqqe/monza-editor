@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.10",
-    "@raviqqe/biome-config": "^2.0.23"
+    "@raviqqe/biome-config": "^2.0.24"
   }
 }

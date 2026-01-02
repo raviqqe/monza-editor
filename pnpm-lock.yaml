@@ -12,8 +12,8 @@ importers:
         specifier: ^2.3.10
         version: 2.3.10
       '@raviqqe/biome-config':
-        specifier: ^2.0.23
-        version: 2.0.23(@biomejs/biome@2.3.10)
+        specifier: ^2.0.24
+        version: 2.0.24(@biomejs/biome@2.3.10)
 
   doc:
     dependencies:
@@ -1302,9 +1302,9 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@raviqqe/biome-config@2.0.23':
-    resolution: {integrity: sha512-swKaDXeNoV7r+/x1OOioobWFHxHU72cgVLIAlFEKHZZMS7hSg9Z4zViKhqI/SM69/pjtl0k4AlfOp82X3M5O2w==}
-    engines: {node: ^25.2.1}
+  '@raviqqe/biome-config@2.0.24':
+    resolution: {integrity: sha512-mccIrFYlBLRbrB7Ao2EkWqtaUweQ3IUHskq8rSlB11tSJeCyVsK851bMMw+HfgyFDuwLjVwG73pKuhPSu+D8Vw==}
+    engines: {node: '>=25.2.1'}
     peerDependencies:
       '@biomejs/biome': ^2.1.4
 
@@ -5291,7 +5291,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@raviqqe/biome-config@2.0.23(@biomejs/biome@2.3.10)':
+  '@raviqqe/biome-config@2.0.24(@biomejs/biome@2.3.10)':
     dependencies:
       '@biomejs/biome': 2.3.10
 
