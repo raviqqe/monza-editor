@@ -29,6 +29,6 @@
     "tsdown": "^0.18.4",
     "typescript": "^5.9.3",
     "vite-plugin-solid": "^2.11.10",
-    "vitest": "^4.0.16"
+    "vitest": "^4.0.17"
   }
 }
