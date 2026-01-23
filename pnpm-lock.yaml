@@ -132,8 +132,8 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(preact@10.28.2)
       tsdown:
-        specifier: ^0.20.0
-        version: 0.20.0(synckit@0.11.11)(typescript@5.9.3)
+        specifier: ^0.20.1
+        version: 0.20.1(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -163,8 +163,8 @@ importers:
         specifier: ^19.2.9
         version: 19.2.9
       tsdown:
-        specifier: ^0.20.0
-        version: 0.20.0(synckit@0.11.11)(typescript@5.9.3)
+        specifier: ^0.20.1
+        version: 0.20.1(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -191,8 +191,8 @@ importers:
         specifier: ^0.2.1
         version: 0.2.1(rolldown@1.0.0-rc.1)(solid-js@1.9.11)
       tsdown:
-        specifier: ^0.20.0
-        version: 0.20.0(synckit@0.11.11)(typescript@5.9.3)
+        specifier: ^0.20.1
+        version: 0.20.1(synckit@0.11.11)(typescript@5.9.3)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -3647,8 +3647,8 @@ packages:
     resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
     engines: {node: '>=6'}
 
-  tsdown@0.20.0:
-    resolution: {integrity: sha512-VLf5wZFyHBTdV0aN3pjRlY5bmwnrZcxOT3pjSYy2JwSgo8zY51xycPWVCkeeyOxllCwrlrO1pTYr7B8j7z/yqA==}
+  tsdown@0.20.1:
+    resolution: {integrity: sha512-Wo1BzqNQVZ6SFQV8rjQBwMmNubO+yV3F+vp2WNTjEaS4S5CT1C1dHtUbeFMrCEasZpGy5w6TshpehNnfTe8QBQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -8255,7 +8255,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsdown@0.20.0(synckit@0.11.11)(typescript@5.9.3):
+  tsdown@0.20.1(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
       ansis: 4.2.0
       cac: 6.7.14
