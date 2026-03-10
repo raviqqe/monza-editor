@@ -27,7 +27,7 @@
     "@astrojs/react": "^5.0.0",
     "@astrojs/solid-js": "^5.1.3",
     "@types/react": "^19.2.14",
-    "astro": "^5.18.0",
+    "astro": "^6.0.1",
     "typescript": "^5.9.3"
   }
 }
