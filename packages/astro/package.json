@@ -22,7 +22,7 @@
     "picolight": "^0.2.8"
   },
   "devDependencies": {
-    "@raviqqe/tsconfig": "^2.0.3",
+    "@raviqqe/tsconfig": "^3.0.0",
     "astro": "^6.0.8",
     "typescript": "^5.9.3"
   }
