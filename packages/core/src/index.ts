@@ -12,7 +12,7 @@ export interface InitializationOptions {
   code: HTMLElement;
   highlight: (text: string) => string;
   onChange?: (event: TextareaEvent) => void;
-  onInput?: (event: TextareaEvent) => void;
+  onInput?: (event: InputEvent) => void;
   pre: HTMLPreElement;
   textarea: HTMLTextAreaElement;
 }
@@ -44,7 +44,7 @@ export const initialize = ({
 
   textarea.addEventListener("input", (event) => {
     update();
-    onInput?.(event as TextareaEvent);
+    onInput?.(event);
   });
   textarea.addEventListener("scroll", scroll);
 
