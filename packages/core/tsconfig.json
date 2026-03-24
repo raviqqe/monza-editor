@@ -10,7 +10,8 @@
           "noUncheckedIndexedAccess": true
         }
       }
-    ]
+    ],
+    "rootDir": "src"
   },
   "include": ["src"]
 }
