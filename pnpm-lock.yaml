@@ -123,8 +123,8 @@ importers:
         version: 10.29.0
     devDependencies:
       '@raviqqe/react-tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
         version: 2.0.3
@@ -151,8 +151,8 @@ importers:
         version: 19.2.4
     devDependencies:
       '@raviqqe/react-tsconfig':
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       '@raviqqe/tsconfig':
         specifier: ^2.0.3
         version: 2.0.3
@@ -1219,13 +1219,17 @@ packages:
     peerDependencies:
       '@biomejs/biome': ^2.1.4
 
-  '@raviqqe/react-tsconfig@2.0.2':
-    resolution: {integrity: sha512-dWIaX5677uqoE1GGUNt8Kj/czmL9puEDQPumsE/HR0zc+ABz37/AgTB4fSJMsQO5/qZdBOrueJ2sqiPt9+hcVg==}
-    engines: {node: ^24.7.0}
+  '@raviqqe/react-tsconfig@2.0.3':
+    resolution: {integrity: sha512-/IIY5Fa331jNNByvR7kVOqHYwtgBFXdp7yCLVS60jUqk1qm8UZjI5+j6BfgoGcpRaY+D5bnOfh21LsQiRIutAQ==}
+    engines: {node: '>=25.8.0'}
 
   '@raviqqe/tsconfig@2.0.3':
     resolution: {integrity: sha512-9eTFd1ye3CcD0vfoPVkLzBr+cOTx/Vk5+feJb9KM4rWxEx3zGtXvAr2v3Er2DOdP8w0c2KhwKXFB/By2NffIHA==}
     engines: {node: '>=24.6.0'}
+
+  '@raviqqe/tsconfig@3.0.0':
+    resolution: {integrity: sha512-axoa5/vjOV/BoPQCyOpfdQr+/vjT9HKo9fxhUB2yvh6I9oRKntcHlht5kTbTndQVBgyreHfaa1STKoFqziZ+dg==}
+    engines: {node: '>=25.8.0'}
 
   '@rolldown/binding-android-arm64@1.0.0-rc.9':
     resolution: {integrity: sha512-lcJL0bN5hpgJfSIz/8PIf02irmyL43P+j1pTCfbD1DbLkmGRuFIA4DD3B3ZOvGqG0XiVvRznbKtN0COQVaKUTg==}
@@ -3559,6 +3563,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@6.0.2:
+    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   ufo@1.6.3:
     resolution: {integrity: sha512-yDJTmhydvl5lJzBmy/hyOAA0d+aqCBuwl818haVdYCRrWV84o7YyeVm4QlVHStqNrrJSTb6jKuFAVqAFsr+K3Q==}
 
@@ -5076,13 +5085,17 @@ snapshots:
     dependencies:
       '@biomejs/biome': 2.4.8
 
-  '@raviqqe/react-tsconfig@2.0.2':
+  '@raviqqe/react-tsconfig@2.0.3':
     dependencies:
-      '@raviqqe/tsconfig': 2.0.3
+      '@raviqqe/tsconfig': 3.0.0
 
   '@raviqqe/tsconfig@2.0.3':
     dependencies:
       typescript: 5.9.3
+
+  '@raviqqe/tsconfig@3.0.0':
+    dependencies:
+      typescript: 6.0.2
 
   '@rolldown/binding-android-arm64@1.0.0-rc.9':
     optional: true
@@ -7949,6 +7962,8 @@ snapshots:
       - ts-node
 
   typescript@5.9.3: {}
+
+  typescript@6.0.2: {}
 
   ufo@1.6.3: {}
 
