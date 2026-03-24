@@ -1,12 +1,9 @@
 {
   "name": "monza-editor",
-  "version": "0.5.7",
+  "version": "0.5.8",
   "description": "The textarea element with syntax highlight",
-  "repository": "https://github.com/raviqqe/monza-editor",
   "license": "MIT",
-  "publishConfig": {
-    "provenance": true
-  },
+  "repository": "https://github.com/raviqqe/monza-editor",
   "type": "module",
   "exports": {
     ".": {
@@ -16,6 +13,9 @@
     "./style.css": {
       "default": "./dist/index.css"
     }
+  },
+  "publishConfig": {
+    "provenance": true
   },
   "scripts": {
     "build": "rslib build",
