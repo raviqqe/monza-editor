@@ -53,7 +53,7 @@ importers:
         version: 0.9.8(prettier@3.8.1)(typescript@6.0.2)
       '@astrojs/mdx':
         specifier: ^5.0.3
-        version: 5.0.3(astro@6.1.5(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))
+        version: 5.0.3(astro@6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))
       '@astrojs/preact':
         specifier: ^5.1.1
         version: 5.1.1(@babel/core@7.29.0)(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(preact@10.29.1)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(yaml@2.8.2)
@@ -67,8 +67,8 @@ importers:
         specifier: ^19.2.14
         version: 19.2.14
       astro:
-        specifier: ^6.1.5
-        version: 6.1.5(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
+        specifier: ^6.1.6
+        version: 6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
       typescript:
         specifier: ^6.0.2
         version: 6.0.2
@@ -86,8 +86,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       astro:
-        specifier: ^6.1.5
-        version: 6.1.5(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
+        specifier: ^6.1.6
+        version: 6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
       typescript:
         specifier: ^6.0.2
         version: 6.0.2
@@ -1852,8 +1852,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@6.1.5:
-    resolution: {integrity: sha512-AJVw/JlssxUCBFi3Hp4djL8Pt7wUQqStBBawCd8cNGBBM2lBzp/rXGguzt4OcMfW+86fs0hpFwMyopHM2r6d3g==}
+  astro@6.1.6:
+    resolution: {integrity: sha512-pRsz+kYriwCV/AUcY/I9OVKtVHuYFs2DtCszAxprXded/kTE53nMwxfnK0Nf6FPfaX9vcUiLnigcSIhuFoKntA==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2673,8 +2673,8 @@ packages:
     resolution: {integrity: sha512-wgWa6FWQ3QRRJbIjbsldRJZxdxYngT/dO0I5Ynmlnin8qy7tC6xYzbcJjtN4wHLXtkbVwHzk0C+OejVw1XM+DQ==}
     engines: {node: 20 || >=22}
 
-  lru-cache@11.3.3:
-    resolution: {integrity: sha512-JvNw9Y81y33E+BEYPr0U7omo+U9AySnsMsEiXgwT6yqd31VQWTLNQqmT4ou5eqPFUrTfIDFta2wKhB1hyohtAQ==}
+  lru-cache@11.3.5:
+    resolution: {integrity: sha512-NxVFwLAnrd9i7KUBxC4DrUhmgjzOs+1Qm50D3oF1/oL+r1NpZ4gA7xvG0/zJ8evR7zIKn4vLf7qTNduWFtCrRw==}
     engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
@@ -4222,12 +4222,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.3(astro@6.1.5(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))':
+  '@astrojs/mdx@5.0.3(astro@6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 7.1.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.1.5(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
+      astro: 6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
       es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -5725,7 +5725,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@6.1.5(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2):
+  astro@6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 3.0.1
       '@astrojs/internal-helpers': 0.8.0
@@ -6743,7 +6743,7 @@ snapshots:
 
   lru-cache@11.3.2: {}
 
-  lru-cache@11.3.3: {}
+  lru-cache@11.3.5: {}
 
   lru-cache@5.1.1:
     dependencies:
@@ -8166,7 +8166,7 @@ snapshots:
       chokidar: 5.0.0
       destr: 2.0.5
       h3: 1.15.11
-      lru-cache: 11.3.3
+      lru-cache: 11.3.5
       node-fetch-native: 1.6.7
       ofetch: 1.5.1
       ufo: 1.6.3
