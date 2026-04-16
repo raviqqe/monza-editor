@@ -53,7 +53,7 @@ importers:
         version: 0.9.8(prettier@3.8.1)(typescript@6.0.2)
       '@astrojs/mdx':
         specifier: ^5.0.3
-        version: 5.0.3(astro@6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))
+        version: 5.0.3(astro@6.1.7(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))
       '@astrojs/preact':
         specifier: ^5.1.1
         version: 5.1.1(@babel/core@7.29.0)(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(preact@10.29.1)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(yaml@2.8.2)
@@ -67,8 +67,8 @@ importers:
         specifier: ^19.2.14
         version: 19.2.14
       astro:
-        specifier: ^6.1.6
-        version: 6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
+        specifier: ^6.1.7
+        version: 6.1.7(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
       typescript:
         specifier: ^6.0.2
         version: 6.0.2
@@ -86,8 +86,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       astro:
-        specifier: ^6.1.6
-        version: 6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
+        specifier: ^6.1.7
+        version: 6.1.7(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
       typescript:
         specifier: ^6.0.2
         version: 6.0.2
@@ -726,6 +726,9 @@ packages:
 
   '@emnapi/core@1.9.2':
     resolution: {integrity: sha512-UC+ZhH3XtczQYfOlu3lNEkdW/p4dsJ1r/bP7H8+rhao3TTTMO1ATq/4DdIi23XuGoFY+Cz0JmCbdVl0hz9jZcA==}
+
+  '@emnapi/runtime@1.10.0':
+    resolution: {integrity: sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA==}
 
   '@emnapi/runtime@1.9.2':
     resolution: {integrity: sha512-3U4+MIWHImeyu1wnmVygh5WlgfYDtyf0k8AbLhMFxOipihf6nrWC4syIm/SwEeec0mNSafiiNnMJwbza/Is6Lw==}
@@ -1852,8 +1855,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@6.1.6:
-    resolution: {integrity: sha512-pRsz+kYriwCV/AUcY/I9OVKtVHuYFs2DtCszAxprXded/kTE53nMwxfnK0Nf6FPfaX9vcUiLnigcSIhuFoKntA==}
+  astro@6.1.7:
+    resolution: {integrity: sha512-pvZysIUV2C2nRv8N7cXAkCLcfDQz/axAxF09SqiTz1B+xnvbhy6KzL2I6J15ZBXk8k0TfMD75dJ151QyQmAqZA==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3072,16 +3075,16 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
+  postcss@8.5.10:
+    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.8:
     resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
-    engines: {node: ^10 || ^12 || >=14}
-
-  postcss@8.5.9:
-    resolution: {integrity: sha512-7a70Nsot+EMX9fFU3064K/kdHWZqGVY+BADLyXc8Dfv+mTLLVl6JzJpPaCZ2kQL9gIJvKXSLMHhqdRRjwQeFtw==}
     engines: {node: ^10 || ^12 || >=14}
 
   preact-render-to-string@6.6.7:
@@ -4211,12 +4214,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.3(astro@6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))':
+  '@astrojs/mdx@5.0.3(astro@6.1.7(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 7.1.0
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
+      astro: 6.1.7(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2)
       es-module-lexer: 2.0.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -4773,6 +4776,11 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@emnapi/runtime@1.10.0':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
   '@emnapi/runtime@1.9.2':
     dependencies:
       tslib: 2.8.1
@@ -4948,7 +4956,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.34.5':
     dependencies:
-      '@emnapi/runtime': 1.9.2
+      '@emnapi/runtime': 1.10.0
     optional: true
 
   '@img/sharp-win32-arm64@0.34.5':
@@ -5702,7 +5710,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@6.1.6(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2):
+  astro@6.1.7(@types/node@25.0.2)(jiti@2.6.1)(less@4.4.0)(rollup@4.60.1)(sass@1.90.0)(stylus@0.62.0)(typescript@6.0.2)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 3.0.1
       '@astrojs/internal-helpers': 0.8.0
@@ -7382,6 +7390,12 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
+  postcss@8.5.10:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
   postcss@8.5.6:
     dependencies:
       nanoid: 3.3.11
@@ -7389,12 +7403,6 @@ snapshots:
       source-map-js: 1.2.1
 
   postcss@8.5.8:
-    dependencies:
-      nanoid: 3.3.11
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
-  postcss@8.5.9:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -8220,7 +8228,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.9
+      postcss: 8.5.10
       rollup: 4.60.1
       tinyglobby: 0.2.16
     optionalDependencies:
