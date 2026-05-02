@@ -1,9 +1,7 @@
 packages:
   - doc
   - packages/*
-
-ignoredBuiltDependencies:
-  - core-js
-  - esbuild
-  - rollup
-  - sharp
+allowBuilds:
+  "@parcel/watcher": false
+  esbuild: false
+  sharp: false
