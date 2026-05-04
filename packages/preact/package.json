@@ -23,7 +23,7 @@
     "preact": "^10.29.1"
   },
   "devDependencies": {
-    "@raviqqe/react-tsconfig": "^2.0.3",
+    "@raviqqe/react-tsconfig": "^2.0.4",
     "@raviqqe/tsconfig": "^3.0.0",
     "@testing-library/preact": "^3.2.4",
     "tsdown": "^0.21.10",
