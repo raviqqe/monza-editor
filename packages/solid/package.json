@@ -23,7 +23,7 @@
     "solid-js": "^1.9.12"
   },
   "devDependencies": {
-    "@raviqqe/tsconfig": "^3.0.0",
+    "@raviqqe/tsconfig": "^3.0.1",
     "@solidjs/testing-library": "^0.8.10",
     "rolldown-plugin-solid": "^0.2.1",
     "tsdown": "^0.21.10",
