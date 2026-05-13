@@ -24,7 +24,7 @@
   "dependencies": {},
   "devDependencies": {
     "@raviqqe/tsconfig": "^3.0.1",
-    "@rslib/core": "^0.21.4",
+    "@rslib/core": "^0.21.5",
     "jsdom": "^29.0.2",
     "typescript": "^6.0.3",
     "typescript-plugin-css-modules": "^5.2.0",
