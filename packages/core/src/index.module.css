@@ -31,8 +31,6 @@
   color: transparent;
   resize: none;
   outline: none;
-  /* TODO Support a fixed-size form in Chrome. */
-  field-sizing: content;
 }
 
 .pre {
