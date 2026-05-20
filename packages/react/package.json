@@ -26,7 +26,7 @@
     "@raviqqe/react-tsconfig": "^2.0.4",
     "@raviqqe/tsconfig": "^3.0.1",
     "@testing-library/react": "^16.3.2",
-    "@types/react": "^19.2.14",
+    "@types/react": "^19.2.15",
     "tsdown": "^0.22.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.6"
