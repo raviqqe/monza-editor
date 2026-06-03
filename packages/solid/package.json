@@ -26,7 +26,7 @@
     "@raviqqe/tsconfig": "^3.0.1",
     "@solidjs/testing-library": "^0.8.10",
     "rolldown-plugin-solid": "^0.2.1",
-    "tsdown": "^0.22.0",
+    "tsdown": "^0.22.1",
     "typescript": "^6.0.3",
     "vite-plugin-solid": "^2.11.12",
     "vitest": "^4.1.7"
