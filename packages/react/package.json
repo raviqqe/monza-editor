@@ -29,6 +29,6 @@
     "@types/react": "^19.2.16",
     "tsdown": "^0.22.1",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.7"
+    "vitest": "^4.1.8"
   }
 }
