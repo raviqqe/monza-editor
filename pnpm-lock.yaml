@@ -59,13 +59,13 @@ importers:
         version: 5.1.5(@babel/core@7.29.7)(less@4.6.4)(preact@10.29.2)(rollup@4.61.1)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0)
       '@astrojs/react':
         specifier: ^5.0.7
-        version: 5.0.7(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(less@4.6.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0)
+        version: 5.0.7(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(less@4.6.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0)
       '@astrojs/solid-js':
         specifier: ^6.0.1
         version: 6.0.1(less@4.6.4)(sass@1.99.0)(solid-js@1.9.13)(stylus@0.62.0)(yaml@2.9.0)
       '@types/react':
-        specifier: ^19.2.16
-        version: 19.2.16
+        specifier: ^19.2.17
+        version: 19.2.17
       astro:
         specifier: ^6.4.4
         version: 6.4.4(less@4.6.4)(rollup@4.61.1)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0)
@@ -158,10 +158,10 @@ importers:
         version: 3.0.1
       '@testing-library/react':
         specifier: ^16.3.2
-        version: 16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@types/react':
-        specifier: ^19.2.16
-        version: 19.2.16
+        specifier: ^19.2.17
+        version: 19.2.17
       tsdown:
         specifier: ^0.22.2
         version: 0.22.2(typescript@6.0.3)
@@ -1866,8 +1866,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.16':
-    resolution: {integrity: sha512-esJiCAnl0kfpNdE69f3So4WJUXy95dLZydX0KwK46riIHDzHM7O9Vtf9xCHW0PXIqvgqNrswl522kA/5yx+F4w==}
+  '@types/react@19.2.17':
+    resolution: {integrity: sha512-MXfmqaVPEVgkBT/aY0aGCkRWWtByiYQXo3xdQ8r5RzuFrPiRn8Gar2tQdXSUQ2GKV3bkXckek89V8wQBY2Q/Aw==}
 
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
@@ -4338,11 +4338,11 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@5.0.7(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(less@4.6.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0)':
+  '@astrojs/react@5.0.7(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(less@4.6.4)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.10.0
-      '@types/react': 19.2.16
-      '@types/react-dom': 19.2.3(@types/react@19.2.16)
+      '@types/react': 19.2.17
+      '@types/react-dom': 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react': 5.2.0(vite@7.3.5(less@4.6.4)(sass@1.99.0)(stylus@0.62.0)(yaml@2.9.0))
       devalue: 5.8.1
       react: 19.2.7
@@ -5589,15 +5589,15 @@ snapshots:
       '@testing-library/dom': 8.20.1
       preact: 10.29.2
 
-  '@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.16))(@types/react@19.2.16)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@babel/runtime': 7.29.2
       '@testing-library/dom': 10.4.1
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
     optionalDependencies:
-      '@types/react': 19.2.16
-      '@types/react-dom': 19.2.3(@types/react@19.2.16)
+      '@types/react': 19.2.17
+      '@types/react-dom': 19.2.3(@types/react@19.2.17)
 
   '@tybys/wasm-util@0.10.2':
     dependencies:
@@ -5672,11 +5672,11 @@ snapshots:
     dependencies:
       postcss: 8.5.13
 
-  '@types/react-dom@19.2.3(@types/react@19.2.16)':
+  '@types/react-dom@19.2.3(@types/react@19.2.17)':
     dependencies:
-      '@types/react': 19.2.16
+      '@types/react': 19.2.17
 
-  '@types/react@19.2.16':
+  '@types/react@19.2.17':
     dependencies:
       csstype: 3.2.3
 

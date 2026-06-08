@@ -26,7 +26,7 @@
     "@astrojs/preact": "^5.1.5",
     "@astrojs/react": "^5.0.7",
     "@astrojs/solid-js": "^6.0.1",
-    "@types/react": "^19.2.16",
+    "@types/react": "^19.2.17",
     "astro": "^6.4.4",
     "typescript": "^6.0.3"
   }
