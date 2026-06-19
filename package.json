@@ -3,7 +3,7 @@
     "lint": "biome ci"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.16",
+    "@biomejs/biome": "^2.5.0",
     "@raviqqe/biome-config": "^2.0.26"
   },
   "engines": {
