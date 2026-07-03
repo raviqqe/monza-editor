@@ -20,7 +20,7 @@ require (
 	github.com/valyala/fasthttp v1.65.0 // indirect
 	github.com/yhat/scrape v0.0.0-20161128144610-24b7890b0945 // indirect
 	go.uber.org/ratelimit v0.3.1 // indirect
-	golang.org/x/net v0.43.0 // indirect
-	golang.org/x/sys v0.35.0 // indirect
-	golang.org/x/text v0.28.0 // indirect
+	golang.org/x/net v0.55.0 // indirect
+	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/text v0.37.0 // indirect
 )
