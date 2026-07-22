@@ -16,8 +16,8 @@
     "monza-editor": "workspace:*",
     "picolight": "^0.2.8",
     "preact": "^10.29.7",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "solid-js": "^1.9.14"
   },
   "devDependencies": {
