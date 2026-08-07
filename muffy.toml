@@ -12,9 +12,6 @@ timeout = "30s"
 max_age = "1w"
 stale_while_revalidate = "1w"
 
-[sites.default.headers]
-user-agent = "Muffy"
-
 [sites.default.retry]
 count = 3
 factor = 2
@@ -31,6 +28,15 @@ max_age = "5m"
 stale_while_revalidate = "5m"
 
 [sites.main.validation.html]
+ignored_attributes = ["data-.*"]
+ignored_elements = [
+  "astro-island",
+  "monza-editor",
+  # TODO Move island styles emitted by Astro into head elements.
+  "style",
+]
+
+[sites.main.validation.svg]
 ignored_attributes = ["data-.*"]
 
 [sites.github]
