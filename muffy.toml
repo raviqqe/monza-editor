@@ -37,7 +37,6 @@ ignored_elements = [
 ]
 
 [sites.main.validation.svg]
-ignored_attributes = ["data-.*"]
 
 [sites.github]
 extend = "default"
