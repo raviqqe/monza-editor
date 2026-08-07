@@ -12,6 +12,9 @@ timeout = "30s"
 max_age = "1w"
 stale_while_revalidate = "1w"
 
+[sites.default.headers]
+user-agent = "Muffy"
+
 [sites.default.retry]
 count = 3
 factor = 2
