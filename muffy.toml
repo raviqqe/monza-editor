@@ -50,3 +50,8 @@ fragments_ignored = true
 [sites.github.rate_limit]
 supply = 10
 window = "1s"
+
+[sites.forbidden]
+extend = "default"
+roots = ["https://www.npmjs.com/"]
+statuses = [200, 403]
