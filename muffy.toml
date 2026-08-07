@@ -1,0 +1,46 @@
+[cache]
+persistent = true
+
+[sites.default]
+roots = []
+max_redirects = 8
+schemes = ["https"]
+statuses = [200]
+timeout = "30s"
+
+[sites.default.cache]
+max_age = "5m"
+
+[sites.default.retry]
+count = 3
+factor = 2
+interval = { initial = "500ms", cap = "10s" }
+
+[sites.default.headers]
+user-agent = "Muffy/0.2.0"
+
+[sites.external]
+extend = "default"
+
+[sites.external.cache]
+max_age = "1w"
+stale_while_revalidate = "1w"
+
+[sites.main]
+extend = "default"
+roots = ["https://raviqqe.com/monza-editor"]
+recurse = true
+
+[sites.github]
+extend = "external"
+roots = ["https://github.com/"]
+concurrency = 64
+
+[sites.github.rate_limit]
+supply = 10
+window = "1s"
+
+[sites.forbidden]
+extend = "external"
+roots = ["https://www.npmjs.com/"]
+statuses = [200, 403]
