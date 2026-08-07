@@ -1,0 +1,57 @@
+[cache]
+persistent = true
+
+[sites.default]
+roots = []
+max_redirects = 8
+schemes = ["https"]
+statuses = [200]
+timeout = "30s"
+
+[sites.default.cache]
+max_age = "1w"
+stale_while_revalidate = "1w"
+
+[sites.default.headers]
+user-agent = "Muffy"
+
+[sites.default.retry]
+count = 3
+factor = 2
+interval = { initial = "500ms", cap = "10s" }
+statuses = [408, 500, 502, 503, 504]
+
+[sites.main]
+extend = "default"
+roots = ["https://raviqqe.com/monza-editor"]
+recurse = true
+
+[sites.main.cache]
+max_age = "0s"
+stale_while_revalidate = "0s"
+
+[sites.main.validation.html]
+ignored_attributes = ["data-.*"]
+ignored_elements = [
+  "astro-island",
+  "monza-editor",
+  # TODO Move island styles emitted by Astro into head elements.
+  "style",
+]
+
+[sites.main.validation.svg]
+
+[sites.github]
+extend = "default"
+roots = ["https://github.com/"]
+concurrency = 64
+fragments_ignored = true
+
+[sites.github.rate_limit]
+supply = 10
+window = "1s"
+
+[sites.forbidden]
+extend = "default"
+roots = ["https://www.npmjs.com/"]
+statuses = [200, 403]
