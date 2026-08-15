@@ -2,7 +2,6 @@
 persistent = true
 
 [sites.default]
-roots = []
 max_redirects = 8
 schemes = ["https"]
 statuses = [200]
@@ -45,7 +44,7 @@ ignored_elements = [
 extend = "default"
 roots = ["https://github.com/"]
 concurrency = 64
-fragments_ignored = true
+ignored_fragments = ["L\\d+(-L\\d+)?", "performance"]
 
 [sites.github.rate_limit]
 supply = 10
