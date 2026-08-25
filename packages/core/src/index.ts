@@ -4,15 +4,11 @@ type ChildElementName = "code" | "pre" | "textarea";
 
 export const styles = rawStyles as Record<ChildElementName | "main", string>;
 
-export type TextareaEvent<E extends Event = Event> = Omit<E, "target"> & {
-  target: HTMLTextAreaElement;
-};
-
 export interface InitializationOptions {
   code: HTMLElement;
   highlight: (text: string) => string;
-  onChange?: (event: TextareaEvent) => void;
-  onInput?: (event: TextareaEvent<InputEvent>) => void;
+  onChange?: (event: Event) => void;
+  onInput?: (event: InputEvent) => void;
   pre: HTMLPreElement;
   textarea: HTMLTextAreaElement;
 }
@@ -44,14 +40,12 @@ export const initialize = ({
 
   textarea.addEventListener("input", (event) => {
     update();
-    onInput?.(event as TextareaEvent<InputEvent>);
+    onInput?.(event);
   });
   textarea.addEventListener("scroll", scroll);
 
   if (onChange) {
-    textarea.addEventListener("change", (event) =>
-      onChange(event as TextareaEvent),
-    );
+    textarea.addEventListener("change", (event) => onChange(event));
   }
 
   update();
