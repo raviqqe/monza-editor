@@ -12,3 +12,5 @@ versioning:
       - "@monza-editor/preact"
       - "@monza-editor/react"
       - "@monza-editor/solid"
+  ignore:
+    - "@monza-editor/doc"
