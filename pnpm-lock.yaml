@@ -76,7 +76,7 @@ importers:
   packages/astro:
     dependencies:
       monza-editor:
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../core
       picolight:
         specifier: ^0.2.9
@@ -116,7 +116,7 @@ importers:
   packages/preact:
     dependencies:
       monza-editor:
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../core
       preact:
         specifier: ^10.29.8
@@ -144,7 +144,7 @@ importers:
   packages/react:
     dependencies:
       monza-editor:
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../core
       react:
         specifier: ^19.2.8
@@ -175,7 +175,7 @@ importers:
   packages/solid:
     dependencies:
       monza-editor:
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../core
       solid-js:
         specifier: ^1.9.15
