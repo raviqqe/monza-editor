@@ -5,3 +5,12 @@ allowBuilds:
   "@parcel/watcher": false
   esbuild: false
   sharp: false
+versioning:
+  fixed:
+    - - monza-editor
+      - "@monza-editor/astro"
+      - "@monza-editor/preact"
+      - "@monza-editor/react"
+      - "@monza-editor/solid"
+  ignore:
+    - "@monza-editor/doc"
