@@ -2,19 +2,39 @@
   dir: packages/astro
   intents:
     - three-comics-refuse
+"@monza-editor/astro@0.5.14":
+  dir: packages/astro
+  intents:
+    - metal-queens-fly
 "@monza-editor/preact@0.5.13":
   dir: packages/preact
   intents:
     - three-comics-refuse
+"@monza-editor/preact@0.5.14":
+  dir: packages/preact
+  intents:
+    - metal-queens-fly
 "@monza-editor/react@0.5.13":
   dir: packages/react
   intents:
     - three-comics-refuse
+"@monza-editor/react@0.5.14":
+  dir: packages/react
+  intents:
+    - metal-queens-fly
 "@monza-editor/solid@0.5.13":
   dir: packages/solid
   intents:
     - three-comics-refuse
+"@monza-editor/solid@0.5.14":
+  dir: packages/solid
+  intents:
+    - metal-queens-fly
 monza-editor@0.5.13:
   dir: packages/core
   intents:
     - three-comics-refuse
+monza-editor@0.5.14:
+  dir: packages/core
+  intents:
+    - metal-queens-fly

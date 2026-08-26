@@ -6,4 +6,4 @@
 "monza-editor": patch
 ---
 
-Release
+Include readme
