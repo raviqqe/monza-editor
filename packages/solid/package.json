@@ -16,6 +16,7 @@
   },
   "scripts": {
     "build": "tsdown",
+    "prepack": "cp ../../README.md .",
     "test": "vitest"
   },
   "dependencies": {

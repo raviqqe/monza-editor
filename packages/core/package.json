@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "rslib build",
+    "prepack": "cp ../../README.md .",
     "test": "vitest"
   },
   "devDependencies": {
