@@ -11,16 +11,16 @@ Its core library consists of only 1 KB JavaScript and 0.5 KB CSS!
 ## Install
 
 ```sh
-# For Preact
+# Preact
 npm install @monza-editor/preact
 
-# For React
+# React
 npm install @monza-editor/react
 
-# For Solid.js
+# Solid.js
 npm install @monza-editor/solid
 
-# For vanilla JS
+# Vanilla JS
 npm install monza-editor
 ```
 

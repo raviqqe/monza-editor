@@ -19,7 +19,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "monza-editor": "workspace:*",
+    "monza-editor": "workspace:^",
     "react": "^19.2.8"
   },
   "devDependencies": {
