@@ -1,1 +1,3 @@
-../../.npmignore
+*.config.ts
+*.test.*
+*.tsbuildinfo
