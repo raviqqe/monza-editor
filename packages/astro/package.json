@@ -15,7 +15,8 @@
     }
   },
   "scripts": {
-    "build": "astro build"
+    "build": "astro build",
+    "prepack": "cp ../../README.md ."
   },
   "dependencies": {
     "monza-editor": "workspace:^",
