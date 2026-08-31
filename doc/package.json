@@ -14,7 +14,7 @@
     "@monza-editor/react": "workspace:*",
     "@monza-editor/solid": "workspace:*",
     "monza-editor": "workspace:*",
-    "picolight": "^0.2.9",
+    "picolight": "^0.2.10",
     "preact": "^10.29.8",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
