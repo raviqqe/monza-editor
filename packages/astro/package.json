@@ -2,17 +2,17 @@
   "name": "@monza-editor/astro",
   "version": "0.5.14",
   "description": "Astro component of Monza editor",
-  "repository": "https://github.com/raviqqe/monza-editor",
   "license": "MIT",
-  "publishConfig": {
-    "provenance": true
-  },
+  "repository": "https://github.com/raviqqe/monza-editor",
   "type": "module",
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
       "default": "./src/index.js"
     }
+  },
+  "publishConfig": {
+    "provenance": true
   },
   "scripts": {
     "build": "astro build",

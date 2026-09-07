@@ -2,17 +2,17 @@
   "name": "@monza-editor/react",
   "version": "0.5.14",
   "description": "React component of Monza editor",
-  "repository": "https://github.com/raviqqe/monza-editor",
   "license": "MIT",
-  "publishConfig": {
-    "provenance": true
-  },
+  "repository": "https://github.com/raviqqe/monza-editor",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     }
+  },
+  "publishConfig": {
+    "provenance": true
   },
   "scripts": {
     "build": "tsdown",
