@@ -31,7 +31,7 @@ export const Editor = ({
   }, [textarea.current, pre.current, code.current]);
 
   return (
-    <div class={`${styles.main} ${rest.class}`} id={id}>
+    <div class={`${styles.root} ${rest.class}`} id={id}>
       <textarea class={styles.textarea} ref={textarea}>
         {value}
       </textarea>

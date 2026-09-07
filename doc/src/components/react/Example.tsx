@@ -6,7 +6,7 @@ import styles from "./Example.module.css";
 
 export const Example = (): JSX.Element => (
   <Editor
-    className={styles.main}
+    className={styles.root}
     onHighlight={highlight}
     value='console.log("Hello, React!");'
   />

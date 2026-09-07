@@ -20,7 +20,7 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
   data-theme={JSON.stringify(theme)}
   data-dark-theme={JSON.stringify(darkTheme)}
 >
-  <div class={`${styles.main} ${props.class}`} id={id}>
+  <div class={`${styles.root} ${props.class}`} id={id}>
     <textarea class={styles.textarea}>{value}</textarea>
     <pre class={styles.pre}><code class={styles.code} /></pre>
   </div>

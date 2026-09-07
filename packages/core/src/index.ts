@@ -2,7 +2,7 @@ import rawStyles from "./index.module.css";
 
 type ChildElementName = "code" | "pre" | "textarea";
 
-export const styles = rawStyles as Record<ChildElementName | "main", string>;
+export const styles = rawStyles as Record<ChildElementName | "root", string>;
 
 export interface InitializationOptions {
   code: HTMLElement;
@@ -66,7 +66,7 @@ export const render = (
 
   textarea.value = value ?? "";
 
-  div.classList.add(styles.main);
+  div.classList.add(styles.root);
   textarea.className = styles.textarea;
   pre.className = styles.pre;
   code.className = styles.code;
