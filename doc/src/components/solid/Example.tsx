@@ -8,7 +8,7 @@ import styles from "./Example.module.css";
 
 export const Example = (): JSX.Element => (
   <Editor
-    class={styles.main}
+    class={styles.root}
     onHighlight={highlight}
     value='console.log("Hello, Solid.js!");'
   />
