@@ -1,6 +1,6 @@
 {
   "name": "@monza-editor/preact",
-  "version": "0.5.14",
+  "version": "0.6.0",
   "description": "Preact component of Monza editor",
   "license": "MIT",
   "repository": "https://github.com/raviqqe/monza-editor",
