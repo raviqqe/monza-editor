@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "monza-editor": "workspace:^",
-    "picolight": "^0.3.3"
+    "picolight": "^0.3.4"
   },
   "devDependencies": {
     "@raviqqe/tsconfig": "^3.0.2",
