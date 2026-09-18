@@ -30,6 +30,6 @@
     "tsdown": "^0.23.0",
     "typescript": "^6.0.3",
     "vite-plugin-solid": "^2.11.14",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.1"
   }
 }
