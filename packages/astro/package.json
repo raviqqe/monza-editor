@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@raviqqe/tsconfig": "^3.0.2",
-    "astro": "^7.3.5",
+    "astro": "^7.3.6",
     "typescript": "^6.0.3"
   }
 }
