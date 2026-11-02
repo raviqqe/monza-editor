@@ -83,8 +83,8 @@ importers:
         version: 0.3.4
     devDependencies:
       '@raviqqe/tsconfig':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.4
+        version: 3.0.4
       astro:
         specifier: ^7.4.4
         version: 7.4.4(esbuild@0.28.2)(less@4.9.1(supports-color@7.2.0))(sass@1.106.1)(stylus@0.62.0(supports-color@7.2.0))(yaml@2.9.1)
@@ -95,8 +95,8 @@ importers:
   packages/core:
     devDependencies:
       '@raviqqe/tsconfig':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.4
+        version: 3.0.4
       '@rslib/core':
         specifier: ^1.0.4
         version: 1.0.4(typescript@6.0.3)
@@ -126,8 +126,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       '@raviqqe/tsconfig':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.4
+        version: 3.0.4
       '@testing-library/preact':
         specifier: ^3.2.6
         version: 3.2.6(preact@11.1.0)
@@ -154,8 +154,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       '@raviqqe/tsconfig':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.4
+        version: 3.0.4
       '@testing-library/react':
         specifier: ^16.3.3
         version: 16.3.3(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -182,8 +182,8 @@ importers:
         version: 1.9.17
     devDependencies:
       '@raviqqe/tsconfig':
-        specifier: ^3.0.2
-        version: 3.0.2
+        specifier: ^3.0.4
+        version: 3.0.4
       '@solidjs/testing-library':
         specifier: ^0.8.10
         version: 0.8.10(solid-js@1.9.17)
@@ -1295,9 +1295,9 @@ packages:
     resolution: {integrity: sha512-hY+53GQGquxNQlMJcHmAXZ1H0uUvcSKhGhArV9bRS0ZL+a0b3O136/9Pnybg8KvmrkOhf4jemI7WpeqAXh4a0w==}
     engines: {node: '>=25.8.0'}
 
-  '@raviqqe/tsconfig@3.0.2':
-    resolution: {integrity: sha512-san+p1rO62JSKwb7F2hbjoY3EtPhC4qiQM9DNpE+pAIguQRlNurfVpm6KNlIuc+WY0e2cS3X7H2EMJ+PZaRtZw==}
-    engines: {node: '>=25.8.0'}
+  '@raviqqe/tsconfig@3.0.4':
+    resolution: {integrity: sha512-XPKqUek8v+1cNBrYG0vi7vB7DnILdqvds9u2rRR46krVozuHIJO7KbAcH3+qI2ih730zsjYg0QkoBjn99ZRYQw==}
+    engines: {node: ^26.12.1}
 
   '@rolldown/binding-android-arm-eabi@1.2.15':
     resolution: {integrity: sha512-aLcgK9gIJ3YRvrrtfSBbRa27F5WrpiTaPulnFpsHPxpUHgFlSgnU4854MHwoRGEBhfRJDWCS2WQ7lIjskE9Olw==}
@@ -4662,9 +4662,9 @@ snapshots:
 
   '@raviqqe/react-tsconfig@2.0.5':
     dependencies:
-      '@raviqqe/tsconfig': 3.0.2
+      '@raviqqe/tsconfig': 3.0.4
 
-  '@raviqqe/tsconfig@3.0.2':
+  '@raviqqe/tsconfig@3.0.4':
     dependencies:
       typescript: 7.0.2
 
