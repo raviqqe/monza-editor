@@ -29,7 +29,7 @@
     "rolldown-plugin-solid": "^0.2.1",
     "tsdown": "^0.23.4",
     "typescript": "^6.0.3",
-    "vite-plugin-solid": "^2.11.14",
+    "vite-plugin-solid": "^2.11.15",
     "vitest": "^5.0.5"
   }
 }
