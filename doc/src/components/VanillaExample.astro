@@ -5,17 +5,17 @@ import styles from "./VanillaExample.module.css";
 
 <div class={styles.root} id="vanilla-example"></div>
 <script>
-  import { render } from "monza-editor";
-  import { highlight } from "../utility.js";
+import { render } from "monza-editor";
+import { highlight } from "../utility.js";
 
-  const element = document.getElementById("vanilla-example");
+const element = document.getElementById("vanilla-example");
 
-  if (!(element instanceof HTMLDivElement)) {
-    throw new Error("No editor element");
-  }
+if (!(element instanceof HTMLDivElement)) {
+  throw new Error("No editor element");
+}
 
-  render(element, {
-    highlight,
-    value: `console.log("Hello, JavaScript!");`,
-  });
+render(element, {
+  highlight,
+  value: `console.log("Hello, JavaScript!");`,
+});
 </script>
