@@ -16,9 +16,9 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
 ---
 
 <monza-editor
+  data-dark-theme={JSON.stringify(darkTheme)}
   data-language={serializeLanguage(language)}
   data-theme={JSON.stringify(theme)}
-  data-dark-theme={JSON.stringify(darkTheme)}
 >
   <div class={`${styles.root} ${props.class}`} id={id}>
     <textarea class={styles.textarea}>{value}</textarea>
@@ -26,43 +26,43 @@ const { id, language, theme, darkTheme, value, ...props } = Astro.props;
   </div>
 </monza-editor>
 <script>
-  import { initialize } from "monza-editor";
-  import { deserializeLanguage, highlight } from "picolight";
+import { initialize } from "monza-editor";
+import { deserializeLanguage, highlight } from "picolight";
 
-  class Editor extends HTMLElement {
-    async connectedCallback(): Promise<void> {
-      const { language, theme, darkTheme } = this.dataset;
+class Editor extends HTMLElement {
+  async connectedCallback(): Promise<void> {
+    const { language, theme, darkTheme } = this.dataset;
 
-      if (!language || !theme) {
-        throw new Error("Editor props missing");
-      }
-
-      const div = this.querySelector("div");
-      const textarea = this.querySelector("textarea");
-      const pre = this.querySelector("pre");
-      const code = this.querySelector("code");
-
-      if (!div || !textarea || !pre || !code) {
-        throw new Error("Editor elements missing");
-      }
-
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      let dark = mediaQuery.matches;
-      mediaQuery.addEventListener("change", (event) => (dark = event.matches));
-
-      initialize({
-        code,
-        highlight: (text) =>
-          highlight(
-            text,
-            deserializeLanguage(language),
-            JSON.parse((dark && darkTheme) || theme),
-          ).outerHTML,
-        pre,
-        textarea,
-      });
+    if (!language || !theme) {
+      throw new Error("Editor props missing");
     }
-  }
 
-  customElements.define("monza-editor", Editor);
+    const div = this.querySelector("div");
+    const textarea = this.querySelector("textarea");
+    const pre = this.querySelector("pre");
+    const code = this.querySelector("code");
+
+    if (!div || !textarea || !pre || !code) {
+      throw new Error("Editor elements missing");
+    }
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    let dark = mediaQuery.matches;
+    mediaQuery.addEventListener("change", (event) => (dark = event.matches));
+
+    initialize({
+      code,
+      highlight: (text) =>
+        highlight(
+          text,
+          deserializeLanguage(language),
+          JSON.parse((dark && darkTheme) || theme),
+        ).outerHTML,
+      pre,
+      textarea,
+    });
+  }
+}
+
+customElements.define("monza-editor", Editor);
 </script>
