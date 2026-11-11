@@ -12,8 +12,8 @@ jobs:
       id-token: write
     environment: ${{ github.ref == 'refs/heads/main' && 'release' || '' }}
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: ./.github/actions/setup
-      - uses: raviqqe/pnpm-publish@b9431a6e362ae9769b351acca4a2f697cb4eea6f # v1.0.2
+      - uses: actions/checkout@v7.0.1
+      - uses: $/.github/actions/setup
+      - uses: raviqqe/pnpm-publish@v1.0.2
         with:
           release: ${{ github.ref == 'refs/heads/main' }}

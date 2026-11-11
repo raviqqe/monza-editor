@@ -18,26 +18,26 @@ jobs:
       run:
         working-directory: doc
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: ./.github/actions/setup
-      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+      - uses: actions/checkout@v7.0.1
+      - uses: $/.github/actions/setup
+      - uses: actions/configure-pages@v6.0.0
       - run: pnpm -r build
-      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+      - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: doc/dist
-      - uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      - uses: actions/deploy-pages@v5.0.1
         if: github.ref == 'refs/heads/main'
   web_test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: ./.github/actions/setup
+      - uses: actions/checkout@v7.0.1
+      - uses: $/.github/actions/setup
       - run: pnpm -r build
       - run: pnpm build --site http://localhost:4321/monza-editor
         working-directory: doc
       - run: pnpm preview &
         working-directory: doc
-      - uses: raviqqe/muffy@75137197b0bc03a227e8638e30bd170607cd3bc5 # v0.5.8
+      - uses: raviqqe/muffy@v0.5.8
         with:
           config: muffy.local.toml
   web_release_test:
@@ -45,8 +45,8 @@ jobs:
       - web_build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: raviqqe/muffy@75137197b0bc03a227e8638e30bd170607cd3bc5 # v0.5.8
+      - uses: actions/checkout@v7.0.1
+      - uses: raviqqe/muffy@v0.5.8
   document:
     needs:
       - web_build
