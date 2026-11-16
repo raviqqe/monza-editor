@@ -200,8 +200,8 @@ importers:
         specifier: workspace:*
         version: link:../packages/core
       picolight:
-        specifier: ^0.3.4
-        version: 0.3.4
+        specifier: ^0.3.5
+        version: 0.3.5
       preact:
         specifier: ^11.2.0
         version: 11.2.0(preact-render-to-string@6.8.2)
@@ -246,8 +246,8 @@ importers:
         specifier: workspace:^
         version: link:../core
       picolight:
-        specifier: ^0.3.4
-        version: 0.3.4
+        specifier: ^0.3.5
+        version: 0.3.5
     devDependencies:
       '@raviqqe/tsconfig':
         specifier: ^3.0.5
@@ -3108,8 +3108,8 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  picolight@0.3.4:
-    resolution: {integrity: sha512-N97A9NM+N0etubx+FCeiiG3+vcaWc7tS8DtYsfk5yb3gnyxiMGPh7dpb5iir4BIj8DpSdCP85DGBu89GbZ1igQ==}
+  picolight@0.3.5:
+    resolution: {integrity: sha512-YHFtN/3tBCFwQtTPJkH6/z7bZyOSTXnH2XL88oHFk/RzUvx9rYUASYiCOte9HWmPhmEpRyeyjCl7c5r7FavoOA==}
 
   picomatch@2.3.2:
     resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
@@ -6548,7 +6548,7 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picolight@0.3.4: {}
+  picolight@0.3.5: {}
 
   picomatch@2.3.2: {}
 
